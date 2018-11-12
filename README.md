@@ -1,2 +1,2 @@
-# 2018-icon-hackathon
+# 201811-icon-hackathon
 Internal Corporate Hackathon 
