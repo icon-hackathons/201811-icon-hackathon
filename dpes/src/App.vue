@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 <template>
 <div id="app">
 
@@ -42,7 +44,9 @@
 
       <!-- @Decorator; 공용 기능 -->
       <span class="">
-        <button class="btn btn-light" type="button" onclick="local.href=''"><router-link to="/list">평가하기</router-link></button>
+        <button class="btn btn-light" type="button">
+          <router-link to="/list">평가하기</router-link>
+        </button>
       </span>
 
     </div>
