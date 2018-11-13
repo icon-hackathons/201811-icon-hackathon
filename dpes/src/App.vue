@@ -3,9 +3,10 @@
 <template>
 <div id="app">
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">
-      <router-link to="/"><img src="https://m.icon.foundation/resources/image/favicon.ico" width="30" height="30" class="d-inline-block align-top" alt=""> DPES
+      <router-link to="/">
+        <img src="../src/assets/logo-dpes.png" max-width="100" height="50" class="d-inline-block align-middle" alt="">
       </router-link>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,33 +20,33 @@
 
         <li class="nav-item active">
           <a class="nav-link">
-            <router-link to="/signin">로그인</router-link><span class="sr-only">(current)</span>
+            <router-link class="nav-atag" to="/signin">로그인</router-link><span class="sr-only">(current)</span>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link">
-            <router-link to="/signup">회원가입</router-link>
+            <router-link class="nav-atag" to="/signup">회원가입</router-link>
           </a>
         </li>
 
         <!-- @Decorator; 로그인 상태 -->
         <li class="nav-item">
           <a class="nav-link">
-            <router-link to="/dashboard">대쉬보드</router-link>
+            <router-link class="nav-atag" to="/dashboard">대쉬보드</router-link>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">
-            <router-link to="/profile">내 프로필</router-link>
+            <router-link class="nav-atag" to="/profile">내 프로필</router-link>
           </a>
         </li>
 
       </ul>
 
       <!-- @Decorator; 공용 기능 -->
-      <span class="">
-        <button class="btn btn-light" type="button">
-          <router-link to="/list">평가하기</router-link>
+      <span class="nav-atag">
+        <button class="btn btn-lg btn-dark" type="button">
+          <router-link class="" to="/list">평가하기</router-link>
         </button>
       </span>
 
@@ -75,6 +76,29 @@
     }
 }
 
+$color-main: rgba(27,176,206,0.8);
+
+.font-weight-extra-bold{
+  font-weight:900 !important;
+}
+
+.nav-atag{
+  color:black;
+  text-decoration: none;
+  &:hover{
+    color:$color-main;
+    text-decoration: none;
+  }
+  a{
+    color:white;
+    text-decoration: none;
+    &:hover{
+      color:white;
+      text-decoration: none;
+    }
+  }
+}
+
 .set-bg {
     width: 100%;
     background-repeat: no-repeat !important;
@@ -94,9 +118,10 @@
 }
 
 .jumbotron-breadcrumb{
+  background-image: url('../src/assets/index-dark.jpg');
   text-align: left !important;
-  padding-top: 20px !important;
-  padding-bottom: 20px !important;
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
   border-radius: 0px !important;
   margin-bottom: 0px !important;
 

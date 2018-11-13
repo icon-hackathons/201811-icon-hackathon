@@ -1,12 +1,11 @@
 <template>
 <div style="height:100%;">
 
-  <section class="jumbotron jumbotron-breadcrumb bg-info">
+  <section class="jumbotron jumbotron-breadcrumb set-bg">
     <div class="text-white container">
       <div class="row">
         <div class="col-md">
-          <span> back page </span>
-          <h1 class="title">Evaluation</h1>
+          <h1 class="title">부서 선택</h1>
         </div>
       </div>
     </div>
