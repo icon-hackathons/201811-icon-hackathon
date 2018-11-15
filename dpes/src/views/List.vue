@@ -12,21 +12,48 @@
   </section>
 
   <section class="container">
-    <div class="row">
-      <div class="col-md">
+    <div class="row" style="margin-top:50px;margin-bottom:50px;">
 
-        <div class="card" style="text-align:left;">
-          <div class="card-header bg-white">
-            비즈니스 기획팀
+      <div class="offset-md-1 col-md-10 offset-md-1">
+
+        <div class="row">
+
+          <div class="card" style="width: 18rem; height: 20%;">
+            <img class="card-img-top" src="../assets/img_sample.jpg" alt="Card image cap" style="height:150px;">
+            <div class="card-body">
+              <h5 class="card-title">비즈니스기획팀</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">
+                <img src="../assets/img_sample.jpg" class="thumbnail rounded-circle small" />
+                <img src="../assets/img_sample.jpg" class="thumbnail rounded-circle small ml-1" />
+                <img src="../assets/img_sample.jpg" class="thumbnail rounded-circle small ml-1" />
+                <img src="../assets/img_sample.jpg" class="thumbnail rounded-circle small ml-1" />
+                <img src="../assets/img_sample.jpg" class="thumbnail rounded-circle small ml-1" />
+              </p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
           </div>
-          <div class="card-body">
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">평가하기</a>
-          </div>
+
         </div>
 
+        <div class="row" style="margin-top:30px;">
+
+
+        </div>
+
+        <div class="row" style="margin-top:30px;">
+
+
+        </div>
+
+
       </div>
+
     </div>
   </section>
+
+
+
 </div>
 </template>

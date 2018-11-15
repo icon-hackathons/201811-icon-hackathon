@@ -1,6 +1,5 @@
-/* eslint-disable */
-
 <template>
+  <!-- eslint-disable max-len -->
 <div id="app">
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -97,6 +96,13 @@ $color-main: rgba(27,176,206,0.8);
       text-decoration: none;
     }
   }
+}
+.thumbnail{
+  &.small{
+    width:35px;
+    height:35px;
+  }
+
 }
 
 .set-bg {
