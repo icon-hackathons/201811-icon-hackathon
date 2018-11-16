@@ -36,12 +36,20 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ './views/Signin.vue'),
     },
     {
-      path: '/list',
-      name: 'group_list',
+      path: '/group',
+      name: 'group',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/List.vue'),
+      component: () => import(/* webpackChunkName: "about" */ './views/Group.vue'),
+    },
+    {
+      path: '/groupprofilelist',
+      name: 'groupprofilelist',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "about" */ './views/GroupProfileList.vue'),
     },
   ],
 });

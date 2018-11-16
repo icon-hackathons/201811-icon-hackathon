@@ -45,7 +45,7 @@
       <!-- @Decorator; 공용 기능 -->
       <span class="nav-atag">
         <button class="btn btn-lg btn-dark" type="button">
-          <router-link class="" to="/list">평가하기</router-link>
+          <router-link class="" to="/group">평가하기</router-link>
         </button>
       </span>
 
