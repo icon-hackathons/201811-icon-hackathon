@@ -75,6 +75,14 @@
     }
 }
 
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  color: black !important;
+  border-bottom: 2px solid black;
+  border-radius: 0px;
+  font-weight: bold;
+  background-color: transparent !important;
+}
+
 $color-main: rgba(27,176,206,0.8);
 
 .font-weight-extra-bold{
