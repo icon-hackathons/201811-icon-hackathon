@@ -5,10 +5,15 @@
     "from": "hxa4c3a78d73bb7287f72801c09298f1a5743b1655",
     "to": "cx0000000000000000000000000000000000000000",
     "deploy": {
-        "stepLimit": "0x5a000000",
+        "stepLimit": "0x5a0000000",
         "contentType": "zip",
         "mode": "install",
         "scoreParams": {
+            "name": "2018 1Q 평가",
+            "desc": "2018 1Q 평가 섹션입니다.",
+            "prize_amount": "0x2386f26fc10000",
+            "due_date": "0x59b08c1fa4000",
+            "dpes_score_address": "cx400f3e1813c58a467f40ee164b99d098da8d4821"
         }
     },
     "txresult": {},
