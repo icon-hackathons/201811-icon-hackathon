@@ -1,15 +1,21 @@
+<script>
+import Breadcrumb from '@/views/Breadcrumb.vue'
+export default {
+  name: 'GroupList',
+  components: {
+    Breadcrumb,
+  },
+};
+</script>
+
 <template>
 <div style="height:100%;">
 
-  <section class="jumbotron jumbotron-breadcrumb set-bg">
-    <div class="text-white container">
-      <div class="row">
-        <div class="col-md">
-          <h1 class="title">부서 선택</h1>
-        </div>
-      </div>
-    </div>
-  </section>
+  <Breadcrumb
+    organization="ICONLoop"
+    title="그룹 선택하기"
+    workspace=" > ICONLoop 1Q 상반기 전사 성과 평가"
+    remaintime="남은 시간 3일 17:39:58" />
 
   <section class="jumbotron mb-0 p-4 border bg-light">
     <div class="row">
@@ -32,7 +38,7 @@
 
         <div class="row mb-2">
           <div class="col-md text-left">
-            <h5>총 10개의 부서를 찾았습니다</h5>
+            <h5>총 10개의 그룹을 찾았습니다</h5>
           </div>
         </div>
 
@@ -41,15 +47,15 @@
           <!-- 카드 시작 -->
           <div class="col-md-4">
             <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="../assets/img_sample.jpg" alt="Card image cap" style="height:150px;">
+              <img class="card-img-top" src="../../assets/img_sample.jpg" alt="Card image cap" style="height:150px;">
               <div class="card-body">
                 <h5 class="card-title">비즈니스기획팀</h5>
 
                 <p class="card-text">
-                  <img src="../assets/img_sample.jpg" class="thumbnail rounded-circle small" />
-                  <img src="../assets/img_sample.jpg" class="thumbnail rounded-circle small ml-1" />
-                  <img src="../assets/img_sample.jpg" class="thumbnail rounded-circle small ml-1" />
-                  <img src="../assets/img_sample.jpg" class="thumbnail rounded-circle small ml-1" />
+                  <img src="../../assets/img_sample.jpg" class="thumbnail rounded-circle small" />
+                  <img src="../../assets/img_sample.jpg" class="thumbnail rounded-circle small ml-1" />
+                  <img src="../../assets/img_sample.jpg" class="thumbnail rounded-circle small ml-1" />
+                  <img src="../../assets/img_sample.jpg" class="thumbnail rounded-circle small ml-1" />
                   <span class="ml-2 text-muted small">+3</span>
                 </p>
 
@@ -71,7 +77,7 @@
                 </div>
 
                 <div>
-                  <router-link :to="{name: 'groupprofilelist'}" tag="button" class="btn btn-secondary btn btn-block mt-4 mb-2">평가하기</router-link>
+                  <router-link :to="{name: 'groupprofilelist'}" tag="button" class="btn btn-secondary btn btn-block mt-4 mb-2">멤버 조회</router-link>
                 </div>
 
               </div>

@@ -2,7 +2,7 @@
   <!-- eslint-disable max-len -->
 <div id="app">
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <a class="navbar-brand" href="#">
       <router-link to="/">
         <img src="../src/assets/logo-dpes.png" max-width="100" height="50" class="d-inline-block align-middle" alt="">
@@ -45,7 +45,7 @@
       <!-- @Decorator; 공용 기능 -->
       <span class="nav-atag">
         <button class="btn btn-lg btn-dark" type="button">
-          <router-link class="" to="/group">평가하기</router-link>
+          <router-link class="" to="/evaluation/getstarted">평가하기</router-link>
         </button>
       </span>
 
@@ -106,6 +106,11 @@ $color-main: rgba(27,176,206,0.8);
   }
 }
 .thumbnail{
+  &.round{
+    max-width:100%;
+    width:200px;
+    border-radius: 50%;
+  }
   &.small{
     width:35px;
     height:35px;

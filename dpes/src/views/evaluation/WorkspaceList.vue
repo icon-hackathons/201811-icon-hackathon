@@ -1,15 +1,21 @@
+<script>
+import Breadcrumb from '@/views/Breadcrumb.vue'
+export default {
+  name: 'WorkspaceList',
+  components: {
+    Breadcrumb,
+  },
+};
+</script>
+
 <template>
 <div style="height:100%;">
 
-  <section class="jumbotron jumbotron-breadcrumb set-bg">
-    <div class="text-white container">
-      <div class="row">
-        <div class="col-md">
-          <h1 class="title">평가 대상 선택</h1>
-        </div>
-      </div>
-    </div>
-  </section>
+  <Breadcrumb
+    organization="ICONLoop"
+    title="워크스페이스 선택하기"
+    workspace=""
+    remaintime="" />
 
   <section class="jumbotron mb-0 p-4 border bg-light">
     <div class="row">
@@ -32,7 +38,7 @@
 
         <div class="row mb-2">
           <div class="col-md text-left">
-            <h5>총 7명의 대상자를 찾았습니다</h5>
+            <h5>총 5개의 연결된 워크스페이스를 찾았습니다</h5>
           </div>
         </div>
 
@@ -41,29 +47,29 @@
           <!-- 카드 시작 -->
           <div class="col-md-4">
             <div class="card" style="width: 18rem;">
-              <img class="card-img-top p-5 rounded-circle text-center mx-auto" src="../assets/img_sample.jpg" alt="Card image cap" style="height:200px;width:200px;">
+              <img class="card-img-top" src="../../assets/img_sample.jpg" alt="Card image cap" style="height:150px;">
               <div class="card-body">
-                <h5 class="card-title">하봉안</h5>
-                <h6 class="card-subtitle text-muted small">비즈니스기획팀</h6>
-                <div class="row mb-2 mt-3">
+                <h5 class="card-title">아이콘루프 1Q 전사 성과 평가</h5>
 
-                  <div class="col-md-4">
-                    <h6 class="card-text font-weight-bold">40%</h6>
-                    <h6 class="card-text text-muted small">평가 진행</h6>
+                <div class="row mb-2">
+
+                  <div class="col-md-12 mt-2">
+                    <h6 class="card-text font-weight-bold">6,000,000 ICX</h6>
+                    <h6 class="card-text text-muted small">총 리워드 풀 예치금</h6>
                   </div>
-                  <div class="col-md-4">
-                    <h6 class="card-text font-weight-bold">87</h6>
-                    <h6 class="card-text text-muted small">평균 평점</h6>
+                  <div class="col-md-12 mt-3">
+                    <h6 class="card-text font-weight-bold">3일 17:39:58</h6>
+                    <h6 class="card-text text-muted small">남은 시간</h6>
                   </div>
-                  <div class="col-md-4">
-                    <h6 class="card-text font-weight-bold">39</h6>
-                    <h6 class="card-text text-muted small">지표</h6>
+                  <div class="col-md-12 mt-3">
+                    <h6 class="card-text font-weight-bold">145명</h6>
+                    <h6 class="card-text text-muted small">평가 대상자</h6>
                   </div>
 
                 </div>
 
                 <div>
-                  <router-link :to="{name: 'evaluation'}" tag="button" class="btn btn-secondary btn btn-block mt-4 mb-2">평가하기</router-link>
+                  <router-link :to="{name: 'grouplist'}" tag="button" class="btn btn-secondary btn btn-block mt-4 mb-2">부서 조회</router-link>
                 </div>
 
               </div>

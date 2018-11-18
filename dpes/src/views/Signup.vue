@@ -40,7 +40,7 @@
               <a class="" href=""><span class="">이미 계정이 있으신가요?</span></a>
             </p>
 
-            <button type="submit" class="btn btn-info" style="width:100%;">회원가입 하기</button>
+            <router-link :to="{name: ''}" tag="button" class="btn btn-secondary">제출하기</router-link>
           </form>
 
         </div>
