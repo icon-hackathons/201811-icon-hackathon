@@ -40,7 +40,7 @@
               <a class="" href=""><span class="">이미 계정이 있으신가요?</span></a>
             </p>
 
-            <router-link :to="{name: ''}" tag="button" class="btn btn-secondary">제출하기</router-link>
+            <router-link :to="{name: 'create_profile'}" tag="button" class="btn btn-secondary">제출하기</router-link>
           </form>
 
         </div>

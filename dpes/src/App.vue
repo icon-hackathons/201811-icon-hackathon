@@ -115,8 +115,44 @@ $color-main: rgba(27,176,206,0.8);
     width:35px;
     height:35px;
   }
+}
+
+.form-control{
+  border-radius: 5px !important;
+  font-size:13px !important;
+
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #595959 !important;
+
+  }
 
 }
+
+.filebox label {
+  display: inline-block;
+  padding: 50px;
+  color: white;
+  font-size: inherit;
+  line-height: normal;
+  vertical-align: middle;
+  background-color: #ccc;
+  cursor: pointer;
+
+}
+
+.filebox input[type="file"] {  /* 파일 필드 숨기기 */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip:rect(0,0,0,0);
+  border: 0;
+}
+
 
 .set-bg {
     width: 100%;
