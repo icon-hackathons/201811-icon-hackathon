@@ -36,7 +36,7 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">
-            <router-link class="nav-atag" to="/profile">내 프로필</router-link>
+            <router-link class="nav-atag" to="/profile">내 정보</router-link>
           </a>
         </li>
 
