@@ -35,7 +35,6 @@ export default {
 
       <div class="offset-md-1 col-md-10 offset-md-1">
 
-
         <div class="row mb-2">
           <div class="col-md text-left">
             <h5>총 7명의 대상자를 찾았습니다</h5>
@@ -69,7 +68,7 @@ export default {
                 </div>
 
                 <div>
-                  <router-link :to="{name: 'evprofile'}" tag="button" class="btn btn-secondary btn btn-block mt-4 mb-2">평가하기</router-link>
+                  <router-link :to="{name: 'sheet'}" tag="button" class="btn btn-dark btn btn-block btn-lg">평가 시트 작성하기</router-link>
                 </div>
 
               </div>
@@ -81,21 +80,16 @@ export default {
 
         <div class="row" style="margin-top:30px;">
 
-
         </div>
 
         <div class="row" style="margin-top:30px;">
 
-
         </div>
-
 
       </div>
 
     </div>
   </section>
-
-
 
 </div>
 </template>
