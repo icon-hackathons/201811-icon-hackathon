@@ -325,6 +325,7 @@ class DpesScore(IconScoreBase, IDpesScore):
 
 		for i in range(len(_gainer_list)):
 			_gainer_address = Address.from_string(_gainer_list[i])
+			self._user_total_prize_dict[_gainer_address] += _prize_amount
 			self._transfer(_gainer_address, _prize_amount)
 		
 		_new_project_count = self._project_count.get() + 1
