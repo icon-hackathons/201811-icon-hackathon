@@ -75,6 +75,13 @@
     }
 }
 
+.profile-card{
+  .card{
+    border-color:transparent;
+    padding:10px;
+  }
+}
+
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
   color: black !important;
   border-bottom: 2px solid black;
