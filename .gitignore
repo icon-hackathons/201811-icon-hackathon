@@ -8,6 +8,11 @@
 /dpes-score/src/icon_score_broker
 /dpes-score/src/icon_score_token
 
+# node_moduls
+/dpes/node_modules/
+node_modules/
+
 # tbears
 .*/
 /exc
+.DS_Store
