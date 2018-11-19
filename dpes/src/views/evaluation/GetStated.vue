@@ -9,7 +9,8 @@ export default {
 </script>
 
 <template>
-<div style="height:100%;">
+<!-- eslint-disable max-len -->
+<div class="pb-5 text-body h-100 bg-light">
 
   <Breadcrumb
     organization=""
@@ -17,45 +18,41 @@ export default {
     workspace=""
     remaintime="" />
 
-  <section class="container text-body">
-    <div class="row mb-5 mt-3">
+  <section class="container">
+    <div class="row">
+      <div class="offset-md-2 col-md-8">
+        <h2 class="font-weight-extra-bold mt-5 pt-3">DPES에 오신 것을 환영합니다. 평가를 시작해주세요.</h2>
 
-      <div class="offset-md-1 col-md-10 offset-md-1">
-
-        <div class="row mt-5 pt-5 pb-5 mb-2">
-          <div class="offset-md-2 col-md-8 offset-md-2 text-center">
-            <h2 class="font-weight-bold">DPES에 오신 것을 환영합니다.
-              <br />평가를 시작해주세요!</h2>
-            <div class="mt-4 h5 text-muted">
-              완전히 탈중앙화된 성과 평가 시스템에서 당신의 동료를 객관적으로 평가해주세요.
-              별도의 로그인 없이 블록체인 계정만으로 익명화 된 평가를 수행할 수 있습니다.
-            </div>
-            <div class="h6 text-muted mt-5 mb-5 text-center">
-              <span class="h4 text-body">Step 1.</span>먼저, 당신의 평가용 계정을 인증해주세요.
-              <br />지갑 열기를 실행해 ICONex 상에서 계정 주소를 가져옵니다.
-
-
-              <form class="text-center mt-4">
-                <div class="form-group row">
-                  <div class="col-md-10 mt-3">
-                    <input type="text" class="form-control form-control-lg" placeholder="계정 주소..." disabled>
-                  </div>
-                  <div class="col-md-1 mt-3">
-                    <router-link :to="{name: 'workspacelist'}" tag="button" class="btn btn-lg btn-dark">지갑 열기</router-link>
-                  </div>
-                </div>
-                <div class="small mt-2">
-                  주의 - 반드시 알려지지 않은 익명의 평가용 계정을 활용해주세요.
-                </div>
-              </form>
-
-            </div>
-          </div>
-        </div>
+        <p class="text-muted mt-1">
+          완전히 탈중앙화된 성과 평가 시스템에서 당신의 동료를 객관적으로 평가해주세요.
+          별도의 로그인 없이 블록체인 계정만으로 익명화 된 평가를 수행할 수 있습니다.
+        </p>
 
       </div>
     </div>
-  </section>
 
+
+      <div class="row mt-5">
+        <div class="offset-md-2 col-md-8 pb-5">
+
+          <div class="card border-0 rounded text-left p-5">
+
+              <div class="row">
+                <div class="col-md-6 mt-3">
+                  <router-link :to="{name: 'getauth'}" tag="button" class="btn btn-block btn-lg btn-outline-dark" style="height:150px;">평가용 계정 인증하기</router-link>
+                </div>
+                <div class="col-md-6 mt-3">
+                  <router-link :to="{name: 'getwallet'}" tag="button" class="btn btn-block btn-lg btn-dark" style="height:150px;">평가 시작하기</router-link>
+                </div>
+              </div>
+              <div class="small text-center mt-3">
+                아직 평가용 계정을 인증하지 않으셨다면 인증을, 평가용 계정을 인증하셨다면 바로 시작해주세요.
+              </div>
+
+          </div>
+        </div>
+      </div>
+
+  </section>
 </div>
 </template>

@@ -1,6 +1,6 @@
 <script>
 import Breadcrumb from '@/views/Breadcrumb.vue'
-import ProfileHeader from '@/views/ProfileHeader.vue'
+import ProfileHeader from '@/views/profile/ProfileHeader.vue'
 export default {
   name: 'Profile',
   components: {

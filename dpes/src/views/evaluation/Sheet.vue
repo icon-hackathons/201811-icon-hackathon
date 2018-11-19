@@ -1,6 +1,6 @@
 <script>
 import Breadcrumb from '@/views/Breadcrumb.vue'
-import ProfileHeader from '@/views/ProfileHeader.vue'
+import ProfileHeader from '@/views/profile/ProfileHeader.vue'
 import ProfileProject from '@/views/profile/ProfileProject.vue'
 import ProfileSelfEval from '@/views/profile/ProfileSelfEval.vue'
 

@@ -85,12 +85,52 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ './views/evaluation/GetStated.vue'),
     },
     {
+      path: '/evaluation/getwallet',
+      name: 'getwallet',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "about" */ './views/evaluation/GetWallet.vue'),
+    },
+    {
+      path: '/evaluation/getauth',
+      name: 'getauth',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "about" */ './views/evaluation/GetAuth.vue'),
+    },
+    {
       path: '/evaluation/workspacelist',
       name: 'workspacelist',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/evaluation/WorkspaceList.vue'),
+    },
+    {
+      path: '/pool/SetOrganization',
+      name: 'setorganization',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "about" */ './views/pool/SetOrganization.vue'),
+    },
+    {
+      path: '/pool/SetWorkspace',
+      name: 'setworkspace',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "about" */ './views/pool/SetWorkspace.vue'),
+    },
+    {
+      path: '/pool/SetRewardPool',
+      name: 'setrewardpool',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "about" */ './views/pool/SetRewardPool.vue'),
     },
 
   ],

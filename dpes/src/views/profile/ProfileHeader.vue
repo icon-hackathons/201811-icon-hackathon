@@ -6,7 +6,7 @@
 
         <div class="row">
           <div class="col-md-4">
-            <img class="thumbnail round" src="../assets/taeyoungkim.jpg" alt="Card image cap" style="">
+            <img class="thumbnail round" src="../../assets/taeyoungkim.jpg" alt="Card image cap" style="">
           </div>
           <div class="col-md-8 text-left">
 
