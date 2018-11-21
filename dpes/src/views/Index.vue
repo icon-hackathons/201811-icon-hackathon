@@ -20,8 +20,8 @@ export default {
         <div class=" col-md-8 offset-sm-1 col-sm-10 offset-sm-1" style="text-align:left;">
           <h1 class="font-weight-extra-bold" style="font-size:45px;">세계 최초의 <br />완전한 탈중앙화 성과 평가 시스템</h1>
           <p class="h5">누가 나를 평가했는지 알 수 없으며, 인센티브의 지급을 100% 알 수 있습니다. 당신의 평판을 관리하고, 인센티브를 수령하세요.</p>
-          <div class="p-3">
-            <button type="button" class="btn btn-light" style="padding:13px;">즉시 평가하기</button>
+          <div class="pt-3">
+            <router-link :to="{name: 'getstarted'}" tag="button" class="btn btn-light" style="padding:13px;">즉시 평가하기</router-link>
             <button type="button" class="btn btn-outline-light" style="margin-left:10px;padding:13px;">자세히 알아보기</button>
           </div>
         </div>

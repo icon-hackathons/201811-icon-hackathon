@@ -21,10 +21,10 @@ export default {
   <section class="container">
     <div class="row">
       <div class="offset-md-2 col-md-8">
-        <h2 class="font-weight-extra-bold mt-5 pt-3">인증된 지갑 불러오기</h2>
+        <h2 class="font-weight-extra-bold mt-5 pt-3">비밀 계정 불러오기</h2>
 
         <p class="text-muted mt-1">
-          온전히 블록체인 상에서 계정 주소에 기반하여 평가를 수행합니다. 그 누구도 알지 못 하는 익명의 평가용 지갑 주소를 불러와주세요.
+          온전히 블록체인 상에서 계정 주소에 기반하여 평가를 수행합니다. 그 누구도 알지 못 하는 비밀 계정을 불러와주세요.
           회원가입 때 사용하셨던 공개된 지갑 주소로 평가를 수행해서는 안됩니다.
         </p>
 
@@ -37,9 +37,9 @@ export default {
 
           <div class="card border-0 rounded text-left p-5">
             <p>
-              먼저, 인증된 평가용 계정을 불러와주세요.<br />
+              먼저, 인증된 비밀 계정을 불러와주세요.<br />
               지갑 열기를 실행해 ICONex에서 계정 주소를 가져옵니다.<br />
-              아직 인증을 마치지 못 하셨다면, <router-link class="text-info" :to="{name: 'getauth'}">여기</router-link>를 클릭하세요.
+              아직 비밀 계정 인증을 마치지 못 하셨다면, <router-link class="text-info" :to="{name: 'getauth'}">여기</router-link>를 클릭하세요.
             </p>
               <div class="row">
                 <div class="col-md-8 mt-3">
@@ -50,7 +50,7 @@ export default {
                 </div>
               </div>
               <div class="small text-center mt-3">
-                주의 - 반드시 타인에게 알려지지 않은 익명의 평가용 계정을 활용해주셔야 합니다. 회원가입 시 사용했던 주소와 달라야 합니다.
+                주의 - 반드시 타인에게 알려지지 않은 익명의 비밀 계정을 활용해주셔야 합니다. 회원가입 시 사용했던 주소와 달라야 합니다.
               </div>
 
           </div>

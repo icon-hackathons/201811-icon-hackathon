@@ -60,7 +60,8 @@ export default {
                           </div>
                           <div class="col-lg-11">
                             <label class="font-weight-bold" for="">평가대상자는 본인의 역할에 걸맞는 역량을 발휘했나요?</label>
-                            5점 별점
+
+                            ddd
                           </div>
                         </div>
                       </div>

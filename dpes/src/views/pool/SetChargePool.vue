@@ -5,10 +5,10 @@
   <section class="container">
     <div class="row">
       <div class="offset-md-2 col-md-8">
-        <h2 class="font-weight-extra-bold mt-5 pt-3">리워드 풀에 인센티브 예치하기</h2>
+        <h2 class="font-weight-extra-bold mt-5 pt-3">차지 풀에 사용료 예치하기</h2>
 
         <p class="text-muted mt-1">
-          리워드 풀에 인센티브를 예치하여, 조직원들에게 인센티브를 분배하세요.
+          차지 풀에 사용료를 예치하여, 금액에 따라 기간을 조정해보세요.
         </p>
 
       </div>
@@ -20,10 +20,10 @@
 
           <div class="card border-0 rounded text-left p-5">
             <div>
-              인센티브 양
+              차지 양
             </div>
 
-            <router-link :to="{name: 'setworkspace'}" tag="button" class="btn btn-secondary mt-4">다음으로</router-link>
+            <router-link :to="{name: 'endofprocess'}" tag="button" class="btn btn-secondary mt-4">다음으로</router-link>
 
           </div>
         </div>

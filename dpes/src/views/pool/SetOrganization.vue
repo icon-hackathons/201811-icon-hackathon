@@ -25,11 +25,12 @@
             </div>
 
             <div class="form-group mt-4">
-              <label class="font-weight-bold mb-0" for=""></label>
-              <input type="text" class="form-control" placeholder="조직명을 입력해주세요.">
+              <label class="font-weight-bold mb-0" for="">조직 관리자의 계정 주소</label>
+              <input type="text" class="form-control" placeholder="조직을 관리하는 계정 주소를 입력해주세요.">
+              <small class="form-text text-muted">조직 관리를 수행할 관리자의 계정 주소를 입력해주세요.</small>
             </div>
 
-            <router-link :to="{name: 'create_profile'}" tag="button" class="btn btn-secondary mt-4">가입하기</router-link>
+            <router-link :to="{name: 'setworkspace'}" tag="button" class="btn btn-secondary mt-4">다음으로</router-link>
 
           </div>
         </div>
