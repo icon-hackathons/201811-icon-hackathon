@@ -1,5 +1,5 @@
 <script>
-import Breadcrumb from '@/views/Breadcrumb.vue'
+import Breadcrumb from '@/views/Breadcrumb.vue';
 export default {
   name: 'GetWallet',
   components: {

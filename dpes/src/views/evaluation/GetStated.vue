@@ -39,14 +39,14 @@ export default {
 
               <div class="row">
                 <div class="col-md-6 mt-3">
-                  <router-link :to="{name: 'getauth'}" tag="button" class="btn btn-block btn-lg btn-outline-dark" style="height:150px;">평가용 계정 인증하기</router-link>
+                  <router-link :to="{name: 'getauth'}" tag="button" class="btn btn-block btn-lg btn-outline-dark" style="height:150px;">비밀 계정 인증하기</router-link>
                 </div>
                 <div class="col-md-6 mt-3">
-                  <router-link :to="{name: 'getwallet'}" tag="button" class="btn btn-block btn-lg btn-dark" style="height:150px;">평가 시작하기</router-link>
+                  <router-link :to="{name: 'getwallet'}" tag="button" class="btn btn-block btn-lg btn-dark" style="height:150px;">비밀 평가 시작하기</router-link>
                 </div>
               </div>
               <div class="small text-center mt-3">
-                아직 평가용 계정을 인증하지 않으셨다면 인증을, 평가용 계정을 인증하셨다면 바로 시작해주세요.
+                아직 비밀 계정을 인증하지 않으셨다면 인증해주세요.
               </div>
 
           </div>
