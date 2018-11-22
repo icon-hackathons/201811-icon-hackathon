@@ -80,6 +80,12 @@ export default {
               <small id="" class="form-text text-muted mb-3">We'll never share your email with anyone else.</small>
               <input type="text" class="form-control" id="" placeholder="직무 혹은 직급 입력...">
             </div>
+            <div class="form-group mt-3">
+              <label class="font-weight-bold mb-0" for="">간략한 자기소개</label>
+              <small id="" class="form-text text-muted mb-3">자기 자신에 대해서 간략하게 소개해주세요</small>
+              <textarea class="form-control" id="" rows="5" placeholder="3줄 이내의 간략한 자기 소개 입력...">
+              </textarea>
+            </div>
           </div>
         </div>
       </div>

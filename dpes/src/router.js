@@ -148,5 +148,13 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ './views/pool/EndOfProcess.vue'),
     },
 
+    {
+      path: '/admin/',
+      name: 'admin',
+      // 차지풀 개설
+      // prep; setrewardpool
+      component: () => import(/* webpackChunkName: "about" */ './views/admin/admin.vue'),
+    },
+
   ],
 });

@@ -66,12 +66,12 @@ export default {
                     <h6 class="card-text text-muted small">멤버</h6>
                   </div>
                   <div class="col-md-4">
-                    <h6 class="card-text font-weight-bold">70%</h6>
+                    <h6 class="card-text font-weight-bold">70</h6>
                     <h6 class="card-text text-muted small">평가 진행</h6>
                   </div>
                   <div class="col-md-4">
-                    <h6 class="card-text font-weight-bold">7명</h6>
-                    <h6 class="card-text text-muted small">멤버</h6>
+                    <h6 class="card-text font-weight-bold">임영광</h6>
+                    <h6 class="card-text text-muted small">그룹장</h6>
                   </div>
 
                 </div>

@@ -11,7 +11,7 @@
         </p>
       </div>
     </div>
-    <router-link :to="{name: 'index'}" tag="button" class="btn btn-secondary mt-4">시작하기</router-link>
+    <router-link :to="{name: 'index'}" tag="button" class="btn btn-secondary btn-block" style="margin-top:100px; margin-bottom:250px;">시작하기</router-link>
   </section>
 </div>
 </template>

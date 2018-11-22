@@ -17,6 +17,11 @@
             <router-link class="nav-atag" to="/profile">내 정보</router-link>
           </a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link">
+            <router-link class="nav-atag" to="/admin">관리하기</router-link>
+          </a>
+        </li>
         <!-- @Decorator; 비로그인 상태 -->
         <li class="nav-item active">
           <a class="nav-link">
@@ -101,7 +106,7 @@
 $color-main: rgba(27,176,206,0.8);
 
 div.bg-light{
-  
+
 }
 
 .font-weight-extra-bold {
