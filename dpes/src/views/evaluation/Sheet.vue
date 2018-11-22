@@ -209,6 +209,7 @@ export default {
           <div class="row mt-5 mt-5 pb-5">
             <div class="col-md-12">
               <button type="submit" class="btn btn-dark btn-lg btn-block">제출하기</button>
+              <router-link :to="{name: 'auditstarted'}" tag="button" class="btn btn-secondary btn btn-block mt-4 mb-2">Audit(개발용)</router-link>
             </div>
           </div>
 

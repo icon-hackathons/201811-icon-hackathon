@@ -78,14 +78,6 @@ export default {
 
         </div>
 
-        <div class="row" style="margin-top:30px;">
-
-        </div>
-
-        <div class="row" style="margin-top:30px;">
-
-        </div>
-
       </div>
 
     </div>
