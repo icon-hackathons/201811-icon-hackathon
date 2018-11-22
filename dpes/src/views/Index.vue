@@ -165,7 +165,7 @@ export default {
                 <img class="card-img-top thumbnail round" src="../assets/t-cute.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">다면평가를 위한 획기적인 솔루션</h5>
-                  <p class="card-text">중독되버렸어</p>
+                  <p class="card-text">다면평가를 절대평가로 수행함으로서 네거티브 평가를 막았고, 여러 장치를 통해 담합 평가를 막은 것이 인상적이다!</p>
                   <p class="card-text"><small class="text-muted">탁형진 인사팀장</small></p>
                 </div>
               </div>
