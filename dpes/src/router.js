@@ -133,6 +133,20 @@ export default new Router({
       // prep; SetWorkspace
       component: () => import(/* webpackChunkName: "about" */ './views/pool/SetRewardPool.vue'),
     },
+    {
+      path: '/pool/SetChargePool',
+      name: 'setchargepool',
+      // 차지풀 개설
+      // prep; setrewardpool
+      component: () => import(/* webpackChunkName: "about" */ './views/pool/SetChargePool.vue'),
+    },
+    {
+      path: '/pool/EodOfProcess',
+      name: 'endofprocess',
+      // 차지풀 개설
+      // prep; setrewardpool
+      component: () => import(/* webpackChunkName: "about" */ './views/pool/EndOfProcess.vue'),
+    },
 
   ],
 });
