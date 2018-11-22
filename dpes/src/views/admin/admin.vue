@@ -3,20 +3,11 @@
 <div class="pb-5 text-body h-100 bg-light">
 
   <section class="container">
-    <div class="row">
-      <div class="offset-md-2 col-md-8">
-        <h2 class="font-weight-extra-bold mt-5 pt-3">로그인하기</h2>
 
-        <p class="text-muted mt-1">
-          자신의 부서와 지갑 주소, 현재 프로젝트를 간단하게 기입해주세요. 그리고 자기 스스로에 대한 진솔한 평가를 담아, 동료들이 나를 평가할 때 참고할 수 있는 자료를 제공하세요!
-        </p>
-
-      </div>
-    </div>
-
-    <form>
-      <div class="row mt-5">
+      <div class="row">
         <div class="offset-md-2 col-md-8 pb-5">
+
+          <router-link :to="{name: 'create_profile'}" tag="button" class="btn btn-secondary mt-4">그룹 생성하기</router-link>
 
           <div class="card border-0 rounded text-left p-5">
             <label class="font-weight-bold mb-0" for="">회원 유형</label>
@@ -44,12 +35,12 @@
             </div>
 
 
-            <router-link :to="{name: 'create_profile'}" tag="button" class="btn btn-secondary mt-4">접속하기</router-link>
+
 
           </div>
         </div>
       </div>
-    </form>
+
   </section>
 </div>
 </template>

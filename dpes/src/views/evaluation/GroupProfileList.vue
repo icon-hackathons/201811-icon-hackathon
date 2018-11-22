@@ -35,7 +35,6 @@ export default {
 
       <div class="offset-md-1 col-md-10 offset-md-1">
 
-
         <div class="row mb-2">
           <div class="col-md text-left">
             <h5>총 7명의 대상자를 찾았습니다</h5>
@@ -54,22 +53,22 @@ export default {
                 <div class="row mb-2 mt-3">
 
                   <div class="col-md-4">
-                    <h6 class="card-text font-weight-bold">40%</h6>
-                    <h6 class="card-text text-muted small">평가 진행</h6>
+                    <h6 class="card-text font-weight-bold">132</h6>
+                    <h6 class="card-text text-muted small">평가자 수</h6>
                   </div>
                   <div class="col-md-4">
-                    <h6 class="card-text font-weight-bold">87</h6>
-                    <h6 class="card-text text-muted small">평균 평점</h6>
+                    <h6 class="card-text font-weight-bold">70</h6>
+                    <h6 class="card-text text-muted small">진행률</h6>
                   </div>
                   <div class="col-md-4">
-                    <h6 class="card-text font-weight-bold">39</h6>
-                    <h6 class="card-text text-muted small">지표</h6>
+                    <h6 class="card-text font-weight-bold">89</h6>
+                    <h6 class="card-text text-muted small">평균 점수</h6>
                   </div>
 
                 </div>
 
                 <div>
-                  <router-link :to="{name: 'evprofile'}" tag="button" class="btn btn-secondary btn btn-block mt-4 mb-2">평가하기</router-link>
+                  <router-link :to="{name: 'sheet'}" tag="button" class="btn btn-secondary btn btn-block mt-3">평가 시트 작성하기</router-link>
                 </div>
 
               </div>
@@ -81,21 +80,16 @@ export default {
 
         <div class="row" style="margin-top:30px;">
 
-
         </div>
 
         <div class="row" style="margin-top:30px;">
 
-
         </div>
-
 
       </div>
 
     </div>
   </section>
-
-
 
 </div>
 </template>

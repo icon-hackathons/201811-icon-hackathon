@@ -1,11 +1,14 @@
 <script>
 import Breadcrumb from '@/views/Breadcrumb.vue'
-import ProfileHeader from '@/views/ProfileHeader.vue'
+import ProfileHeader from '@/views/profile/ProfileHeader.vue'
+import ProfileSelfEval from '@/views/profile/ProfileSelfEval.vue'
+
 export default {
   name: 'Profile',
   components: {
     Breadcrumb,
-    ProfileHeader
+    ProfileHeader,
+    ProfileSelfEval,
   },
 };
 </script>
@@ -22,6 +25,14 @@ export default {
     remaintime="" />
 
   <ProfileHeader />
+
+  <section class="container">
+    <div class="row mb-4 mt-4">
+      <div class="offset-md-1 col-md-10 offset-md-1">
+        <ProfileSelfEval />
+      </div>
+    </div>
+  </section>
 
 </div>
 </template>

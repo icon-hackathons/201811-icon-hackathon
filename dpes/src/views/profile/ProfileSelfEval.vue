@@ -1,3 +1,5 @@
+<!-- eslint-disable -->
+
 <script>
 export default {
   name: 'ProfileSelfEval',
@@ -153,7 +155,7 @@ input:checked~label,
 </style>
 
 <template>
-<div>
+<div class="text-left">
 
   <div class="row">
     <div class="col-md-12">
@@ -387,6 +389,5 @@ input:checked~label,
 
   </div>
 
-</div>
 </div>
 </template>
