@@ -96,6 +96,27 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ './views/evaluation/GetAuth.vue'),
     },
     {
+      path: '/evaluation/auditstarted',
+      name: 'auditstarted',
+      // 그룹 리더 심사 인증
+      // prep; none
+      component: () => import(/* webpackChunkName: "about" */ './views/evaluation/AuditStarted.vue'),
+    },
+    {
+      path: '/evaluation/audit',
+      name: 'audit',
+      // 차지풀 개설
+      // prep; auditstarted
+      component: () => import(/* webpackChunkName: "about" */ './views/evaluation/Audit.vue'),
+    },
+    {
+      path: '/evaluation/auditdone',
+      name: 'auditdone',
+      // 차지풀 개설
+      // prep; auditstarted
+      component: () => import(/* webpackChunkName: "about" */ './views/evaluation/AuditDone.vue'),
+    },
+    {
       path: '/pool/SetOrganization',
       name: 'setorganization',
       // 조직 개설하기
@@ -131,14 +152,6 @@ export default new Router({
       // 차지풀 개설
       // prep; setrewardpool
       component: () => import(/* webpackChunkName: "about" */ './views/pool/EndOfProcess.vue'),
-    },
-
-    {
-      path: '/admin/',
-      name: 'admin',
-      // 차지풀 개설
-      // prep; setrewardpool
-      component: () => import(/* webpackChunkName: "about" */ './views/admin/admin.vue'),
     },
 
   ],

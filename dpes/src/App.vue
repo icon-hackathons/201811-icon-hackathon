@@ -20,13 +20,7 @@
             <router-link class="nav-atag" to="/profile">내 정보</router-link>
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link">
-            <router-link class="nav-atag" to="/admin">관리하기</router-link>
-          </a>
-        </li>
-      </ul>
-      <ul v-else class="navbar-nav mr-auto">
+        
         <!-- @Decorator; 비로그인 상태 -->
         <li class="nav-item active">
           <a class="nav-link">
