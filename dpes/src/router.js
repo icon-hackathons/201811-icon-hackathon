@@ -168,14 +168,6 @@ export default new Router({
       // prep; setrewardpool
       component: () => import(/* webpackChunkName: "about" */ './views/pool/EndOfProcess.vue'),
     },
-    {
-      path: '/admin/',
-      name: 'admin',
-      // 차지풀 개설
-      // prep; setrewardpool
-      component: () => import(/* webpackChunkName: "about" */ './views/admin/Admin.vue'),
-    },
-
 
   ],
 });
