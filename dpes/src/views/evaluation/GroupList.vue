@@ -47,7 +47,7 @@ export default {
           <!-- 카드 시작 -->
           <div class="col-md-4">
             <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="../../assets/img_sample.jpg" alt="Card image cap" style="height:150px;">
+              <img class="card-img-top" src="../../assets/card-top-bg4.jpg" alt="Card image cap" style="height:150px;">
               <div class="card-body">
                 <h5 class="card-title">비즈니스기획팀</h5>
 
@@ -86,17 +86,6 @@ export default {
           <!-- 카드 끝 -->
 
         </div>
-
-        <div class="row" style="margin-top:30px;">
-
-
-        </div>
-
-        <div class="row" style="margin-top:30px;">
-
-
-        </div>
-
 
       </div>
 

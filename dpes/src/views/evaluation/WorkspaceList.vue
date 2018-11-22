@@ -47,7 +47,7 @@ export default {
           <!-- 카드 시작 -->
           <div class="col-md-4">
             <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="../../assets/img_sample.jpg" alt="Card image cap" style="height:150px;">
+              <img class="card-img-top" src="../../assets/card-top-bg1.jpg" alt="Card image cap" style="height:150px;">
               <div class="card-body">
                 <h5 class="card-title">아이콘루프 1Q 전사 성과 평가</h5>
 

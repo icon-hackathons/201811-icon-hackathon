@@ -31,7 +31,7 @@ export default {
   </section>
 
   <section class="container">
-    <div class="row mb-4 mt-4">
+    <div class="row mb-5 pb-5 mt-4">
 
       <div class="offset-md-1 col-md-10 offset-md-1">
 
@@ -46,7 +46,7 @@ export default {
           <!-- 카드 시작 -->
           <div class="col-md-4">
             <div class="card" style="width: 18rem;">
-              <img class="card-img-top p-5 rounded-circle text-center mx-auto" src="../../assets/img_sample.jpg" alt="Card image cap" style="height:200px;width:200px;">
+              <img class="card-img-top p-4 rounded-circle text-center mx-auto" src="../../assets/t-ty.jpg" alt="Card image cap" style="height:200px;width:200px;">
               <div class="card-body">
                 <h5 class="card-title">김태영</h5>
                 <h6 class="card-subtitle text-muted small">비즈니스기획팀</h6>
