@@ -11,20 +11,17 @@ export default {
     isSuccess: false,
   },
   mutations: {
-    [SUBMIT_SUCCESS](state, payload) {
-      state.auth = true;
-      state.userId = payload;
+    [SUBMIT_SUCCESS](state) {
+      state.isSuccess = true;
     },
     [RESET](state) {
-      state.auth = false;
+      state.isSuccess = false;
     },
   },
   actions: {
     async [AT.PROFILE_FORM.SUBMIT]({ commit }, payload) {
-      const checkAuth = await ServerAPI.createProfile(payload.email, payload.pw);
-      if (checkAuth) {
-        commit(SUBMIT_SUCCESS);
-      }
+      await ServerAPI.createProfile(payload);
+      commit(SUBMIT_SUCCESS);
     },
     [AT.PROFILE_FORM.RESET]({ commit }) {
       commit(RESET);

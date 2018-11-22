@@ -18,8 +18,7 @@ const sendTransaction = params => new Promise((resolve) => {
   const eventHandler = (event) => {
     const { type, payload } = event.detail;
     if (type === 'RESPONSE_JSON-RPC') {
-      console.log(payload);
-      resolve(payload);
+      resolve(payload.result);
     }
     window.removeEventListener('ICONEX_RELAY_RESPONSE', eventHandler);
   };

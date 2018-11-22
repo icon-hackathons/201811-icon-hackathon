@@ -7,7 +7,7 @@ pyenv activate venv36
 tbears deploy dpes_score -k ../keystores/Admin1.json -p "@1234qwer" -c ../config/deploy_dpes_score.json
 
 // update dpes score
-tbears deploy dpes_score -k ../keystores/Admin1.json -p "@1234qwer" -c ../config/deploy_dpes_score.json -m update -o cx400f3e1813c58a467f40ee164b99d098da8d4821
+tbears deploy dpes_score -k ../keystores/Admin1.json -p "@1234qwer" -c ../config/deploy_dpes_score.json -m update -o cx1352acdaadf247ed66baa915f6f66a1aa5ca5e9c
 
 // send icx to contract
 tbears sendtx -k ../keystores/Admin1.json -p "@1234qwer" -c ../config/deploy_dpes_score.json ../config/send_icx_to_contract.json

@@ -18,14 +18,10 @@ export default {
 <template>
 <!-- eslint-disable max-len -->
 <div class="mb-5 pb-5 text-body" style="height:100%;">
-
   <Breadcrumb organization="ICONLoop" title="평가 시트 작성하기" workspace=" > ICONLoop 1Q 상반기 전사 성과 평가" group=" > 비즈니스기획팀" remaintime="남은 시간 3일 17:39:58" />
-
   <ProfileHeader />
-
   <section class="container">
     <div class="row mb-4 mt-4">
-
       <div class="offset-md-1 col-md-10 offset-md-1">
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
           <li class="nav-item">
@@ -33,11 +29,9 @@ export default {
               XXX님 평가하기
             </a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link text-body" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">자가 평가</a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link text-body" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">최근 참가 프로젝트</a>
           </li>
@@ -60,12 +54,10 @@ export default {
                           </div>
                           <div class="col-lg-11">
                             <label class="font-weight-bold" for="">평가대상자는 본인의 역할에 걸맞는 역량을 발휘했나요?</label>
-
                             ddd
                           </div>
                         </div>
                       </div>
-
                       <div class="form-group mt-3">
                         <div class="row">
                           <div class="col-lg-1 mx-auto">
@@ -78,13 +70,11 @@ export default {
                         </div>
                       </div>
                     </div>
-
                     <div class="mt-5">
                       <div class="h5 mt-3 font-weight-bold">
                         2. 평가대상자의 업무 역량은?
                       </div>
                       <hr />
-
                       <div class="form-group mt-3">
                         <div class="row">
                           <div class="col-lg-1 mx-auto">
@@ -96,7 +86,6 @@ export default {
                           </div>
                         </div>
                       </div>
-
                       <div class="form-group mt-3">
                         <div class="row">
                           <div class="col-lg-1 mx-auto">
@@ -108,7 +97,6 @@ export default {
                           </div>
                         </div>
                       </div>
-
                       <div class="form-group mt-3">
                         <div class="row">
                           <div class="col-lg-1 mx-auto">
@@ -120,7 +108,6 @@ export default {
                           </div>
                         </div>
                       </div>
-
                       <div class="form-group mt-3">
                         <div class="row">
                           <div class="col-lg-1 mx-auto">
@@ -132,7 +119,6 @@ export default {
                           </div>
                         </div>
                       </div>
-
                       <div class="form-group mt-3">
                         <div class="row">
                           <div class="col-lg-1 mx-auto">
@@ -144,15 +130,12 @@ export default {
                           </div>
                         </div>
                       </div>
-
                     </div>
-
                     <div class="mt-5">
                       <div class="h5 mt-3 font-weight-bold">
                         3. 평가대상자의 업무 태도는?
                       </div>
                       <hr />
-
                       <div class="form-group mt-3">
                         <div class="row">
                           <div class="col-lg-1 mx-auto">
@@ -164,7 +147,6 @@ export default {
                           </div>
                         </div>
                       </div>
-
                       <div class="form-group mt-3">
                         <div class="row">
                           <div class="col-lg-1 mx-auto">
@@ -176,7 +158,6 @@ export default {
                           </div>
                         </div>
                       </div>
-
                       <div class="form-group mt-3">
                         <div class="row">
                           <div class="col-lg-1 mx-auto">
@@ -188,36 +169,26 @@ export default {
                           </div>
                         </div>
                       </div>
-
                     </div>
-
                   </div>
                 </div>
               </div>
-
             </div>
-
             <div class="tab-pane fade show text-left" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
               <ProfileSelfEval />
-
             </div>
             <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
               <ProfileProject />
             </div>
           </div>
-
           <div class="row mt-5 mt-5 pb-5">
             <div class="col-md-12">
               <button type="submit" class="btn btn-dark btn-lg btn-block">제출하기</button>
             </div>
           </div>
-
         </form>
-
       </div>
-
     </div>
   </section>
-
 </div>
 </template>

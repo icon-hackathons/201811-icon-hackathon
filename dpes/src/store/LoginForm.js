@@ -5,7 +5,7 @@ import ServerAPI from '../api/ServerAPI';
 /* mutation-types */
 const LOG_IN_SUCCESS = 'LOG_IN_SUCCESS';
 const LOG_OUT_SUCCESS = 'LOG_OUT_SUCCESS';
-const SIGN_IN_SUCCESS = 'SIGN_IN_SUCCESS';
+const SIGN_UP_SUCCESS = 'SIGN_UP_SUCCESS';
 const RESET = 'RESET';
 
 export default {
@@ -22,7 +22,7 @@ export default {
       state.auth = false;
       state.userId = 0;
     },
-    [SIGN_IN_SUCCESS](state, payload) {
+    [SIGN_UP_SUCCESS](state, payload) {
       state.auth = true;
       state.userId = payload;
     },
@@ -31,10 +31,17 @@ export default {
     },
   },
   actions: {
+    async [AT.LOGIN_FORM.SIGN_UP]({ commit }, payload) {
+      await ServerAPI.createUser(payload.email, payload.pw);
+      const userId = await ServerAPI.checkAuth(payload.email, payload.pw);
+      if (userId) {
+        commit(SIGN_UP_SUCCESS, userId);
+      }
+    },
     async [AT.LOGIN_FORM.LOG_IN]({ commit }, payload) {
-      const checkAuth = await ServerAPI.checkAuth(payload.email, payload.pw);
-      if (checkAuth) {
-        commit(LOG_IN_SUCCESS);
+      const userId = await ServerAPI.checkAuth(payload.email, payload.pw);
+      if (userId) {
+        commit(LOG_IN_SUCCESS, userId);
       }
     },
     [AT.LOGIN_FORM.LOG_OUT]({ commit }) {

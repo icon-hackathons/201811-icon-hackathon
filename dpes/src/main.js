@@ -5,7 +5,7 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import App from './App.vue';
 import router from './router';
-import store from './store';
+import store from './store/store';
 import 'expose-loader?$!expose-loader?jQuery!jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
