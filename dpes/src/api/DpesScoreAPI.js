@@ -1,6 +1,8 @@
 import Constants from '../constants';
 import iconService from '../sdk/IconService';
 import Builder from '../sdk/Builder';
+import IconexConnectAPI from '../api/IconexConnectAPI';
+import DpesScoreAPI from '../api/DpesScoreAPI';
 
 const checkChildExist = async (childAddress) => {
   const call = Builder.call({
@@ -71,6 +73,29 @@ const getUserInfo = async (userAddress) => {
   return result;
 };
 
+const auditVote = async ({
+  projectAddress,
+  childAddress,
+}) => {
+  const params = Builder.sendTx({
+    from: childAddress,
+    to: Constants.DPES_SCORE_ADDRESS,
+    stepLimit: '0xdbba0',
+    networkId: '0x3',
+    nonce: '0x1',
+    value: '0x0',
+    methodName: 'audit_vote',
+    params: {
+      _project_address: projectAddress,
+    },
+  });
+  const tx = await IconexConnectAPI.sendTransaction(params);
+  const result = await DpesScoreAPI.checkTransaction(tx);
+  if (result) {
+    return true;
+  }
+};
+
 const checkTransaction = (param, isDeploy = false) => new Promise((resolve) => {
   let timer;
   const checkTx = (tx) => {
@@ -100,4 +125,5 @@ export default {
   getTeamCount,
   getUserInfo,
   checkTransaction,
+  auditVote,
 };

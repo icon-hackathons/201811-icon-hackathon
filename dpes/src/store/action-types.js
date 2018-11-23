@@ -30,5 +30,5 @@ export default {
   },
   AUDIT: {
     GET_REVIEW_RESULT: 'GET_REVIEW_RESULT',
-  }
+  },
 };

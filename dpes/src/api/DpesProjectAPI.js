@@ -14,7 +14,10 @@ const getMessageList = async (projectAddress, userAddress) => {
   return result;
 };
 
-const getReviewResult = async (projectAddress, userAddress) => {
+const getReviewResult = async ({
+  projectAddress,
+  userAddress,
+}) => {
   const call = Builder.call({
     to: projectAddress,
     methodName: 'get_review_result',

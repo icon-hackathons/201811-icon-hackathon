@@ -60,7 +60,7 @@ tbears sendtx -k ../keystores/OracleParent1.json -p "@1234qwer" -c ../config/dep
 tbears deploy dpes_project_score -k ../keystores/Admin1.json -p "@1234qwer" -c ../config/deploy_dpes_project_score.json
 
 // update project score
-tbears deploy dpes_project_score -k ../keystores/Admin1.json -p "@1234qwer" -c ../config/deploy_dpes_project_score.json -m update -o cxa96dc58ea96a341ec30c9efbcda64208b664c184
+tbears deploy dpes_project_score -k ../keystores/Admin1.json -p "@1234qwer" -c ../config/deploy_dpes_project_score.json -m update -o cx48b7224207fac3a8c2903c2ceefd9c25b1239f76
 
 // vote
 tbears sendtx -k ../keystores/P1-1.json -p "@1234qwer" -c ../config/deploy_dpes_project_score.json ../config/vote_f_1_1_t_1_1.json
