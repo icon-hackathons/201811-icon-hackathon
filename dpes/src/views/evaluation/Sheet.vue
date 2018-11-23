@@ -99,11 +99,11 @@ export default {
 <template>
 <!-- eslint-disable max-len -->
 <div class="mb-5 pb-5 text-body" style="height:100%;">
-  <Breadcrumb 
-    organization="ICONLoop" 
-    title="평가 시트 작성하기" 
-    :workspace="` > ${workspace.projectName}`" 
-    group=" > 비즈니스기획팀" 
+  <Breadcrumb
+    organization="ICONLoop"
+    title="평가 시트 작성하기"
+    :workspace="` > ${workspace.projectName}`"
+    group=" > 비즈니스기획팀"
     :remaintime="`남은 시간 ${convertedDistance}`" />
   <ProfileHeader />
   <section class="container">
@@ -321,6 +321,22 @@ export default {
                                 <input data-value="N" type="radio" name="options" id="option3" autocomplete="off">아니오
                               </label>
                             </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group mt-3">
+                        <div class="row">
+                          <div class="col-lg-1 mx-auto">
+                            <span class="font-weight-bold h6 text-muted">4.4.</span>
+                          </div>
+                          <div class="col-lg-11">
+                            <label class="font-weight-bold" for="">대상자에게 도움이 되는 피드백을 전달해주세요.</label>
+                            <div class="form-group">
+
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="대상자의 성장에 도움을 주세요!"></textarea>
+</div>
+
+
                           </div>
                         </div>
                       </div>
