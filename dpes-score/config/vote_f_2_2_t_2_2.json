@@ -1,0 +1,24 @@
+{
+    "jsonrpc": "2.0",
+    "method": "icx_sendTransaction",
+    "params": {
+        "version": "0x3",
+        "from": "hx0fc2c4a745db84455de35d4a102ce7b8b8ee9cbb",
+        "value": "0x0",
+        "stepLimit": "0xdbba0",
+        "nid": "0x3",
+        "nonce": "0x1",
+        "to": "cx06e42378bd1bea29c1758d2684aae51a04c2c5dd",
+        "dataType": "call",
+            "data": {
+                "method": "vote",
+                "params": {
+                    "_from": "hx0fc2c4a745db84455de35d4a102ce7b8b8ee9cbb", 
+                    "_to": "hx92bb869bb42edd254ac6b6bd5c1c85702a6b5380",
+                    "_formatted_json": "[{\"type\":\"bool\",\"value\":\"0x1\"},{\"type\":\"int\",\"value\":\"0x5\"},{\"type\":\"int\",\"value\":\"0x5\"},{\"type\":\"int\",\"value\":\"0x5\"},{\"type\":\"int\",\"value\":\"0x5\"}]",
+                    "_message": "일 잘해요 정말! 2"
+                }
+            }
+    },
+    "id": 1
+}

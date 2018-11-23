@@ -1,6 +1,13 @@
 # log
+/tbears.log
 /dpes-score/tbears.log
 
 # sample
-/dpes-score/standard_token
-/dpes-score/standard_crowd_sale
+/dpes-score/src/standard_token
+/dpes-score/src/standard_crowd_sale
+/dpes-score/src/icon_score_broker
+/dpes-score/src/icon_score_token
+
+# tbears
+.*/
+/exc

@@ -1,0 +1,14 @@
+{
+    "jsonrpc": "2.0",
+    "method": "icx_sendTransaction",
+    "params": {
+        "version": "0x3",
+        "from": "hxa4c3a78d73bb7287f72801c09298f1a5743b1655",
+        "value": "0x1a055690d9db80000",
+        "stepLimit": "0x9502f900",
+        "nid": "0x3",
+        "nonce": "0x1",
+        "to": "cx400f3e1813c58a467f40ee164b99d098da8d4821"
+    },
+    "id": 1
+}

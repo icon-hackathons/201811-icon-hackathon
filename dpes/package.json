@@ -17,6 +17,7 @@
     "npm": "^6.4.1",
     "popper.js": "^1.14.5",
     "swiper": "^4.4.2",
+    "icon-sdk-js": "0.0.4",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
     "vue-zondicons": "^0.1.10",
