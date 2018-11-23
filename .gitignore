@@ -1,0 +1,26 @@
+smart-wallet/venv
+smart-wallet/.Python
+smart-wallet/.idea
+smart-wallet/keystore
+smart-wallet/tbears.log
+smart-wallet/.score
+smart-wallet/.statedb
+
+smart-wallet/faucet
+smart-wallet/client/node_modules/
+
+*.py[cod]
+*$py.class
+
+# Environments
+smart-wallet/.env
+smart-wallet/.venv
+smart-wallet/env/
+smart-wallet/venv/
+smart-wallet/ENV/
+smart-wallet/env.bak/
+smart-wallet/venv.bak/
+
+smart-wallet/build/
+smart-wallet/dist/
+smart-wallet/tmp/
