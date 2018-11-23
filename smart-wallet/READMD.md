@@ -13,7 +13,7 @@ pip install -r requirements.txt
 
  2. Send icx for store icx in SmartWallet
 
- 3. Account structure
+* Account structure
 ```json
 {
     "id": len(self._accounts),
@@ -28,19 +28,24 @@ pip install -r requirements.txt
 
 ``` 
 
- 4. Add account 
+* Add account 
 
 ```python
     def add_account(self, account: str):
 ``` 
 
- 5. Transfer
+* Transfer
 ```python
     def transfer(self, account_id: int, token_type: str, contract_addr: str, to: str, amount: int):
 
 ```
 
- 6. Approval pending tx 
+* Approval pending tx 
 ```python
     def approval(self, tx_id: int, did: str, auth_proof: str):
+```
+
+* Change Owner
+```python
+    def change_new_wallet(self, did_infos: str):
 ```

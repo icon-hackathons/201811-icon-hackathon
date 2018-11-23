@@ -21,12 +21,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="15" />
-          <entry key="md" value="467" />
+          <entry key="md" value="509" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="467" />
+          <entry key="Markdown" value="509" />
           <entry key="PLAIN_TEXT" value="15" />
         </counts>
       </usages-collector>
@@ -73,8 +73,8 @@
         <entry file="file://$PROJECT_DIR$/smart-wallet/READMD.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="372">
-                <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+              <first_editor relative-caret-position="402">
+                <caret line="49" column="48" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
               </first_editor>
               <second_editor />
             </state>
@@ -95,8 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/smart-wallet/smart_wallet/smart_wallet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2220">
-              <caret line="148" column="33" selection-start-line="148" selection-end-line="149" />
+            <state relative-caret-position="415">
+              <caret line="91" column="48" lean-forward="true" selection-start-line="91" selection-end-line="92" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -230,8 +230,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/smart-wallet/smart_wallet/smart_wallet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2220">
-          <caret line="148" column="33" selection-start-line="148" selection-end-line="149" />
+        <state relative-caret-position="415">
+          <caret line="91" column="48" lean-forward="true" selection-start-line="91" selection-end-line="92" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
@@ -241,8 +241,8 @@
     <entry file="file://$PROJECT_DIR$/smart-wallet/READMD.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="372">
-            <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+          <first_editor relative-caret-position="402">
+            <caret line="49" column="48" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
           </first_editor>
           <second_editor />
         </state>
