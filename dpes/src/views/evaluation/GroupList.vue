@@ -1,22 +1,65 @@
 <script>
+import { mapState, mapActions } from 'vuex';
 import Breadcrumb from '@/views/Breadcrumb.vue'
+import GroupCard from '@/views/evaluation/GroupCard.vue'
+import ServerAPI from '@/api/ServerAPI';
+
 export default {
   name: 'GroupList',
   components: {
     Breadcrumb,
+    GroupCard,
   },
+  data: function () {
+    return {
+      dueDate: 0,
+      timer: '',
+      groupList: [],
+    }
+  },
+  computed: {
+    ...mapState({
+      workspace: state => state.Workspace.workspace,
+      loading: state => state.Workspace.loading,
+    }),
+    convertedDistance: function () {
+      const days = Math.floor(this.dueDate / (1000000 * 60 * 60 * 24));
+      const hours = Math.floor((this.dueDate % (1000000 * 60 * 60 * 24)) / (1000000 * 60 * 60));
+      const hoursStr = hours >= 10 ? hours : '0' + hours;
+      const minutes = Math.floor((this.dueDate % (1000000 * 60 * 60)) / (1000000 * 60));
+      const minutesStr = minutes >= 10 ? minutes : '0' + minutes;
+      const seconds = Math.floor((this.dueDate % (1000000 * 60)) / 1000000);
+      const secondsStr = seconds >= 10 ? seconds : '0' + seconds;
+      return `${days}일 ${hoursStr}:${minutesStr}:${secondsStr}`;
+    }
+  },
+  created: async function() {
+    const groupList = await ServerAPI.getGroupList();
+    this.groupList = groupList.data;
+
+    this.dueDate = this.workspace.dueDate;
+    this.startTimer();
+    this.timer = setInterval(this.startTimer, 1000);
+  },
+  methods: {
+    startTimer: function () {
+      this.dueDate = this.dueDate - 1000000;
+    },
+  },
+  beforeDestroy() {
+    if (this.timer) clearInterval(this.timer);
+  }
 };
 </script>
 
 <template>
-<div style="height:100%;">
-
+<div v-if="loading"></div>
+<div v-else style="height:100%;">
   <Breadcrumb
     organization="ICONLoop"
     title="그룹 선택하기"
-    workspace=" > ICONLoop 1Q 상반기 전사 성과 평가"
-    remaintime="남은 시간 3일 17:39:58" />
-
+    :workspace="` > ${workspace.projectName}`"
+    :remaintime="`남은 시간 ${convertedDistance}`" />
   <section class="jumbotron mb-0 p-4 border bg-light">
     <div class="row">
       <div class="offset-md-1 col-md-10 offset-md-1">
@@ -29,59 +72,18 @@ export default {
       </div>
     </div>
   </section>
-
   <section class="container">
     <div class="row mb-4 mt-4">
-
       <div class="offset-md-1 col-md-10 offset-md-1">
-
-
         <div class="row mb-2">
           <div class="col-md text-left">
-            <h5>총 10개의 그룹을 찾았습니다</h5>
+            <h5>총 {{ groupList.length }}개의 그룹을 찾았습니다</h5>
           </div>
         </div>
-
         <div class="row">
-
           <!-- 카드 시작 -->
-          <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="../../assets/card-top-bg4.jpg" alt="Card image cap" style="height:150px;">
-              <div class="card-body">
-                <h5 class="card-title">비즈니스기획팀</h5>
-
-                <p class="card-text">
-                  <img src="../../assets/img_sample.jpg" class="thumbnail rounded-circle small" />
-                  <img src="../../assets/img_sample.jpg" class="thumbnail rounded-circle small ml-1" />
-                  <img src="../../assets/img_sample.jpg" class="thumbnail rounded-circle small ml-1" />
-                  <img src="../../assets/img_sample.jpg" class="thumbnail rounded-circle small ml-1" />
-                  <span class="ml-2 text-muted small">+3</span>
-                </p>
-
-                <div class="row mb-2">
-
-                  <div class="col-md-4">
-                    <h6 class="card-text font-weight-bold">7명</h6>
-                    <h6 class="card-text text-muted small">멤버</h6>
-                  </div>
-                  <div class="col-md-4">
-                    <h6 class="card-text font-weight-bold">70</h6>
-                    <h6 class="card-text text-muted small">평가 진행</h6>
-                  </div>
-                  <div class="col-md-4">
-                    <h6 class="card-text font-weight-bold">임영광</h6>
-                    <h6 class="card-text text-muted small">그룹장</h6>
-                  </div>
-
-                </div>
-
-                <div>
-                  <router-link :to="{name: 'groupprofilelist'}" tag="button" class="btn btn-secondary btn btn-block mt-4 mb-2">멤버 조회</router-link>
-                </div>
-
-              </div>
-            </div>
+          <div v-for="(group, i) in groupList" v-bind:key="i">
+            <GroupCard :key="i" :group="group" />
           </div>
           <!-- 카드 끝 -->
 

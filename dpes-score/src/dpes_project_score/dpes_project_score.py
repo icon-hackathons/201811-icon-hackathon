@@ -33,14 +33,23 @@ class Error():
 TAG = 'DpesProjectScore'
 ICX = 10 ** 18
 WEIGHT_ARR = [
-	3,
-	2,
-	2,
-	2,
-	1
+	8,
+	6.666,
+	6.666,
+	6.666,
+	6.666,
+	8,
+	6.666,
+	8,
+	6.666,
+	6.666,
+	5.333,
+	5.333,
+	5.333,
+	5.333,
+	8
 ]
-WEIGHT_SUM = 10
-THRESHOLD = 80
+WEIGHT_SUM = 100
 
 class ChildLevel():
 	MEMBER = 1
@@ -64,6 +73,7 @@ class DpesProjectScore(IconScoreBase):
 	_PRIZE_AMOUNT = "_PRIZE_AMOUNT"
 	_DUE_DATE = "_DUE_DATE"
 	_STATUS = "_STATUS"
+	_THRESHOLD = "_THRESHOLD"
 
 	_SCORE_DICT = "_SCORE_DICT"
 	_TOTAL_SCORE_DICT = "_TOTAL_SCORE_DICT"
@@ -84,6 +94,7 @@ class DpesProjectScore(IconScoreBase):
 		self._desc = VarDB(self._DESC, db, str)
 		self._prize_amount = VarDB(self._PRIZE_AMOUNT, db, int)
 		self._due_date = VarDB(self._DUE_DATE, db, int)
+		self._threshold = VarDB(self._THRESHOLD, db, int)
 		
 		self._status = VarDB(self._STATUS, db, int)
 		self._score_dict = DictDB(self._SCORE_DICT, db, value_type=int, depth=2)
@@ -104,7 +115,8 @@ class DpesProjectScore(IconScoreBase):
 				   desc: str,
 				   prize_amount: int,
 				   due_date: int,
-				   dpes_score_address: Address
+				   dpes_score_address: Address,
+				   threshold: int
 				   ):
 		super().on_install()
 		self._precondition(due_date >= self.now())
@@ -114,6 +126,7 @@ class DpesProjectScore(IconScoreBase):
 		self._desc.set(desc)
 		self._prize_amount.set(prize_amount)
 		self._due_date.set(due_date)
+		self._threshold.set(threshold)
 		self._status.set(ProjectStatus.ACTIVE)
 		self._audit_count.set(0)
 		self._dpes_score_address.set(dpes_score_address)
@@ -197,18 +210,17 @@ class DpesProjectScore(IconScoreBase):
 		_answer_array = list()
 		_decoded_data = json_loads(_formatted_json)
 		_decoded_data_size = len(_decoded_data)
-
 		for i in range(_decoded_data_size):
 			_answer_score = 0
 			_weight = WEIGHT_ARR[i] 
 			if _decoded_data[i]['type'] == 'int':
 				_answer_score = self._hex_to_int(_decoded_data[i]['value']) * 20
 				_answer_array.append(_answer_score)
-				_total_score += (_answer_score * _weight / WEIGHT_SUM)
+				_total_score += round(float(_answer_score) * float(_weight) / float(WEIGHT_SUM))
 			else:
 				_answer_score = self._hex_to_int(_decoded_data[i]['value']) * 100
 				_answer_array.append(_answer_score)
-				_total_score += (_answer_score * _weight / WEIGHT_SUM)
+				_total_score += round(float(_answer_score) * float(_weight) / float(WEIGHT_SUM))
 		
 		if not self._reviewer_dict[_to]:
 			self._user_array.put(_to)
@@ -285,7 +297,7 @@ class DpesProjectScore(IconScoreBase):
 				'user_address': str(_user_address),
 				'score': _score
 			})
-			if (_score > THRESHOLD):
+			if (_score > self._hex_to_int(self._threshold)):
 				_gainer_list.append(str(_user_address))
 		return {
 			'score': _score_list,

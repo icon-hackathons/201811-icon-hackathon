@@ -17,34 +17,22 @@ export default new Router({
     {
       path: '/profile/create_profile',
       name: 'create_profile',
-      // 프로필 생성
-      // => 회원 가입 이후 등장하는 화면. 회원 가입/평가 작성
-      // prep; Signup
-      component: () => import(/* webpackChunkName: "about" */ './views/profile/CreateProfile.vue'),
+      component: () => import('./views/profile/CreateProfile.vue'),
     },
     {
       path: '/profile',
       name: 'profile',
-      // 프로필 조회
-      // => 프로필 내용 조회
-      // prep; none
-      component: () => import(/* webpackChunkName: "about" */ './views/profile/Profile.vue'),
+      component: () => import('./views/profile/Profile.vue'),
     },
     {
       path: '/signup',
       name: 'signup',
-      // 회원 가입
-      // => 회원 가입 정보 기입
-      // prep; none
-      component: () => import(/* webpackChunkName: "about" */ './views/Signup.vue'),
+      component: () => import('./views/Signup.vue'),
     },
     {
       path: '/signin',
       name: 'signin',
-      // 로그인
-      // => 로그인
-      // prep; none
-      component: () => import(/* webpackChunkName: "about" */ './views/Signin.vue'),
+      component: () => import('./views/Signin.vue'),
     },
     {
       path: '/evaluation/workspacelist',

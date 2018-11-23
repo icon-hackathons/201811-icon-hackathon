@@ -7,13 +7,16 @@ pyenv activate venv36
 tbears deploy dpes_score -k ../keystores/Admin1.json -p "@1234qwer" -c ../config/deploy_dpes_score.json
 
 // update dpes score
-tbears deploy dpes_score -k ../keystores/Admin1.json -p "@1234qwer" -c ../config/deploy_dpes_score.json -m update -o cx400f3e1813c58a467f40ee164b99d098da8d4821
+tbears deploy dpes_score -k ../keystores/Admin1.json -p "@1234qwer" -c ../config/deploy_dpes_score.json -m update -o cx9b8e46f4452b56be19557a21bc436c3fc44d2467
 
 // send icx to contract
 tbears sendtx -k ../keystores/Admin1.json -p "@1234qwer" -c ../config/deploy_dpes_score.json ../config/send_icx_to_contract.json
 
 // call create_parent_dict
 tbears sendtx -k ../keystores/Admin1.json -p "@1234qwer" -c ../config/deploy_dpes_score.json ../config/create_parent_dict.json
+
+// call create_parent_dict demo
+tbears sendtx -k ../keystores/Admin1.json -p "@1234qwer" -c ../config/deploy_dpes_score.json ../config/create_parent_dict_demo.json
 
 // parent array mock
 [{"address":"hx435b4dd5f623f2e31c691bf480902a3056b828ac","limit":2,"name":"글로벌팀","parent_level":1},{"address":"hx4ed9e9c34451bd3ceb85a7530cb0b0986fd46f79","limit":2,"name":"개발1팀","parent_level":1},{"address":"hx6efa0281337beea3c3888398e0cba640482aec36","limit":1,"name":"임원진","parent_level":2}]
@@ -57,7 +60,7 @@ tbears sendtx -k ../keystores/OracleParent1.json -p "@1234qwer" -c ../config/dep
 tbears deploy dpes_project_score -k ../keystores/Admin1.json -p "@1234qwer" -c ../config/deploy_dpes_project_score.json
 
 // update project score
-tbears deploy dpes_project_score -k ../keystores/Admin1.json -p "@1234qwer" -c ../config/deploy_dpes_project_score.json -m update -o cx06e42378bd1bea29c1758d2684aae51a04c2c5dd
+tbears deploy dpes_project_score -k ../keystores/Admin1.json -p "@1234qwer" -c ../config/deploy_dpes_project_score.json -m update -o cxa96dc58ea96a341ec30c9efbcda64208b664c184
 
 // vote
 tbears sendtx -k ../keystores/P1-1.json -p "@1234qwer" -c ../config/deploy_dpes_project_score.json ../config/vote_f_1_1_t_1_1.json

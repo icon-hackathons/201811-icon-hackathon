@@ -1,0 +1,21 @@
+{
+    "jsonrpc": "2.0",
+    "method": "icx_sendTransaction",
+    "params": {
+        "version": "0x3",
+        "from": "hxa4c3a78d73bb7287f72801c09298f1a5743b1655",
+        "value": "0x0",
+        "stepLimit": "0x9502f900",
+        "nid": "0x3",
+        "nonce": "0x1",
+        "to": "cx9b8e46f4452b56be19557a21bc436c3fc44d2467",
+        "dataType": "call",
+            "data": {
+                "method": "create_parent_dict",
+                "params": {
+                    "_formatted_json": "[{\"address\":\"hx435b4dd5f623f2e31c691bf480902a3056b828ac\",\"limit\":\"0x2\",\"name\":\"비즈니스기획팀\",\"parent_level\":\"0x1\"}]"
+                }
+            }
+    },
+    "id": 1
+}

@@ -71,6 +71,27 @@ const getUserInfo = async (userAddress) => {
   return result;
 };
 
+const checkTransaction = (param, isDeploy = false) => new Promise((resolve) => {
+  let timer;
+  const checkTx = (tx) => {
+    const transactionResult = iconService.getTransactionResult(tx).execute();
+    const flag = isDeploy ? transactionResult['scoreAddress'] : transactionResult['status'];
+    if (flag) {
+      clearInterval(timer);
+      resolve(isDeploy ? flag : true);
+    } else {
+      clearInterval(timer);
+      alert(transactionResult.failure.message);
+      resolve(false);
+    }
+  };
+  timer = setInterval(() => {
+    checkTx(param);
+  }, 1600);
+});
+
+
+
 export default {
   checkChildExist,
   checkParentExist,
@@ -78,4 +99,5 @@ export default {
   getParentLevel,
   getTeamCount,
   getUserInfo,
+  checkTransaction,
 };

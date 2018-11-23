@@ -1,22 +1,66 @@
 <script>
 import Breadcrumb from '@/views/Breadcrumb.vue'
+import { mapState, mapActions } from 'vuex';
+import ServerAPI from '@/api/ServerAPI';
+import GroupProfileListCard from '@/views/evaluation/GroupProfileListCard.vue';
+
 export default {
   name: 'GroupProfileList',
   components: {
     Breadcrumb,
+    GroupProfileListCard,
   },
+  data: function () {
+    return {
+      dueDate: 0,
+      timer: '',
+      profileList: [],
+      loading: true,
+    }
+  },
+  computed: {
+    ...mapState({
+      workspace: state => state.Workspace.workspace,
+    }),
+    convertedDistance: function () {
+      const days = Math.floor(this.dueDate / (1000000 * 60 * 60 * 24));
+      const hours = Math.floor((this.dueDate % (1000000 * 60 * 60 * 24)) / (1000000 * 60 * 60));
+      const hoursStr = hours >= 10 ? hours : '0' + hours;
+      const minutes = Math.floor((this.dueDate % (1000000 * 60 * 60)) / (1000000 * 60));
+      const minutesStr = minutes >= 10 ? minutes : '0' + minutes;
+      const seconds = Math.floor((this.dueDate % (1000000 * 60)) / 1000000);
+      const secondsStr = seconds >= 10 ? seconds : '0' + seconds;
+      return `${days}일 ${hoursStr}:${minutesStr}:${secondsStr}`;
+    }
+  },
+  created: async function() {
+    const profileList = await ServerAPI.getProfileList();
+    this.profileList = profileList.data;
+    console.log(this.profileList)
+    this.dueDate = this.workspace.dueDate;
+    this.startTimer();
+    this.timer = setInterval(this.startTimer, 1000);
+    this.loading = false;
+  },
+  methods: {
+    startTimer: function () {
+      this.dueDate = this.dueDate - 1000000;
+    },
+  },
+  beforeDestroy() {
+    if (this.timer) clearInterval(this.timer);
+  }
 };
 </script>
 
 <template>
-<div style="height:100%;">
-
+<div v-if="loading"></div>
+<div v-else style="height:100%;">
   <Breadcrumb
     organization="ICONLoop"
     title="평가 대상자 선택하기"
-    workspace=" > ICONLoop 1Q 상반기 전사 성과 평가"
-    remaintime="남은 시간 3일 17:39:58" />
-
+    :workspace="` > ${workspace.projectName}`"
+    :remaintime="`남은 시간 ${convertedDistance}`" />
   <section class="jumbotron mb-0 p-4 border bg-light">
     <div class="row">
       <div class="offset-md-1 col-md-10 offset-md-1">
@@ -37,42 +81,15 @@ export default {
 
         <div class="row mb-2">
           <div class="col-md text-left">
-            <h5>총 7명의 대상자를 찾았습니다</h5>
+            <h5>총 {{profileList.length}}명의 대상자를 찾았습니다</h5>
           </div>
         </div>
 
         <div class="row">
 
           <!-- 카드 시작 -->
-          <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top p-4 rounded-circle text-center mx-auto" src="../../assets/t-ty.jpg" alt="Card image cap" style="height:200px;width:200px;">
-              <div class="card-body">
-                <h5 class="card-title">김태영</h5>
-                <h6 class="card-subtitle text-muted small">비즈니스기획팀</h6>
-                <div class="row mb-2 mt-3">
-
-                  <div class="col-md-4">
-                    <h6 class="card-text font-weight-bold">132</h6>
-                    <h6 class="card-text text-muted small">평가자 수</h6>
-                  </div>
-                  <div class="col-md-4">
-                    <h6 class="card-text font-weight-bold">70</h6>
-                    <h6 class="card-text text-muted small">진행률</h6>
-                  </div>
-                  <div class="col-md-4">
-                    <h6 class="card-text font-weight-bold">89</h6>
-                    <h6 class="card-text text-muted small">평균 점수</h6>
-                  </div>
-
-                </div>
-
-                <div>
-                  <router-link :to="{name: 'sheet'}" tag="button" class="btn btn-secondary btn btn-block mt-3">평가 시트 작성하기</router-link>
-                </div>
-
-              </div>
-            </div>
+          <div v-for="(user, i) in profileList" v-bind:key="i">
+            <GroupProfileListCard :key="i" :user="user" />
           </div>
           <!-- 카드 끝 -->
 

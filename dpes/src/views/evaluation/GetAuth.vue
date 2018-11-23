@@ -1,9 +1,49 @@
 <script>
-import Breadcrumb from '@/views/Breadcrumb.vue'
+/* eslint-disable func-names */
+import { mapState, mapActions } from 'vuex';
+import Star from '@/views/common/Star.vue';
+import Breadcrumb from '@/views/Breadcrumb.vue';
+import AT from '@/store/action-types';
+
 export default {
   name: 'GetAuth',
   components: {
     Breadcrumb,
+    Star,
+  },
+  data: function () {
+    return {
+      childAddress: '',
+    };
+  },
+  computed: {
+    ...mapState({
+      parent: state => state.EvaluationLogin.parent,
+      child: state => state.EvaluationLogin.child,
+    }),
+  },
+  watch: {
+    child: function(child) {
+      if (child.hasOwnProperty('childAddress') && child.hasOwnProperty('childLevel')) {
+        this.$router.push('/evaluation/workspacelist');
+      }
+    },
+  },
+  methods: {
+    ...mapActions([
+      AT.EVALUATION_LOGIN.PARENT_LOG_IN,
+      AT.EVALUATION_LOGIN.SIGN_UP,
+    ]),
+    parentLogIn: function () {
+      this[AT.EVALUATION_LOGIN.PARENT_LOG_IN]();
+    },
+    signUp: function () {
+      this[AT.EVALUATION_LOGIN.SIGN_UP]({
+        parentAddress: this.parent.parentAddress,
+        childAddress: this.childAddress,
+        isLeader: '0x0',
+      });
+    },
   },
 };
 </script>
@@ -11,7 +51,6 @@ export default {
 <template>
 <!-- eslint-disable max-len -->
 <div class="pb-5 text-body h-100 bg-light">
-
   <Breadcrumb
     organization=""
     title="평가 시작하기"
@@ -49,7 +88,7 @@ export default {
 
                 <div class="row">
                   <div class="col-md-12 text-center mt-1">
-                    <router-link :to="{name: ''}" tag="button" class="btn btn-lg btn-dark">그룹 공용 계정 가져오기</router-link>
+                    <button @click="parentLogIn" tag="button" class="btn btn-lg btn-dark">그룹 공용 계정 가져오기</button>
                   </div>
                 </div>
                 <div class="small text-center mt-3">그룹 공용 계정은 그룹 관리자가 알고 있습니다. 그룹 관리자에게 오프체인 상에서 PK를 받아 연결해주세요.</div>
@@ -69,10 +108,10 @@ export default {
 
                   <div class="row">
                     <div class="col-md-8 mt-3">
-                      <input type="text" class="form-control form-control-lg" placeholder="계정 주소 입력...">
+                      <input v-model="childAddress" type="text" class="form-control form-control-lg" placeholder="계정 주소 입력...">
                     </div>
                     <div class="col-md-4 mt-3">
-                      <router-link :to="{name: ''}" tag="button" class="btn btn-lg btn-dark">인증하기</router-link>
+                      <button @click="signUp" tag="button" class="btn btn-lg btn-dark">인증하기</button>
                     </div>
                   </div>
                   <div class="small text-center mt-3">

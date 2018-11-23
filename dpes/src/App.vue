@@ -1,18 +1,22 @@
 <template>
 <!-- eslint-disable max-len -->
 <div id="app">
-
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-      <ul class="navbar-nav mr-auto">
-
+      <ul v-if="userId" class="navbar-nav mr-auto">
         <!-- @Decorator; 로그인 상태 -->
+        <li class="nav-item">
+          <a class="nav-link">
+            <a @click.prevent="logOut" class="nav-atag" to="/">로그아웃</a>
+          </a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="#">
             <router-link class="nav-atag" to="/profile">내 정보</router-link>
           </a>
         </li>
-
+      </ul>
+      <ul v-else class="navbar-nav mr-auto">
         <!-- @Decorator; 비로그인 상태 -->
         <li class="nav-item active">
           <a class="nav-link">
@@ -24,7 +28,6 @@
             <router-link class="nav-atag" to="/signup">회원가입</router-link>
           </a>
         </li>
-
       </ul>
     </div>
     <div class="mx-auto order-0">
@@ -39,7 +42,6 @@
     </div>
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
       <ul class="navbar-nav ml-auto">
-
         <!-- @Decorator; 공용 기능 -->
         <li class="nav-item">
           <a class="nav-link" href="#">
@@ -95,10 +97,6 @@
 }
 
 $color-main: rgba(27,176,206,0.8);
-
-div.bg-light{
-
-}
 
 .font-weight-extra-bold {
     font-weight: 900 !important;
@@ -209,3 +207,35 @@ div.bg-light{
     width: 180px;
 }
 </style>
+
+<script>
+import { mapState, mapActions } from 'vuex';
+import Breadcrumb from '@/views/Breadcrumb.vue'
+import ProfileHeader from '@/views/profile/ProfileHeader.vue'
+import Star from '@/views/common/Star.vue';
+import AT from '@/store/action-types';
+
+export default {
+  name: 'App',
+  computed: {
+    ...mapState({
+      userId: state => state.LoginForm.userId,
+    }),
+  },
+  watch: {
+    userId: function(val) {
+      if (!val) {
+        this.$router.push('/');
+      }
+    },
+  },
+  methods: {
+    ...mapActions([
+      AT.LOGIN_FORM.LOG_OUT,
+    ]),
+    logOut: function () {
+      this[AT.LOGIN_FORM.LOG_OUT]();
+    },
+  }
+};
+</script>
