@@ -5,10 +5,6 @@
     <div class="row">
       <div class="offset-md-2 col-md-8">
         <h2 class="font-weight-extra-bold mt-5 pt-3">공개 회원으로 가입</h2>
-
-        <p class="text-muted mt-1">
-          자신의 부서와 지갑 주소, 현재 프로젝트를 간단하게 기입해주세요. 그리고 자기 스스로에 대한 진솔한 평가를 담아, 동료들이 나를 평가할 때 참고할 수 있는 자료를 제공하세요!
-        </p>
       </div>
     </div>
     <form>

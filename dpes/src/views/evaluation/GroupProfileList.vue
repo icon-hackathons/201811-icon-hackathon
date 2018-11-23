@@ -75,7 +75,7 @@ export default {
   </section>
 
   <section class="container">
-    <div class="row mb-4 mt-4">
+    <div class="row mb-5 pb-5 mt-4">
 
       <div class="offset-md-1 col-md-10 offset-md-1">
 

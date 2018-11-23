@@ -25,11 +25,6 @@ export default new Router({
       component: () => import('./views/profile/Profile.vue'),
     },
     {
-      path: '/dashboard',
-      name: 'dashboard',
-      component: () => import('./views/Dashboard.vue'),
-    },
-    {
       path: '/signup',
       name: 'signup',
       component: () => import('./views/Signup.vue'),
