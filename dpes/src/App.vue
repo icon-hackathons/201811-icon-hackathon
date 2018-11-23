@@ -8,16 +8,11 @@
 
         <!-- @Decorator; 로그인 상태 -->
         <li class="nav-item">
-          <a class="nav-link">
-            <router-link class="nav-atag" to="/dashboard">대쉬보드</router-link>
-          </a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="#">
             <router-link class="nav-atag" to="/profile">내 정보</router-link>
           </a>
         </li>
-        
+
         <!-- @Decorator; 비로그인 상태 -->
         <li class="nav-item active">
           <a class="nav-link">

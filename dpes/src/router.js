@@ -31,14 +31,6 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ './views/profile/Profile.vue'),
     },
     {
-      path: '/dashboard',
-      name: 'dashboard',
-      // 대쉬보드
-      // => 대쉬보드 내용 조회
-      // prep; none
-      component: () => import(/* webpackChunkName: "about" */ './views/Dashboard.vue'),
-    },
-    {
       path: '/signup',
       name: 'signup',
       // 회원 가입
