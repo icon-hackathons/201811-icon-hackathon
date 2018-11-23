@@ -1,6 +1,6 @@
 <template>
-<div class="col-md-4">
-  <div class="card" style="width: 18rem;">
+<div class="col-md-4 mt-3">
+  <div class="card" style="width: 16rem;">
     <img class="card-img-top p-5 rounded-circle text-center mx-auto" :src="getImg(user.img)" alt="Card image cap" style="height:200px;width:200px;">
     <div class="card-body">
     <h5 class="card-title">{{ user.name }}</h5>
@@ -74,6 +74,3 @@ export default {
   }
 };
 </script>
-
-
-

@@ -63,7 +63,7 @@ export default {
     :remaintime="`남은 시간 ${convertedDistance}`" />
   <section class="jumbotron mb-0 p-4 border bg-light">
     <div class="row">
-      <div class="offset-md-1 col-md-10 offset-md-1">
+      <div class="col-md-12">
         <div class="input-group">
           <input type="text" class="form-control" placeholder="Search..." aria-label="Recipient's username" aria-describedby="button-addon2">
           <div class="input-group-append">

@@ -99,7 +99,7 @@ export default {
       this.dueDate = this.dueDate - 1000000
     },
     getRandomImg() {
-      return require(`../../assets/workspace_${this.imgKey}.png`);
+      return require(`../../assets/card-top-bg${this.imgKey}.jpg`);
     }
   },
   beforeDestroy() {
@@ -107,6 +107,3 @@ export default {
   }
 };
 </script>
-
-
-

@@ -22,7 +22,7 @@ export default {
           <p class="h5">누가 나를 평가했는지 알 수 없으며, 인센티브의 지급을 100% 알 수 있습니다. 당신의 평판을 관리하고, 인센티브를 수령하세요.</p>
           <div class="pt-3">
             <router-link :to="{name: 'getstarted'}" tag="button" class="btn btn-light" style="padding:13px;">즉시 평가하기</router-link>
-            <button type="button" class="btn btn-outline-light" style="margin-left:10px;padding:13px;">자세히 알아보기</button>
+            <router-link :to="{name: 'easteregg'}" tag="button" class="ml-2 btn btn-outline-light" style="padding:13px;">자세히 알아보기</router-link>
           </div>
         </div>
       </div>

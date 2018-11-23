@@ -1,3 +1,18 @@
+<script>
+import { mapState, mapActions } from 'vuex';
+import Star from '@/views/common/Star.vue';
+import AT from '@/store/action-types';
+
+export default {
+  name: 'ProfileSelfEval',
+  components: {
+    Star,
+  },
+  props: [
+    'profile'
+  ]
+};
+</script>
 
 <template>
   <!-- eslint-disable -->
@@ -185,19 +200,3 @@
     </div>
   </div>
 </template>
-
-<script>
-import { mapState, mapActions } from 'vuex';
-import Star from '@/views/common/Star.vue';
-import AT from '@/store/action-types';
-
-export default {
-  name: 'ProfileSelfEval',
-  components: {
-    Star,
-  },
-  props: [
-    'profile'
-  ]
-};
-</script>
