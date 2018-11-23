@@ -8,7 +8,7 @@
         "stepLimit": "0xdbba0",
         "nid": "0x3",
         "nonce": "0x1",
-        "to": "cx06e42378bd1bea29c1758d2684aae51a04c2c5dd",
+        "to": "cxa96dc58ea96a341ec30c9efbcda64208b664c184",
         "dataType": "call",
             "data": {
                 "method": "vote",
@@ -16,7 +16,7 @@
                     "_from": "hx9051d3a7e357b863f9c5b873788bf5a48b40e75a", 
                     "_to": "hx92bb869bb42edd254ac6b6bd5c1c85702a6b5380",
                     "_formatted_json": "[{\"type\":\"bool\",\"value\":\"0x1\"},{\"type\":\"int\",\"value\":\"0x4\"},{\"type\":\"int\",\"value\":\"0x4\"},{\"type\":\"int\",\"value\":\"0x5\"},{\"type\":\"int\",\"value\":\"0x4\"}]",
-                    "_message": "흠흠...Oracle"
+                    "_message": "흠흠..."
                 }
             }
     },

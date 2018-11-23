@@ -136,7 +136,7 @@
                   </div>
                   <div class="col-lg-10">
                     <label class="font-weight-bold" for="">해당 프로젝트에서 자신의 기여도를 평가해주세요.</label>
-                    <Star @clicked="onClicked_1_5" :name="'1_5'" :value="selfReview['1-5']" :style="{ position: 'absolute', top: '-7px', right: '3px'}"></Star>
+                    <Star @clicked="onClicked_1_5" :name="'star_1_5'" :value="selfReview['1-5']" :style="{ position: 'absolute', top: '-7px', right: '3px'}"></Star>
                   </div>
                 </div>
               </div>
@@ -215,7 +215,7 @@
               <hr />
               <div class="form-group mt-3">
                 <label class="font-weight-bold" for="">당신은 지난 평가 기간동안 자기 스스로에게 몇 점을 줄 수 있습니까?</label>
-                <Star @clicked="onClicked_4_1" :name="'4_1'" :value="selfReview['4-1']" :style="{ position: 'relative', top: '3px', left: '26px'}"></Star>
+                <Star @clicked="onClicked_4_1" :name="'profile_4_1'" :value="selfReview['4-1']" :style="{ position: 'relative', top: '3px', left: '26px'}"></Star>
               </div>
             </div>
           </div>
@@ -293,14 +293,14 @@ export default {
       const data = event.target.files[0];
       this.img = data.name;
     },
-    onClicked_1_5: function (value) {
+    onClicked_1_5: function (e) {
       this.selfReview = Object.assign({}, this.selfReview, {
-        '1_5': Number(value),
+        '1_5': Number(e.value),
       });
     },
-    onClicked_4_1: function (value) {
+    onClicked_4_1: function (e) {
       this.selfReview = Object.assign({}, this.selfReview, {
-        '4_1': Number(value),
+        '4_1': Number(e.value),
       });
     },
     submit: function () {

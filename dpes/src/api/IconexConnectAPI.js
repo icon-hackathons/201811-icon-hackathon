@@ -14,6 +14,7 @@ const getAddress = () => new Promise((resolve) => {
   }));
 });
 
+
 const sendTransaction = params => new Promise((resolve) => {
   const eventHandler = (event) => {
     const { type, payload } = event.detail;

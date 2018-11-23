@@ -83,8 +83,11 @@ export default {
       const s = this.inactiveRatingChars
       return s[Math.min(s.length - 1, x - 1)]
     },
-    sendValueToParent(v) {
-      this.$emit('clicked', v)
+    sendValueToParent(v, n) {
+      this.$emit('clicked', {
+        value: v,
+        name: n,
+      })
     }
   },
 };
@@ -160,7 +163,7 @@ input:checked~label,
             :key="'i'+x"
             type="radio"
             @change="updateInput($event.target.value)"
-            @click="sendValueToParent($event.target.value)"
+            @click="sendValueToParent($event.target.value, $event.target.name)"
             :checked="value===x"
             :id="name+x"
             :name="name"

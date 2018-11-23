@@ -1,4 +1,33 @@
 {
+  "groups": [
+    {
+      "id": 1,
+      "name": "비즈니스기획팀",
+      "count": 7,
+      "leader": "임영광",
+      "progress": 48
+    },
+    {
+      "id": 2,
+      "name": "개발1팀",
+      "count": 8,
+      "leader": "이홍수",
+      "progress": 28
+    },
+    {
+      "id": 3,
+      "name": "개발2팀",
+      "count": 7,
+      "leader": "팀장님",
+      "progress": 26
+    }
+  ],
+  "workspaces": [
+    {
+      "address": "cx48b7224207fac3a8c2903c2ceefd9c25b1239f76",
+      "id": 1
+    }
+  ],
   "users": [
     {
       "id": 1,
@@ -44,6 +73,11 @@
       "email": "couldseeme0.5422396759326451@icon.foundation",
       "pw": "1234",
       "id": 9
+    },
+    {
+      "email": "couldseeme0.03175148177133558@icon.foundation",
+      "pw": "1234",
+      "id": 10
     }
   ],
   "profiles": [
@@ -51,9 +85,10 @@
       "id": 1,
       "name": "김진현",
       "img": "profile_1.png",
-      "walletAddress": "hx1234123412341234123412341234123412341234",
+      "walletAddress": "hxcacb3b4b04f0f0e4e1667163476d436c87dd11bc",
       "company": "ICONLOOP",
-      "team": "기획1팀",
+      "team": "비즈니스기획팀",
+      "groupId": "1",
       "position": "매니저",
       "introduction": "저는 이러이러한 삶을 살아온 사람입니다.",
       "selfReview": {
@@ -75,9 +110,10 @@
       "id": 2,
       "name": "하봉안",
       "img": "profile_1.png",
-      "walletAddress": "hx1234123412341234123412341234123412341234",
+      "walletAddress": "hx72f7f531dcd26c6f34f691ec54c0ea9a255d2508",
       "company": "ICONLOOP",
-      "team": "기획1팀",
+      "team": "비즈니스기획팀",
+      "groupId": "1",
       "position": "매니저",
       "introduction": "저는 이러이러한 삶을 살아온 사람입니다.",
       "selfReview": {
@@ -101,7 +137,8 @@
       "img": "profile_1.png",
       "walletAddress": "hx1234123412341234123412341234123412341234",
       "company": "ICONLOOP",
-      "team": "기획1팀",
+      "team": "비즈니스기획팀",
+      "groupId": "1",
       "position": "매니저",
       "introduction": "저는 이러이러한 삶을 살아온 사람입니다.",
       "selfReview": {
@@ -125,7 +162,8 @@
       "img": "profile_1.png",
       "walletAddress": "hx1234123412341234123412341234123412341234",
       "company": "ICONLOOP",
-      "team": "기획1팀",
+      "team": "비즈니스기획팀",
+      "groupId": "1",
       "position": "매니저",
       "introduction": "저는 이러이러한 삶을 살아온 사람입니다.",
       "selfReview": {
@@ -149,7 +187,8 @@
       "img": "profile_1.png",
       "walletAddress": "hx1234123412341234123412341234123412341234",
       "company": "ICONLOOP",
-      "team": "기획1팀",
+      "team": "비즈니스기획팀",
+      "groupId": "1",
       "position": "매니저",
       "introduction": "저는 이러이러한 삶을 살아온 사람입니다.",
       "selfReview": {
@@ -173,7 +212,8 @@
       "img": "profile_1.png",
       "walletAddress": "hx1234123412341234123412341234123412341234",
       "company": "ICONLOOP",
-      "team": "기획1팀",
+      "team": "비즈니스기획팀",
+      "groupId": "1",
       "position": "매니저",
       "introduction": "저는 이러이러한 삶을 살아온 사람입니다.",
       "selfReview": {
@@ -196,7 +236,8 @@
       "img": "profile_1.png",
       "walletAddress": "hx1234123412341234123412341234123412341234",
       "company": "ICONLOOP",
-      "team": "기획1팀",
+      "team": "비즈니스기획팀",
+      "groupId": "1",
       "position": "매니저",
       "selfReview": {
         "1_1": "ICONex 프로젝트에서 소프트웨어 개발 전반을 담당하였고, 트래커 프론트엔드 개발 보조 및 icon-sdk-js 개발 보조를 담당하였습니다.",
@@ -219,7 +260,8 @@
       "img": "profile_1.png",
       "walletAddress": "hx1234123412341234123412341234123412341234",
       "company": "ICONLOOP",
-      "team": "기획1팀",
+      "team": "비즈니스기획팀",
+      "groupId": "1",
       "position": "매니저",
       "selfReview": {
         "1_1": "ICONex 프로젝트에서 소프트웨어 개발 전반을 담당하였고, 트래커 프론트엔드 개발 보조 및 icon-sdk-js 개발 보조를 담당하였습니다.",
@@ -242,7 +284,8 @@
       "img": "profile_1.png",
       "walletAddress": "hx1234123412341234123412341234123412341234",
       "company": "ICONLOOP",
-      "team": "기획1팀",
+      "team": "비즈니스기획팀",
+      "groupId": "1",
       "position": "매니저",
       "selfReview": {
         "1_1": "ICONex 프로젝트에서 소프트웨어 개발 전반을 담당하였고, 트래커 프론트엔드 개발 보조 및 icon-sdk-js 개발 보조를 담당하였습니다.",
@@ -259,6 +302,29 @@
       },
       "userId": 9,
       "id": 9
+    },
+    {
+      "name": "Jiyoung Lee",
+      "img": "profile_1.png",
+      "walletAddress": "hx1234123412341234123412341234123412341234",
+      "company": "ICONLOOP",
+      "team": "기획1팀",
+      "position": "매니저",
+      "selfReview": {
+        "1_1": "ICONex 프로젝트에서 소프트웨어 개발 전반을 담당하였고, 트래커 프론트엔드 개발 보조 및 icon-sdk-js 개발 보조를 담당하였습니다.",
+        "1_2": "ICONex 프로젝트를 최선을 다해 수행하였습니다.",
+        "1_3": "자랑스러운 성과는 이것입니다.",
+        "1_4": "열심히 해서입니다.",
+        "1_5": 2,
+        "2_1": "프론트엔드 개발 지식",
+        "2_2": "인생을 사는 법",
+        "2_3": "시간 참 짧네요",
+        "3_1": "좀 더 빨리 개발 가능할듯요",
+        "3_2": "데이 트레이딩",
+        "4_1": 3
+      },
+      "userId": 10,
+      "id": 10
     }
   ]
 }

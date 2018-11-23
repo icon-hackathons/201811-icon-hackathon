@@ -12,10 +12,10 @@
             <span class="text-muted" style="font-size:15px;">{{ profile['team'] }}</span>
             <div class="row mt-3">
               <div class="col-md-3">
-                <span class="h5 font-weight-bold">132</span><span class="text-muted ml-2" style="font-size:15px;">평가자 수</span>
+                <span class="h5 font-weight-bold">123</span><span class="text-muted ml-2" style="font-size:15px;">평가자 수</span>
               </div>
               <div class="col-md-3">
-                <span class="h5 font-weight-bold">70</span><span class="text-muted ml-2" style="font-size:15px;">진행률</span>
+                <span class="h5 font-weight-bold">{{ parseInt(profile['balance'], 16) }}</span><span class="text-muted ml-2" style="font-size:15px;">진행률</span>
               </div>
               <div class="col-md-3">
                 <span class="h5 font-weight-bold"> {{ parseInt(profile['grade'], 16) }}</span><span class="text-muted ml-2" style="font-size:15px;">평균 점수</span>

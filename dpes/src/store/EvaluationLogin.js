@@ -10,11 +10,13 @@ const PARENT_LOG_IN_SUCCESS = 'PARENT_LOG_IN_SUCCESS';
 const CHILD_LOG_IN_SUCCESS = 'CHILD_LOG_IN_SUCCESS';
 const WALLET_LOG_OUT_SUCCESS = 'WALLET_LOG_OUT_SUCCESS';
 const WALLET_SIGN_UP_SUCCESS = 'WALLET_SIGN_UP_SUCCESS';
+const WALLET_SIGN_UP_FAIL = 'WALLET_SIGN_UP_FAIL';
+const LOADING = 'LOADING';
 const RESET = 'RESET';
 
 export default {
   state: {
-    auth: false,
+    loading: false,
     parent: {
       parentAddress: '',
       parentLevel: 0,
@@ -25,16 +27,27 @@ export default {
     },
   },
   mutations: {
+    [LOADING](state) {
+      state.loading = true;
+    },
     [PARENT_LOG_IN_SUCCESS](state, payload) {
-      state.auth = true;
       state.parent = Object.assign({}, state.parent, payload);
     },
     [CHILD_LOG_IN_SUCCESS](state, payload) {
-      state.auth = true;
+      state.parent = {};
       state.child = Object.assign({}, state.child, payload);
     },
+    [WALLET_SIGN_UP_SUCCESS](state, payload) {
+      state.loading = false;
+      state.parent = {};
+      state.child = Object.assign({}, state.child, payload);
+    },
+    [WALLET_SIGN_UP_FAIL](state) {
+      state.loading = false;
+    },
     [RESET](state) {
-      state.auth = false;
+      state.parent = {};
+      state.child = {};
     },
   },
   actions: {
@@ -51,11 +64,27 @@ export default {
         });
       }
     },
+
+    async [AT.EVALUATION_LOGIN.CHILD_LOG_IN]({ commit }) {
+      const childAddress = await IconexConnectAPI.getAddress();
+      const checkChildExist = await DpesScoreAPI.checkChildExist(childAddress);
+      if (!parseInt(checkChildExist, 16)) {
+        alert('child not exist');
+      } else {
+        const childLevel = await DpesScoreAPI.getChildLevel(childAddress);
+        commit(CHILD_LOG_IN_SUCCESS, {
+          childLevel: parseInt(childLevel, 16),
+          childAddress,
+        });
+      }
+    },
+
     async [AT.EVALUATION_LOGIN.SIGN_UP]({ commit }, {
       parentAddress,
       childAddress,
       isLeader,
     }) {
+      commit(LOADING);
       const params = Builder.sendTx({
         from: parentAddress,
         to: Constants.DPES_SCORE_ADDRESS,
@@ -69,26 +98,23 @@ export default {
           _is_leader: isLeader,
         },
       });
-      console.log(params);
       const tx = await IconexConnectAPI.sendTransaction(params);
-      console.log(tx);
-    },
-    async [AT.EVALUATION_LOGIN.CHILD_LOG_IN]({ commit }) {
-      const childAddress = await IconexConnectAPI.getAddress();
-      const checkChildExist = await DpesScoreAPI.checkChildExist(childAddress);
-      if (!checkChildExist) {
-        alert('child not exist');
-      } else {
+      const result = await DpesScoreAPI.checkTransaction(tx);
+      if (result) {
         const childLevel = await DpesScoreAPI.getChildLevel(childAddress);
         commit(WALLET_SIGN_UP_SUCCESS, {
-          parentLevel: parseInt(childLevel, 16),
           childAddress,
+          childLevel: parseInt(childLevel, 16),
         });
+      } else {
+        commit(WALLET_SIGN_UP_FAIL);
       }
     },
+
     [AT.EVALUATION_LOGIN.LOG_OUT]({ commit }) {
       commit(WALLET_LOG_OUT_SUCCESS);
     },
+
     [AT.EVALUATION_LOGIN.RESET]({ commit }) {
       commit(RESET);
     },

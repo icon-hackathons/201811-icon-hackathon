@@ -8,12 +8,12 @@
         "stepLimit": "0x9502f900",
         "nid": "0x3",
         "nonce": "0x1",
-        "to": "cx1352acdaadf247ed66baa915f6f66a1aa5ca5e9c",
+        "to": "cx9b8e46f4452b56be19557a21bc436c3fc44d2467",
         "dataType": "call",
             "data": {
                 "method": "close_vote",
                 "params": {
-                    "_project_address": "cx06e42378bd1bea29c1758d2684aae51a04c2c5dd"
+                    "_project_address": "cxa96dc58ea96a341ec30c9efbcda64208b664c184"
                 }
             }
     },

@@ -8,7 +8,7 @@
         "stepLimit": "0xdbba0",
         "nid": "0x3",
         "nonce": "0x1",
-        "to": "cx1352acdaadf247ed66baa915f6f66a1aa5ca5e9c",
+        "to": "cx9b8e46f4452b56be19557a21bc436c3fc44d2467",
         "dataType": "call",
             "data": {
                 "method": "sign_up",

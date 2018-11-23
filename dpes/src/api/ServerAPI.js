@@ -41,6 +41,13 @@ const createUser = async (email, pw) => {
   return res.data;
 };
 
+const createWorkspace = async (address) => {
+  const res = await api.post('/workspaces', {
+    address,
+  });
+  return res.data;
+};
+
 const checkAuth = async (email, pw) => {
   const users = await api.get('/users');
   const user = users.data.filter(item => item.email === email && item.pw === pw);
@@ -48,9 +55,29 @@ const checkAuth = async (email, pw) => {
   return result;
 };
 
+const getWorkspaceList = async () => {
+  const workspaces = await api.get('/workspaces');
+  const addressMap = workspaces.data.map(workspace => workspace.address)
+  return addressMap;
+};
+
+const getGroupList = async () => {
+  const groups = await api.get('/groups');
+  return groups;
+};
+
+const getProfileList = async () => {
+  const users = await api.get('/profiles?groupId=1');
+  return users;
+};
+
 export default {
   getProfile,
   createProfile,
   createUser,
+  createWorkspace,
   checkAuth,
+  getWorkspaceList,
+  getGroupList,
+  getProfileList,
 };

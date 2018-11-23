@@ -20,7 +20,8 @@
             <router-link class="nav-atag" to="/profile">내 정보</router-link>
           </a>
         </li>
-        
+      </ul>
+      <ul v-else class="navbar-nav mr-auto">
         <!-- @Decorator; 비로그인 상태 -->
         <li class="nav-item active">
           <a class="nav-link">
@@ -216,7 +217,6 @@ $color-main: rgba(27,176,206,0.8);
 import { mapState, mapActions } from 'vuex';
 import Breadcrumb from '@/views/Breadcrumb.vue'
 import ProfileHeader from '@/views/profile/ProfileHeader.vue'
-import ProfileSelfEval from '@/views/profile/ProfileSelfEval.vue'
 import Star from '@/views/common/Star.vue';
 import AT from '@/store/action-types';
 

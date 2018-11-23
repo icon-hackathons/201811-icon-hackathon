@@ -19,10 +19,15 @@ export default {
   computed: {
     ...mapState({
       parent: state => state.EvaluationLogin.parent,
+      child: state => state.EvaluationLogin.child,
     }),
   },
   watch: {
-  
+    child: function(child) {
+      if (child.hasOwnProperty('childAddress') && child.hasOwnProperty('childLevel')) {
+        this.$router.push('/evaluation/workspacelist');
+      }
+    },
   },
   methods: {
     ...mapActions([

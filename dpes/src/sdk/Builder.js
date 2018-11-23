@@ -7,6 +7,7 @@ import Constants from '../constants';
 const {
   CallBuilder,
   CallTransactionBuilder,
+  DeployTransactionBuilder,
 } = IconBuilder;
 
 const call = ({
@@ -55,7 +56,37 @@ const sendTx = ({
   };
 };
 
+
+const deploy = ({
+  networkId,
+  from,
+  stepLimit,
+  content,
+  params = {},
+} = {}) => {
+  const deployTransactionBuilder = new DeployTransactionBuilder();
+  const obj = deployTransactionBuilder
+    .nid(networkId)
+    .from(from)
+    .to(Constants.SCORE_INSTALL_ADDRESS)
+    .stepLimit(stepLimit)
+    .timestamp(`0x${((new Date()).getTime() * 1000).toString(16)}`)
+    .contentType('application/zip')
+    .content(`0x${content}`)
+    .params(params)
+    .version('0x3')
+    .build();
+
+  return {
+    jsonrpc: '2.0',
+    method: 'icx_sendTransaction',
+    params: obj,
+    id: 1,
+  };
+};
+
 export default {
   call,
   sendTx,
+  deploy,
 };
