@@ -1,7 +1,7 @@
 <template>
-  <div class="col-md-4">
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="../../assets/img_sample.jpg" alt="Card image cap" style="height:150px;">
+  <div class="col-md-3">
+    <div class="card mt-4" style="width: 16rem;">
+      <img class="card-img-top" :src="getRandomImg()" alt="Card image cap" style="height:150px;">
       <div class="card-body">
         <h5 class="card-title">{{ group.name }}</h5>
         <p class="card-text">
@@ -33,7 +33,6 @@
   </div>
 </template>
 
-
 <script>
 /* eslint-disable func-names */
 import { mapState, mapActions } from 'vuex';
@@ -44,8 +43,16 @@ import { IconAmount, IconConverter } from 'icon-sdk-js';
 export default {
   name: 'GroupCard',
   props: ['group'],
+  data: function () {
+    return {
+      loading: true,
+      imgKey: Math.floor(Math.random() * 2) + 1,
+    };
+  },
+  methods: {
+    getRandomImg() {
+      return require(`../../assets/card-top-bg${this.imgKey}.jpg`);
+    }
+  },
 };
 </script>
-
-
-

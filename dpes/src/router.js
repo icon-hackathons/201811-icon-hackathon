@@ -148,6 +148,14 @@ export default new Router({
       // prep; setrewardpool
       component: () => import(/* webpackChunkName: "about" */ './views/pool/EndOfProcess.vue'),
     },
+    {
+      path: '/easteregg',
+      name: 'easteregg',
+      // 차지풀 개설
+      // prep; setrewardpool
+      component: () => import(/* webpackChunkName: "about" */ './views/EasterEgg.vue'),
+    },
+
 
   ],
 });
