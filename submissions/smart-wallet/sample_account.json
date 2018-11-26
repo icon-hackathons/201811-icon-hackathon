@@ -1,0 +1,10 @@
+{
+  \"id\": 1,
+  \"tokenType\": \"icx\",
+  \"contractAddr\": \"\",
+  \"balance\": 0,
+  \"sendLimit\": 500000,
+  \"totalUsed\": 0,
+  \"lastUsedDate\": \"2018-11-12\",
+  \"did\": []
+}
