@@ -6,7 +6,7 @@
 
 ICONWITHU is a service where you can register wedding invitation on SCORE, receive ICX for payment and manage your ledger conveniently.
 
-![firstscreen](https://github.com/freesia1231/201811-icon-hackathon/tree/master/submissions/ShowMeTheMoney/png/first.png)
+![firstscreen](https://github.com/freesia1231/201811-icon-hackathon/raw/master/submissions/ShowMeTheMoney/png/first.png)
 
 
 
