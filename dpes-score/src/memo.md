@@ -7,7 +7,7 @@ pyenv activate venv36
 tbears deploy dpes_score -k ../keystores/Admin1.json -p "@1234qwer" -c ../config/deploy_dpes_score.json
 
 // update dpes score
-tbears deploy dpes_score -k ../keystores/Admin1.json -p "@1234qwer" -c ../config/deploy_dpes_score.json -m update -o cx9b8e46f4452b56be19557a21bc436c3fc44d2467
+tbears deploy dpes_score -k ../keystores/Admin1.json -p "@1234qwer" -c ../config/deploy_dpes_score.json -m update -o cx635118b9865c8cddee4759dff5d29360f5664d5a
 
 // send icx to contract
 tbears sendtx -k ../keystores/Admin1.json -p "@1234qwer" -c ../config/deploy_dpes_score.json ../config/send_icx_to_contract.json
@@ -60,7 +60,7 @@ tbears sendtx -k ../keystores/OracleParent1.json -p "@1234qwer" -c ../config/dep
 tbears deploy dpes_project_score -k ../keystores/Admin1.json -p "@1234qwer" -c ../config/deploy_dpes_project_score.json
 
 // update project score
-tbears deploy dpes_project_score -k ../keystores/Admin1.json -p "@1234qwer" -c ../config/deploy_dpes_project_score.json -m update -o cx48b7224207fac3a8c2903c2ceefd9c25b1239f76
+tbears deploy dpes_project_score -k ../keystores/Admin1.json -p "@1234qwer" -c ../config/deploy_dpes_project_score.json -m update -o cxb787980518b717a7f986500576c6a24c0294ed64
 
 // vote
 tbears sendtx -k ../keystores/P1-1.json -p "@1234qwer" -c ../config/deploy_dpes_project_score.json ../config/vote_f_1_1_t_1_1.json

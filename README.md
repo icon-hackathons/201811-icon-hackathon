@@ -56,7 +56,7 @@ Token Economy 기반 인센티브/패널티
 > - dpes-score : ICON Network에서 작동하는 SCORE 기반의 스마트 컨트랙트
 
 ## 개발 설정
-의존성 모듈들을 설치한 후 `dev` 스크립트 실행
+의존성 모듈들을 설치한 후 `serve` 스크립트 실행
 ```bash
 npm i # npm install
 npm run serve

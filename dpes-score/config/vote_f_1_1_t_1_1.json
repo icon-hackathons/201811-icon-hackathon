@@ -8,14 +8,14 @@
         "stepLimit": "0xdbba0",
         "nid": "0x3",
         "nonce": "0x1",
-        "to": "cx48b7224207fac3a8c2903c2ceefd9c25b1239f76",
+        "to": "cxb787980518b717a7f986500576c6a24c0294ed64",
         "dataType": "call",
             "data": {
                 "method": "vote",
                 "params": {
                     "_from": "hx8a6f27ec9347b3e0f330ac929920e3f48ad4e5cd", 
                     "_to": "hxcacb3b4b04f0f0e4e1667163476d436c87dd11bc",
-                    "_formatted_json": "[{\"type\":\"bool\",\"value\":\"0x1\"},{\"type\":\"int\",\"value\":\"0x4\"},{\"type\":\"int\",\"value\":\"0x4\"},{\"type\":\"int\",\"value\":\"0x5\"},{\"type\":\"int\",\"value\":\"0x4\"}]",
+                    "_formatted_json": "[{\"type\":\"int\",\"value\":\"0x4\"},{\"type\":\"int\",\"value\":\"0x3\"},{\"type\":\"int\",\"value\":\"0x3\"},{\"type\":\"int\",\"value\":\"0x4\"},{\"type\":\"int\",\"value\":\"0x4\"},{\"type\":\"int\",\"value\":\"0x4\"},{\"type\":\"int\",\"value\":\"0x4\"},{\"type\":\"int\",\"value\":\"0x4\"},{\"type\":\"int\",\"value\":\"0x4\"},{\"type\":\"int\",\"value\":\"0x4\"},{\"type\":\"int\",\"value\":\"0x3\"},{\"type\":\"int\",\"value\":\"0x4\"},{\"type\":\"int\",\"value\":\"0x4\"},{\"type\":\"int\",\"value\":\"0x3\"},{\"type\":\"bool\",\"value\":\"0x1\"}]",
                     "_message": "진짜 열심히 하는 친구랍니다."
                 }
             }

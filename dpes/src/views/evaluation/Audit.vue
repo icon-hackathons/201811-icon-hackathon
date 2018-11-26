@@ -30,7 +30,7 @@ export default {
     ]),
     async auditVote() {
         const result = await DpesScoreAPI.auditVote({
-            projectAddress: this.projectAddress || 'cx48b7224207fac3a8c2903c2ceefd9c25b1239f76',
+            projectAddress: this.projectAddress || 'cxb787980518b717a7f986500576c6a24c0294ed64',
             childAddress: 'hx908f59b7ea6bbbc6b2fcfc629d7cacdb22db6432'
         });
         if (result) {
@@ -40,7 +40,7 @@ export default {
   },
   created: function() {
     this[AT.AUDIT.GET_REVIEW_RESULT]({
-      projectAddress: this.projectAddress || 'cx48b7224207fac3a8c2903c2ceefd9c25b1239f76'
+      projectAddress: this.projectAddress || 'cxb787980518b717a7f986500576c6a24c0294ed64'
     });
   },
 };

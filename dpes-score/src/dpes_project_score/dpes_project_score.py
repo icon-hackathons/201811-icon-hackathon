@@ -49,6 +49,7 @@ WEIGHT_ARR = [
 	5.333,
 	8
 ]
+THRESHOLD = 80
 WEIGHT_SUM = 100
 
 class ChildLevel():
@@ -73,7 +74,6 @@ class DpesProjectScore(IconScoreBase):
 	_PRIZE_AMOUNT = "_PRIZE_AMOUNT"
 	_DUE_DATE = "_DUE_DATE"
 	_STATUS = "_STATUS"
-	_THRESHOLD = "_THRESHOLD"
 
 	_SCORE_DICT = "_SCORE_DICT"
 	_TOTAL_SCORE_DICT = "_TOTAL_SCORE_DICT"
@@ -94,8 +94,7 @@ class DpesProjectScore(IconScoreBase):
 		self._desc = VarDB(self._DESC, db, str)
 		self._prize_amount = VarDB(self._PRIZE_AMOUNT, db, int)
 		self._due_date = VarDB(self._DUE_DATE, db, int)
-		self._threshold = VarDB(self._THRESHOLD, db, int)
-		
+	
 		self._status = VarDB(self._STATUS, db, int)
 		self._score_dict = DictDB(self._SCORE_DICT, db, value_type=int, depth=2)
 		self._total_score_dict = DictDB(self._TOTAL_SCORE_DICT, db, value_type=int)
@@ -115,8 +114,7 @@ class DpesProjectScore(IconScoreBase):
 				   desc: str,
 				   prize_amount: int,
 				   due_date: int,
-				   dpes_score_address: Address,
-				   threshold: int
+				   dpes_score_address: Address
 				   ):
 		super().on_install()
 		self._precondition(due_date >= self.now())
@@ -126,7 +124,6 @@ class DpesProjectScore(IconScoreBase):
 		self._desc.set(desc)
 		self._prize_amount.set(prize_amount)
 		self._due_date.set(due_date)
-		self._threshold.set(threshold)
 		self._status.set(ProjectStatus.ACTIVE)
 		self._audit_count.set(0)
 		self._dpes_score_address.set(dpes_score_address)
@@ -297,7 +294,7 @@ class DpesProjectScore(IconScoreBase):
 				'user_address': str(_user_address),
 				'score': _score
 			})
-			if (_score > self._hex_to_int(self._threshold)):
+			if (_score > THRESHOLD):
 				_gainer_list.append(str(_user_address))
 		return {
 			'score': _score_list,

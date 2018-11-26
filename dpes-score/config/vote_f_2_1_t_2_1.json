@@ -8,7 +8,7 @@
         "stepLimit": "0xdbba0",
         "nid": "0x3",
         "nonce": "0x1",
-        "to": "cx48b7224207fac3a8c2903c2ceefd9c25b1239f76",
+        "to": "cxb787980518b717a7f986500576c6a24c0294ed64",
         "dataType": "call",
             "data": {
                 "method": "vote",
