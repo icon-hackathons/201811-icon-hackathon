@@ -32,11 +32,13 @@ ICONWITHU is a mobile web service.
 
 
 
-\3.     Click button and make invitation
+\3.     Click button and make invitation 
+
 ![secondscreen](https://github.com/freesia1231/201811-icon-hackathon/raw/master/submissions/ShowMeTheMoney/png/second.png)
 
 
 \4.     Input your wedding data and set ledger lock password.
+
 ![makeletter](https://github.com/freesia1231/201811-icon-hackathon/raw/master/submissions/ShowMeTheMoney/png/makeletter.png)
 
 ![makeletter2](https://github.com/freesia1231/201811-icon-hackathon/raw/master/submissions/ShowMeTheMoney/png/makeletter2.png)
