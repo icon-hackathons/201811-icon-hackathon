@@ -1,0 +1,668 @@
+[INFO|logger.py:332] 2018-11-02 14:19:43,232 > [IconServiceCli] check_serve_icon_service!
+[INFO|logger.py:332] 2018-11-02 14:19:43,272 > [LOG] start_server() start
+[INFO|logger.py:332] 2018-11-02 14:19:43,274 > [LOG] start_process() end
+[INFO|logger.py:332] 2018-11-02 14:19:43,274 > [IconServiceCli] start_command done!
+[INFO|logger.py:332] 2018-11-02 14:19:43,479 > [IconRpcServerCli] check_serve_rest_app!
+[INFO|logger.py:332] 2018-11-02 14:19:43,510 > [IconRpcServerCli] start_command done!
+[INFO|logger.py:332] 2018-11-02 14:19:43,648 > [IconServiceCli] ====================LOG CONFIG====================
+[INFO|logger.py:332] 2018-11-02 14:19:43,648 > [IconServiceCli] [CONFIG.log.logger] > tbears
+[INFO|logger.py:332] 2018-11-02 14:19:43,648 > [IconServiceCli] [CONFIG.log.level] > info
+[INFO|logger.py:332] 2018-11-02 14:19:43,649 > [IconServiceCli] [CONFIG.log.filePath] > ./tbears.log
+[INFO|logger.py:332] 2018-11-02 14:19:43,649 > [IconServiceCli] [CONFIG.log.colorLog] > True
+[INFO|logger.py:332] 2018-11-02 14:19:43,649 > [IconServiceCli] [CONFIG.log.outputType] > file
+[INFO|logger.py:332] 2018-11-02 14:19:43,649 > [IconServiceCli] [CONFIG.log.rotate.type] > bytes
+[INFO|logger.py:332] 2018-11-02 14:19:43,649 > [IconServiceCli] [CONFIG.log.rotate.maxBytes] > 10485760
+[INFO|logger.py:332] 2018-11-02 14:19:43,649 > [IconServiceCli] [CONFIG.log.rotate.backupCount] > 10
+[INFO|logger.py:332] 2018-11-02 14:19:43,649 > [IconServiceCli] [CONFIG.scoreRootPath] > ./.score
+[INFO|logger.py:332] 2018-11-02 14:19:43,649 > [IconServiceCli] [CONFIG.stateDbRootPath] > ./.statedb
+[INFO|logger.py:332] 2018-11-02 14:19:43,649 > [IconServiceCli] [CONFIG.channel] > loopchain_default
+[INFO|logger.py:332] 2018-11-02 14:19:43,649 > [IconServiceCli] [CONFIG.amqpKey] > 7100
+[INFO|logger.py:332] 2018-11-02 14:19:43,649 > [IconServiceCli] [CONFIG.amqpTarget] > 127.0.0.1
+[INFO|logger.py:332] 2018-11-02 14:19:43,650 > [IconServiceCli] [CONFIG.builtinScoreOwner] > hxebf3a409845cd09dcb5af31ed5be5e34e2af9433
+[INFO|logger.py:332] 2018-11-02 14:19:43,650 > [IconServiceCli] [CONFIG.service.fee] > False
+[INFO|logger.py:332] 2018-11-02 14:19:43,650 > [IconServiceCli] [CONFIG.service.audit] > False
+[INFO|logger.py:332] 2018-11-02 14:19:43,650 > [IconServiceCli] [CONFIG.service.deployerWhiteList] > False
+[INFO|logger.py:332] 2018-11-02 14:19:43,650 > [IconServiceCli] [CONFIG.service.scorePackageValidator] > False
+[INFO|logger.py:332] 2018-11-02 14:19:43,650 > [IconServiceCli] [CONFIG.hostAddress] > 127.0.0.1
+[INFO|logger.py:332] 2018-11-02 14:19:43,650 > [IconServiceCli] [CONFIG.port] > 9000
+[INFO|logger.py:332] 2018-11-02 14:19:43,651 > [IconServiceCli] [CONFIG.genesis.nid] > 0x3
+[INFO|logger.py:332] 2018-11-02 14:19:43,651 > [IconServiceCli] [CONFIG.genesis.accounts] > [{'name': 'genesis', 'address': 'hx0000000000000000000000000000000000000000', 'balance': '0x2961fff8ca4a62327800000'}, {'name': 'fee_treasury', 'address': 'hx1000000000000000000000000000000000000000', 'balance': '0x0'}, {'name': 'test1', 'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb', 'balance': '0x2961fff8ca4a62327800000'}]
+[INFO|logger.py:332] 2018-11-02 14:19:43,651 > [IconServiceCli] [CONFIG.blockConfirmInterval] > 10
+[INFO|logger.py:332] 2018-11-02 14:19:43,651 > [IconServiceCli] [CONFIG.blockConfirmEmpty] > True
+[INFO|logger.py:332] 2018-11-02 14:19:43,651 > [IconServiceCli] [CONFIG.debug] > False
+[INFO|logger.py:332] 2018-11-02 14:19:43,651 > [IconServiceCli] [CONFIG.command] > start
+[INFO|logger.py:332] 2018-11-02 14:19:43,651 > [IconServiceCli] [CONFIG.config] > ./temp_conf.json
+[INFO|logger.py:332] 2018-11-02 14:19:43,652 > [IconServiceCli] [CONFIG.tbearsMode] > False
+[INFO|logger.py:332] 2018-11-02 14:19:43,652 > [IconServiceCli] ====================LOG CONFIG====================
+[INFO|logger.py:332] 2018-11-02 14:19:43,661 > [IconService] ==========IconService Service params==========
+[INFO|logger.py:332] 2018-11-02 14:19:43,661 > [IconService] score_root_path : ./.score
+[INFO|logger.py:332] 2018-11-02 14:19:43,661 > [IconService] icon_score_state_db_root_path  : ./.statedb
+[INFO|logger.py:332] 2018-11-02 14:19:43,661 > [IconService] amqp_target  : 127.0.0.1
+[INFO|logger.py:332] 2018-11-02 14:19:43,661 > [IconService] amqp_key  :  7100
+[INFO|logger.py:332] 2018-11-02 14:19:43,662 > [IconService] icon_score_queue_name  : IconScore.loopchain_default.7100
+[INFO|logger.py:332] 2018-11-02 14:19:43,662 > [IconService] ==========IconService Service params==========
+[INFO|logger.py:332] 2018-11-02 14:19:43,662 > [IconInnerService] icon_score_service open
+[INFO|logger.py:332] 2018-11-02 14:19:43,671 > [IconService_Icx] total_supply: 0
+[INFO|logger.py:332] 2018-11-02 14:19:43,697 > [IconService] Start IconService Service serve!
+[INFO|logger.py:332] 2018-11-02 14:19:44,318 > [IconRpcServerCli] ====================LOG CONFIG====================
+[INFO|logger.py:332] 2018-11-02 14:19:44,318 > [IconRpcServerCli] [CONFIG.log.logger] > tbears
+[INFO|logger.py:332] 2018-11-02 14:19:44,318 > [IconRpcServerCli] [CONFIG.log.level] > info
+[INFO|logger.py:332] 2018-11-02 14:19:44,318 > [IconRpcServerCli] [CONFIG.log.filePath] > ./tbears.log
+[INFO|logger.py:332] 2018-11-02 14:19:44,318 > [IconRpcServerCli] [CONFIG.log.colorLog] > True
+[INFO|logger.py:332] 2018-11-02 14:19:44,318 > [IconRpcServerCli] [CONFIG.log.outputType] > file
+[INFO|logger.py:332] 2018-11-02 14:19:44,319 > [IconRpcServerCli] [CONFIG.log.rotate.type] > bytes
+[INFO|logger.py:332] 2018-11-02 14:19:44,319 > [IconRpcServerCli] [CONFIG.log.rotate.maxBytes] > 10485760
+[INFO|logger.py:332] 2018-11-02 14:19:44,319 > [IconRpcServerCli] [CONFIG.log.rotate.backupCount] > 10
+[INFO|logger.py:332] 2018-11-02 14:19:44,319 > [IconRpcServerCli] [CONFIG.channel] > loopchain_default
+[INFO|logger.py:332] 2018-11-02 14:19:44,319 > [IconRpcServerCli] [CONFIG.port] > 9000
+[INFO|logger.py:332] 2018-11-02 14:19:44,319 > [IconRpcServerCli] [CONFIG.portDiffRestServiceContainer] > 1900
+[INFO|logger.py:332] 2018-11-02 14:19:44,320 > [IconRpcServerCli] [CONFIG.amqpKey] > 7100
+[INFO|logger.py:332] 2018-11-02 14:19:44,320 > [IconRpcServerCli] [CONFIG.amqpTarget] > 127.0.0.1
+[INFO|logger.py:332] 2018-11-02 14:19:44,320 > [IconRpcServerCli] [CONFIG.gunicornWorkerCount] > 9
+[INFO|logger.py:332] 2018-11-02 14:19:44,320 > [IconRpcServerCli] [CONFIG.disableV1Api] > True
+[INFO|logger.py:332] 2018-11-02 14:19:44,320 > [IconRpcServerCli] [CONFIG.restSslType] > 0
+[INFO|logger.py:332] 2018-11-02 14:19:44,320 > [IconRpcServerCli] [CONFIG.defaultSslCertPath] > resources/ssl_test_cert/cert.pem
+[INFO|logger.py:332] 2018-11-02 14:19:44,321 > [IconRpcServerCli] [CONFIG.defaultSslKeyPath] > resources/ssl_test_cert/key.pem
+[INFO|logger.py:332] 2018-11-02 14:19:44,321 > [IconRpcServerCli] [CONFIG.defaultSslTrustCertPath] > resources/ssl_test_ca/cert.pem
+[INFO|logger.py:332] 2018-11-02 14:19:44,321 > [IconRpcServerCli] [CONFIG.ipLocal] > 127.0.0.1
+[INFO|logger.py:332] 2018-11-02 14:19:44,321 > [IconRpcServerCli] [CONFIG.grpcTimeout] > 30
+[INFO|logger.py:332] 2018-11-02 14:19:44,321 > [IconRpcServerCli] [CONFIG.grpcRetry] > 5
+[INFO|logger.py:332] 2018-11-02 14:19:44,321 > [IconRpcServerCli] [CONFIG.restAdditionalTimeout] > 30
+[INFO|logger.py:332] 2018-11-02 14:19:44,321 > [IconRpcServerCli] [CONFIG.scoreQueryTimeout] > 120
+[INFO|logger.py:332] 2018-11-02 14:19:44,321 > [IconRpcServerCli] [CONFIG.hostAddress] > 127.0.0.1
+[INFO|logger.py:332] 2018-11-02 14:19:44,321 > [IconRpcServerCli] [CONFIG.scoreRootPath] > ./.score
+[INFO|logger.py:332] 2018-11-02 14:19:44,321 > [IconRpcServerCli] [CONFIG.stateDbRootPath] > ./.statedb
+[INFO|logger.py:332] 2018-11-02 14:19:44,322 > [IconRpcServerCli] [CONFIG.service.fee] > False
+[INFO|logger.py:332] 2018-11-02 14:19:44,322 > [IconRpcServerCli] [CONFIG.service.audit] > False
+[INFO|logger.py:332] 2018-11-02 14:19:44,322 > [IconRpcServerCli] [CONFIG.service.deployerWhiteList] > False
+[INFO|logger.py:332] 2018-11-02 14:19:44,322 > [IconRpcServerCli] [CONFIG.genesis.nid] > 0x3
+[INFO|logger.py:332] 2018-11-02 14:19:44,322 > [IconRpcServerCli] [CONFIG.genesis.accounts] > [{'name': 'genesis', 'address': 'hx0000000000000000000000000000000000000000', 'balance': '0x2961fff8ca4a62327800000'}, {'name': 'fee_treasury', 'address': 'hx1000000000000000000000000000000000000000', 'balance': '0x0'}, {'name': 'test1', 'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb', 'balance': '0x2961fff8ca4a62327800000'}]
+[INFO|logger.py:332] 2018-11-02 14:19:44,322 > [IconRpcServerCli] [CONFIG.blockConfirmInterval] > 10
+[INFO|logger.py:332] 2018-11-02 14:19:44,322 > [IconRpcServerCli] [CONFIG.blockConfirmEmpty] > True
+[INFO|logger.py:332] 2018-11-02 14:19:44,322 > [IconRpcServerCli] [CONFIG.debug] > False
+[INFO|logger.py:332] 2018-11-02 14:19:44,322 > [IconRpcServerCli] [CONFIG.command] > start
+[INFO|logger.py:332] 2018-11-02 14:19:44,322 > [IconRpcServerCli] [CONFIG.config] > ./temp_conf.json
+[INFO|logger.py:332] 2018-11-02 14:19:44,322 > [IconRpcServerCli] [CONFIG.tbearsMode] > True
+[INFO|logger.py:332] 2018-11-02 14:19:44,322 > [IconRpcServerCli] ====================LOG CONFIG====================
+[INFO|logger.py:332] 2018-11-02 14:19:44,376 > [tbears_block_manager] ====================LOG CONFIG====================
+[INFO|logger.py:332] 2018-11-02 14:19:44,377 > [tbears_block_manager] [CONFIG.hostAddress] > 127.0.0.1
+[INFO|logger.py:332] 2018-11-02 14:19:44,377 > [tbears_block_manager] [CONFIG.port] > 9000
+[INFO|logger.py:332] 2018-11-02 14:19:44,377 > [tbears_block_manager] [CONFIG.scoreRootPath] > ./.score
+[INFO|logger.py:332] 2018-11-02 14:19:44,377 > [tbears_block_manager] [CONFIG.stateDbRootPath] > ./.statedb
+[INFO|logger.py:332] 2018-11-02 14:19:44,377 > [tbears_block_manager] [CONFIG.log.logger] > tbears
+[INFO|logger.py:332] 2018-11-02 14:19:44,377 > [tbears_block_manager] [CONFIG.log.level] > info
+[INFO|logger.py:332] 2018-11-02 14:19:44,378 > [tbears_block_manager] [CONFIG.log.filePath] > ./tbears.log
+[INFO|logger.py:332] 2018-11-02 14:19:44,378 > [tbears_block_manager] [CONFIG.log.colorLog] > True
+[INFO|logger.py:332] 2018-11-02 14:19:44,378 > [tbears_block_manager] [CONFIG.log.outputType] > file
+[INFO|logger.py:332] 2018-11-02 14:19:44,378 > [tbears_block_manager] [CONFIG.log.rotate.type] > bytes
+[INFO|logger.py:332] 2018-11-02 14:19:44,378 > [tbears_block_manager] [CONFIG.log.rotate.maxBytes] > 10485760
+[INFO|logger.py:332] 2018-11-02 14:19:44,378 > [tbears_block_manager] [CONFIG.log.rotate.backupCount] > 10
+[INFO|logger.py:332] 2018-11-02 14:19:44,379 > [tbears_block_manager] [CONFIG.service.fee] > False
+[INFO|logger.py:332] 2018-11-02 14:19:44,379 > [tbears_block_manager] [CONFIG.service.audit] > False
+[INFO|logger.py:332] 2018-11-02 14:19:44,379 > [tbears_block_manager] [CONFIG.service.deployerWhiteList] > False
+[INFO|logger.py:332] 2018-11-02 14:19:44,379 > [tbears_block_manager] [CONFIG.genesis.nid] > 0x3
+[INFO|logger.py:332] 2018-11-02 14:19:44,379 > [tbears_block_manager] [CONFIG.genesis.accounts] > [{'name': 'genesis', 'address': 'hx0000000000000000000000000000000000000000', 'balance': '0x2961fff8ca4a62327800000'}, {'name': 'fee_treasury', 'address': 'hx1000000000000000000000000000000000000000', 'balance': '0x0'}, {'name': 'test1', 'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb', 'balance': '0x2961fff8ca4a62327800000'}]
+[INFO|logger.py:332] 2018-11-02 14:19:44,379 > [tbears_block_manager] [CONFIG.channel] > loopchain_default
+[INFO|logger.py:332] 2018-11-02 14:19:44,379 > [tbears_block_manager] [CONFIG.amqpKey] > 7100
+[INFO|logger.py:332] 2018-11-02 14:19:44,380 > [tbears_block_manager] [CONFIG.amqpTarget] > 127.0.0.1
+[INFO|logger.py:332] 2018-11-02 14:19:44,380 > [tbears_block_manager] [CONFIG.blockConfirmInterval] > 10
+[INFO|logger.py:332] 2018-11-02 14:19:44,380 > [tbears_block_manager] [CONFIG.blockConfirmEmpty] > True
+[INFO|logger.py:332] 2018-11-02 14:19:44,380 > [tbears_block_manager] ====================LOG CONFIG====================
+[INFO|logger.py:332] 2018-11-02 14:19:44,392 > [tbears_block_manager] ==========tbears block_manager params==========
+[INFO|logger.py:332] 2018-11-02 14:19:44,393 > [tbears_block_manager] amqp_target  : 127.0.0.1
+[INFO|logger.py:332] 2018-11-02 14:19:44,393 > [tbears_block_manager] amqp_key  :  7100
+[INFO|logger.py:332] 2018-11-02 14:19:44,393 > [tbears_block_manager] queue_name  : Channel.loopchain_default.7100
+[INFO|logger.py:332] 2018-11-02 14:19:44,393 > [tbears_block_manager]             : IconScore.loopchain_default.7100
+[INFO|logger.py:332] 2018-11-02 14:19:44,393 > [tbears_block_manager] ==========tbears block_manager params==========
+[INFO|logger.py:332] 2018-11-02 14:19:44,568 > [IconInnerService] icon_score_hello
+[INFO|logger.py:332] 2018-11-02 14:19:44,578 > [IconInnerService] invoke request with {'transactions': [{'method': '', 'params': {'txHash': '685cf62751cef607271ed7190b6a707405c5b07ec0830156e748c0c2ea4a2cfe', 'timestamp': '0x579a7aee948b9'}, 'genesisData': {'nid': '0x3', 'accounts': [{'name': 'genesis', 'address': 'hx0000000000000000000000000000000000000000', 'balance': '0x2961fff8ca4a62327800000'}, {'name': 'fee_treasury', 'address': 'hx1000000000000000000000000000000000000000', 'balance': '0x0'}, {'name': 'test1', 'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb', 'balance': '0x2961fff8ca4a62327800000'}]}}], 'block': {'blockHeight': '0x0', 'blockHash': 'ccef77f7349e06cb16544de296288f6525a67817240bb05ee842079818b83066', 'timestamp': '0x579a7aee948b9'}}
+[INFO|logger.py:332] 2018-11-02 14:19:44,592 > [IconInnerService] invoke response with {'txResults': {'685cf62751cef607271ed7190b6a707405c5b07ec0830156e748c0c2ea4a2cfe': {'txHash': '685cf62751cef607271ed7190b6a707405c5b07ec0830156e748c0c2ea4a2cfe', 'blockHeight': '0x0', 'blockHash': 'ccef77f7349e06cb16544de296288f6525a67817240bb05ee842079818b83066', 'txIndex': '0x0', 'stepUsed': '0x0', 'stepPrice': '0x0', 'cumulativeStepUsed': '0x0', 'status': '0x1'}}, 'stateRootHash': 'bca45882a67284e753546443b22611f827fc81b9b7c08ffce87378f9e765cad6'}
+[INFO|logger.py:332] 2018-11-02 14:19:44,601 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x0', 'blockHash': 'ccef77f7349e06cb16544de296288f6525a67817240bb05ee842079818b83066'}
+[INFO|logger.py:332] 2018-11-02 14:19:44,602 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:19:44,607 > [tbears_block_manager] tbears block_manager service started!
+[INFO|logger.py:332] 2018-11-02 14:19:54,610 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x1', 'blockHash': '42168dd2124bc34042855018fc5e1324e2d25aadc2bd176ccd8ce7788c8c1a3e', 'prevBlockHash': 'ccef77f7349e06cb16544de296288f6525a67817240bb05ee842079818b83066', 'timestamp': '0x579a7af825ca0'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:19:54,611 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:19:54,614 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x2', 'blockHash': '42168dd2124bc34042855018fc5e1324e2d25aadc2bd176ccd8ce7788c8c1a3e'}
+[INFO|logger.py:332] 2018-11-02 14:19:54,615 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:20:04,610 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x2', 'blockHash': 'd8520f2e4a7338a3a55a9e7144cea62d2065b8a75d123877dae3e2c802c399ab', 'prevBlockHash': '42168dd2124bc34042855018fc5e1324e2d25aadc2bd176ccd8ce7788c8c1a3e', 'timestamp': '0x579a7b01af488'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:20:04,612 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:20:04,615 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x3', 'blockHash': 'd8520f2e4a7338a3a55a9e7144cea62d2065b8a75d123877dae3e2c802c399ab'}
+[INFO|logger.py:332] 2018-11-02 14:20:04,616 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:20:14,614 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x3', 'blockHash': '06cd1f5a2b210397732b0109283e6df86747a18d33244cb801a9c5c81cb25006', 'prevBlockHash': 'd8520f2e4a7338a3a55a9e7144cea62d2065b8a75d123877dae3e2c802c399ab', 'timestamp': '0x579a7b0b3983e'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:20:14,616 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:20:14,619 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x4', 'blockHash': '06cd1f5a2b210397732b0109283e6df86747a18d33244cb801a9c5c81cb25006'}
+[INFO|logger.py:332] 2018-11-02 14:20:14,619 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:20:24,618 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x4', 'blockHash': '3f0feedd965fcf2a1064b311b25cf830b2aa9583231d7129337a5f3ac1aff4fd', 'prevBlockHash': '06cd1f5a2b210397732b0109283e6df86747a18d33244cb801a9c5c81cb25006', 'timestamp': '0x579a7b14c3f20'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:20:24,620 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:20:24,623 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x5', 'blockHash': '3f0feedd965fcf2a1064b311b25cf830b2aa9583231d7129337a5f3ac1aff4fd'}
+[INFO|logger.py:332] 2018-11-02 14:20:24,623 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:20:34,621 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x5', 'blockHash': '16c43fe4299256531bd665e5a67cee460e82a32e0d79c1720c864ad62f27125b', 'prevBlockHash': '3f0feedd965fcf2a1064b311b25cf830b2aa9583231d7129337a5f3ac1aff4fd', 'timestamp': '0x579a7b1e4e000'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:20:34,623 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:20:34,625 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x6', 'blockHash': '16c43fe4299256531bd665e5a67cee460e82a32e0d79c1720c864ad62f27125b'}
+[INFO|logger.py:332] 2018-11-02 14:20:34,626 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:20:44,622 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x6', 'blockHash': 'e55765617f4d0f7588d2ab2b784fa29c58e4a3ac9c962e15d8a52547eaaf8a89', 'prevBlockHash': '16c43fe4299256531bd665e5a67cee460e82a32e0d79c1720c864ad62f27125b', 'timestamp': '0x579a7b27d7c50'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:20:44,623 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:20:44,626 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x7', 'blockHash': 'e55765617f4d0f7588d2ab2b784fa29c58e4a3ac9c962e15d8a52547eaaf8a89'}
+[INFO|logger.py:332] 2018-11-02 14:20:44,627 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:20:54,626 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x7', 'blockHash': '5b4e5db2bc633615d312525da6b008a8c315be3476b845a31114e1a3532e2be3', 'prevBlockHash': 'e55765617f4d0f7588d2ab2b784fa29c58e4a3ac9c962e15d8a52547eaaf8a89', 'timestamp': '0x579a7b31622a7'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:20:54,627 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:20:54,630 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x8', 'blockHash': '5b4e5db2bc633615d312525da6b008a8c315be3476b845a31114e1a3532e2be3'}
+[INFO|logger.py:332] 2018-11-02 14:20:54,630 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:21:04,631 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x8', 'blockHash': '7d7ad859f6390dc8e8c9f748bb4b41bcebc28b497bd54f1aebe9e9fcd49e7bb3', 'prevBlockHash': '5b4e5db2bc633615d312525da6b008a8c315be3476b845a31114e1a3532e2be3', 'timestamp': '0x579a7b3aec9fa'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:21:04,632 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:21:04,635 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x9', 'blockHash': '7d7ad859f6390dc8e8c9f748bb4b41bcebc28b497bd54f1aebe9e9fcd49e7bb3'}
+[INFO|logger.py:332] 2018-11-02 14:21:04,635 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:21:14,631 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x9', 'blockHash': 'd97106063ac8b8aaf853b38284df25fe81e6e6aa69dedc491e3061b7f58e6562', 'prevBlockHash': '7d7ad859f6390dc8e8c9f748bb4b41bcebc28b497bd54f1aebe9e9fcd49e7bb3', 'timestamp': '0x579a7b4476164'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:21:14,633 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:21:14,642 > [IconInnerService] write_precommit_state request with {'blockHeight': '0xa', 'blockHash': 'd97106063ac8b8aaf853b38284df25fe81e6e6aa69dedc491e3061b7f58e6562'}
+[INFO|logger.py:332] 2018-11-02 14:21:14,643 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:21:24,632 > [IconInnerService] invoke request with {'block': {'blockHeight': '0xa', 'blockHash': '7168c7ec14c43e8f4255657a52e81fd9b9b8b0c20f0396fed25eed7bdb442157', 'prevBlockHash': 'd97106063ac8b8aaf853b38284df25fe81e6e6aa69dedc491e3061b7f58e6562', 'timestamp': '0x579a7b4dffc99'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:21:24,633 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:21:24,635 > [IconInnerService] write_precommit_state request with {'blockHeight': '0xb', 'blockHash': '7168c7ec14c43e8f4255657a52e81fd9b9b8b0c20f0396fed25eed7bdb442157'}
+[INFO|logger.py:332] 2018-11-02 14:21:24,636 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:21:34,635 > [IconInnerService] invoke request with {'block': {'blockHeight': '0xb', 'blockHash': '5828142eaae6af49458b38ab3da634a398b46aee550aa17c4e906c23cd01da8a', 'prevBlockHash': '7168c7ec14c43e8f4255657a52e81fd9b9b8b0c20f0396fed25eed7bdb442157', 'timestamp': '0x579a7b5789f72'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:21:34,637 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:21:34,641 > [IconInnerService] write_precommit_state request with {'blockHeight': '0xc', 'blockHash': '5828142eaae6af49458b38ab3da634a398b46aee550aa17c4e906c23cd01da8a'}
+[INFO|logger.py:332] 2018-11-02 14:21:34,642 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:21:44,639 > [IconInnerService] invoke request with {'block': {'blockHeight': '0xc', 'blockHash': '13188551b8a0cff3d7e370bc7ad46a92f110f0aff9247bac4845541eeaaa8bec', 'prevBlockHash': '5828142eaae6af49458b38ab3da634a398b46aee550aa17c4e906c23cd01da8a', 'timestamp': '0x579a7b611454f'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:21:44,640 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:21:44,643 > [IconInnerService] write_precommit_state request with {'blockHeight': '0xd', 'blockHash': '13188551b8a0cff3d7e370bc7ad46a92f110f0aff9247bac4845541eeaaa8bec'}
+[INFO|logger.py:332] 2018-11-02 14:21:44,644 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:21:54,641 > [IconInnerService] invoke request with {'block': {'blockHeight': '0xd', 'blockHash': 'dd6af4cbecb0c94b6053215c13d36c1b353c0221a697690171973cefb9c29ebb', 'prevBlockHash': '13188551b8a0cff3d7e370bc7ad46a92f110f0aff9247bac4845541eeaaa8bec', 'timestamp': '0x579a7b6a9e3f0'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:21:54,642 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:21:54,644 > [IconInnerService] write_precommit_state request with {'blockHeight': '0xe', 'blockHash': 'dd6af4cbecb0c94b6053215c13d36c1b353c0221a697690171973cefb9c29ebb'}
+[INFO|logger.py:332] 2018-11-02 14:21:54,645 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:22:04,644 > [IconInnerService] invoke request with {'block': {'blockHeight': '0xe', 'blockHash': 'fe0c5f6537d43b1a103f813859167190775faef3be238299f951a4eed21ed998', 'prevBlockHash': 'dd6af4cbecb0c94b6053215c13d36c1b353c0221a697690171973cefb9c29ebb', 'timestamp': '0x579a7b7428325'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:22:04,645 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:22:04,649 > [IconInnerService] write_precommit_state request with {'blockHeight': '0xf', 'blockHash': 'fe0c5f6537d43b1a103f813859167190775faef3be238299f951a4eed21ed998'}
+[INFO|logger.py:332] 2018-11-02 14:22:04,649 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:22:14,647 > [IconInnerService] invoke request with {'block': {'blockHeight': '0xf', 'blockHash': '85ad4755adc6b78d8d7833ce2e17c99a131bba5370fdb5d230ee05b009e5a606', 'prevBlockHash': 'fe0c5f6537d43b1a103f813859167190775faef3be238299f951a4eed21ed998', 'timestamp': '0x579a7b7db26dd'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:22:14,649 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:22:14,652 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x10', 'blockHash': '85ad4755adc6b78d8d7833ce2e17c99a131bba5370fdb5d230ee05b009e5a606'}
+[INFO|logger.py:332] 2018-11-02 14:22:14,652 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:22:24,650 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x10', 'blockHash': '4052a3259017b5f4593e7036424cde0c999d8b05cce9b353899b78c78104b3cd', 'prevBlockHash': '85ad4755adc6b78d8d7833ce2e17c99a131bba5370fdb5d230ee05b009e5a606', 'timestamp': '0x579a7b873ca63'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:22:24,652 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:22:24,654 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x11', 'blockHash': '4052a3259017b5f4593e7036424cde0c999d8b05cce9b353899b78c78104b3cd'}
+[INFO|logger.py:332] 2018-11-02 14:22:24,655 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:22:27,230 > [IconInnerService] icon_score_service close
+[INFO|logger.py:332] 2018-11-02 14:22:27,231 > [IconServiceCli] ==========IconService Done==========
+[INFO|logger.py:332] 2018-11-02 14:22:37,957 > [IconServiceCli] check_serve_icon_service!
+[INFO|logger.py:332] 2018-11-02 14:22:37,996 > [LOG] start_server() start
+[INFO|logger.py:332] 2018-11-02 14:22:37,998 > [LOG] start_process() end
+[INFO|logger.py:332] 2018-11-02 14:22:37,998 > [IconServiceCli] start_command done!
+[INFO|logger.py:332] 2018-11-02 14:22:38,200 > [IconRpcServerCli] check_serve_rest_app!
+[INFO|logger.py:332] 2018-11-02 14:22:38,239 > [IconRpcServerCli] start_command done!
+[INFO|logger.py:332] 2018-11-02 14:22:38,408 > [IconServiceCli] ====================LOG CONFIG====================
+[INFO|logger.py:332] 2018-11-02 14:22:38,408 > [IconServiceCli] [CONFIG.log.logger] > tbears
+[INFO|logger.py:332] 2018-11-02 14:22:38,409 > [IconServiceCli] [CONFIG.log.level] > info
+[INFO|logger.py:332] 2018-11-02 14:22:38,409 > [IconServiceCli] [CONFIG.log.filePath] > ./tbears.log
+[INFO|logger.py:332] 2018-11-02 14:22:38,409 > [IconServiceCli] [CONFIG.log.colorLog] > True
+[INFO|logger.py:332] 2018-11-02 14:22:38,409 > [IconServiceCli] [CONFIG.log.outputType] > file
+[INFO|logger.py:332] 2018-11-02 14:22:38,409 > [IconServiceCli] [CONFIG.log.rotate.type] > bytes
+[INFO|logger.py:332] 2018-11-02 14:22:38,409 > [IconServiceCli] [CONFIG.log.rotate.maxBytes] > 10485760
+[INFO|logger.py:332] 2018-11-02 14:22:38,410 > [IconServiceCli] [CONFIG.log.rotate.backupCount] > 10
+[INFO|logger.py:332] 2018-11-02 14:22:38,410 > [IconServiceCli] [CONFIG.scoreRootPath] > ./.score
+[INFO|logger.py:332] 2018-11-02 14:22:38,410 > [IconServiceCli] [CONFIG.stateDbRootPath] > ./.statedb
+[INFO|logger.py:332] 2018-11-02 14:22:38,410 > [IconServiceCli] [CONFIG.channel] > loopchain_default
+[INFO|logger.py:332] 2018-11-02 14:22:38,410 > [IconServiceCli] [CONFIG.amqpKey] > 7100
+[INFO|logger.py:332] 2018-11-02 14:22:38,410 > [IconServiceCli] [CONFIG.amqpTarget] > 127.0.0.1
+[INFO|logger.py:332] 2018-11-02 14:22:38,410 > [IconServiceCli] [CONFIG.builtinScoreOwner] > hxebf3a409845cd09dcb5af31ed5be5e34e2af9433
+[INFO|logger.py:332] 2018-11-02 14:22:38,411 > [IconServiceCli] [CONFIG.service.fee] > False
+[INFO|logger.py:332] 2018-11-02 14:22:38,411 > [IconServiceCli] [CONFIG.service.audit] > False
+[INFO|logger.py:332] 2018-11-02 14:22:38,411 > [IconServiceCli] [CONFIG.service.deployerWhiteList] > False
+[INFO|logger.py:332] 2018-11-02 14:22:38,411 > [IconServiceCli] [CONFIG.service.scorePackageValidator] > False
+[INFO|logger.py:332] 2018-11-02 14:22:38,411 > [IconServiceCli] [CONFIG.hostAddress] > 127.0.0.1
+[INFO|logger.py:332] 2018-11-02 14:22:38,411 > [IconServiceCli] [CONFIG.port] > 9000
+[INFO|logger.py:332] 2018-11-02 14:22:38,411 > [IconServiceCli] [CONFIG.genesis.nid] > 0x3
+[INFO|logger.py:332] 2018-11-02 14:22:38,411 > [IconServiceCli] [CONFIG.genesis.accounts] > [{'name': 'genesis', 'address': 'hx0000000000000000000000000000000000000000', 'balance': '0x2961fff8ca4a62327800000'}, {'name': 'fee_treasury', 'address': 'hx1000000000000000000000000000000000000000', 'balance': '0x0'}, {'name': 'test1', 'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb', 'balance': '0x2961fff8ca4a62327800000'}]
+[INFO|logger.py:332] 2018-11-02 14:22:38,412 > [IconServiceCli] [CONFIG.blockConfirmInterval] > 10
+[INFO|logger.py:332] 2018-11-02 14:22:38,412 > [IconServiceCli] [CONFIG.blockConfirmEmpty] > True
+[INFO|logger.py:332] 2018-11-02 14:22:38,412 > [IconServiceCli] [CONFIG.debug] > False
+[INFO|logger.py:332] 2018-11-02 14:22:38,412 > [IconServiceCli] [CONFIG.command] > start
+[INFO|logger.py:332] 2018-11-02 14:22:38,412 > [IconServiceCli] [CONFIG.config] > ./temp_conf.json
+[INFO|logger.py:332] 2018-11-02 14:22:38,412 > [IconServiceCli] [CONFIG.tbearsMode] > False
+[INFO|logger.py:332] 2018-11-02 14:22:38,412 > [IconServiceCli] ====================LOG CONFIG====================
+[INFO|logger.py:332] 2018-11-02 14:22:38,424 > [IconService] ==========IconService Service params==========
+[INFO|logger.py:332] 2018-11-02 14:22:38,424 > [IconService] score_root_path : ./.score
+[INFO|logger.py:332] 2018-11-02 14:22:38,425 > [IconService] icon_score_state_db_root_path  : ./.statedb
+[INFO|logger.py:332] 2018-11-02 14:22:38,425 > [IconService] amqp_target  : 127.0.0.1
+[INFO|logger.py:332] 2018-11-02 14:22:38,425 > [IconService] amqp_key  :  7100
+[INFO|logger.py:332] 2018-11-02 14:22:38,425 > [IconService] icon_score_queue_name  : IconScore.loopchain_default.7100
+[INFO|logger.py:332] 2018-11-02 14:22:38,425 > [IconService] ==========IconService Service params==========
+[INFO|logger.py:332] 2018-11-02 14:22:38,425 > [IconInnerService] icon_score_service open
+[INFO|logger.py:332] 2018-11-02 14:22:38,431 > [IconService_Icx] total_supply: 0
+[INFO|logger.py:332] 2018-11-02 14:22:38,460 > [IconService] Start IconService Service serve!
+[INFO|logger.py:332] 2018-11-02 14:22:39,091 > [IconRpcServerCli] ====================LOG CONFIG====================
+[INFO|logger.py:332] 2018-11-02 14:22:39,091 > [IconRpcServerCli] [CONFIG.log.logger] > tbears
+[INFO|logger.py:332] 2018-11-02 14:22:39,091 > [IconRpcServerCli] [CONFIG.log.level] > info
+[INFO|logger.py:332] 2018-11-02 14:22:39,092 > [IconRpcServerCli] [CONFIG.log.filePath] > ./tbears.log
+[INFO|logger.py:332] 2018-11-02 14:22:39,092 > [IconRpcServerCli] [CONFIG.log.colorLog] > True
+[INFO|logger.py:332] 2018-11-02 14:22:39,092 > [IconRpcServerCli] [CONFIG.log.outputType] > file
+[INFO|logger.py:332] 2018-11-02 14:22:39,092 > [IconRpcServerCli] [CONFIG.log.rotate.type] > bytes
+[INFO|logger.py:332] 2018-11-02 14:22:39,092 > [IconRpcServerCli] [CONFIG.log.rotate.maxBytes] > 10485760
+[INFO|logger.py:332] 2018-11-02 14:22:39,092 > [IconRpcServerCli] [CONFIG.log.rotate.backupCount] > 10
+[INFO|logger.py:332] 2018-11-02 14:22:39,092 > [IconRpcServerCli] [CONFIG.channel] > loopchain_default
+[INFO|logger.py:332] 2018-11-02 14:22:39,093 > [IconRpcServerCli] [CONFIG.port] > 9000
+[INFO|logger.py:332] 2018-11-02 14:22:39,093 > [IconRpcServerCli] [CONFIG.portDiffRestServiceContainer] > 1900
+[INFO|logger.py:332] 2018-11-02 14:22:39,093 > [IconRpcServerCli] [CONFIG.amqpKey] > 7100
+[INFO|logger.py:332] 2018-11-02 14:22:39,093 > [IconRpcServerCli] [CONFIG.amqpTarget] > 127.0.0.1
+[INFO|logger.py:332] 2018-11-02 14:22:39,093 > [IconRpcServerCli] [CONFIG.gunicornWorkerCount] > 9
+[INFO|logger.py:332] 2018-11-02 14:22:39,093 > [IconRpcServerCli] [CONFIG.disableV1Api] > True
+[INFO|logger.py:332] 2018-11-02 14:22:39,093 > [IconRpcServerCli] [CONFIG.restSslType] > 0
+[INFO|logger.py:332] 2018-11-02 14:22:39,093 > [IconRpcServerCli] [CONFIG.defaultSslCertPath] > resources/ssl_test_cert/cert.pem
+[INFO|logger.py:332] 2018-11-02 14:22:39,094 > [IconRpcServerCli] [CONFIG.defaultSslKeyPath] > resources/ssl_test_cert/key.pem
+[INFO|logger.py:332] 2018-11-02 14:22:39,094 > [IconRpcServerCli] [CONFIG.defaultSslTrustCertPath] > resources/ssl_test_ca/cert.pem
+[INFO|logger.py:332] 2018-11-02 14:22:39,094 > [IconRpcServerCli] [CONFIG.ipLocal] > 127.0.0.1
+[INFO|logger.py:332] 2018-11-02 14:22:39,094 > [IconRpcServerCli] [CONFIG.grpcTimeout] > 30
+[INFO|logger.py:332] 2018-11-02 14:22:39,094 > [IconRpcServerCli] [CONFIG.grpcRetry] > 5
+[INFO|logger.py:332] 2018-11-02 14:22:39,094 > [IconRpcServerCli] [CONFIG.restAdditionalTimeout] > 30
+[INFO|logger.py:332] 2018-11-02 14:22:39,095 > [IconRpcServerCli] [CONFIG.scoreQueryTimeout] > 120
+[INFO|logger.py:332] 2018-11-02 14:22:39,095 > [IconRpcServerCli] [CONFIG.hostAddress] > 127.0.0.1
+[INFO|logger.py:332] 2018-11-02 14:22:39,095 > [IconRpcServerCli] [CONFIG.scoreRootPath] > ./.score
+[INFO|logger.py:332] 2018-11-02 14:22:39,095 > [IconRpcServerCli] [CONFIG.stateDbRootPath] > ./.statedb
+[INFO|logger.py:332] 2018-11-02 14:22:39,095 > [IconRpcServerCli] [CONFIG.service.fee] > False
+[INFO|logger.py:332] 2018-11-02 14:22:39,095 > [IconRpcServerCli] [CONFIG.service.audit] > False
+[INFO|logger.py:332] 2018-11-02 14:22:39,095 > [IconRpcServerCli] [CONFIG.service.deployerWhiteList] > False
+[INFO|logger.py:332] 2018-11-02 14:22:39,096 > [IconRpcServerCli] [CONFIG.genesis.nid] > 0x3
+[INFO|logger.py:332] 2018-11-02 14:22:39,096 > [IconRpcServerCli] [CONFIG.genesis.accounts] > [{'name': 'genesis', 'address': 'hx0000000000000000000000000000000000000000', 'balance': '0x2961fff8ca4a62327800000'}, {'name': 'fee_treasury', 'address': 'hx1000000000000000000000000000000000000000', 'balance': '0x0'}, {'name': 'test1', 'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb', 'balance': '0x2961fff8ca4a62327800000'}]
+[INFO|logger.py:332] 2018-11-02 14:22:39,096 > [IconRpcServerCli] [CONFIG.blockConfirmInterval] > 10
+[INFO|logger.py:332] 2018-11-02 14:22:39,096 > [IconRpcServerCli] [CONFIG.blockConfirmEmpty] > True
+[INFO|logger.py:332] 2018-11-02 14:22:39,096 > [IconRpcServerCli] [CONFIG.debug] > False
+[INFO|logger.py:332] 2018-11-02 14:22:39,096 > [IconRpcServerCli] [CONFIG.command] > start
+[INFO|logger.py:332] 2018-11-02 14:22:39,096 > [IconRpcServerCli] [CONFIG.config] > ./temp_conf.json
+[INFO|logger.py:332] 2018-11-02 14:22:39,096 > [IconRpcServerCli] [CONFIG.tbearsMode] > True
+[INFO|logger.py:332] 2018-11-02 14:22:39,097 > [IconRpcServerCli] ====================LOG CONFIG====================
+[INFO|logger.py:332] 2018-11-02 14:22:39,182 > [tbears_block_manager] ====================LOG CONFIG====================
+[INFO|logger.py:332] 2018-11-02 14:22:39,182 > [tbears_block_manager] [CONFIG.hostAddress] > 127.0.0.1
+[INFO|logger.py:332] 2018-11-02 14:22:39,183 > [tbears_block_manager] [CONFIG.port] > 9000
+[INFO|logger.py:332] 2018-11-02 14:22:39,183 > [tbears_block_manager] [CONFIG.scoreRootPath] > ./.score
+[INFO|logger.py:332] 2018-11-02 14:22:39,185 > [tbears_block_manager] [CONFIG.stateDbRootPath] > ./.statedb
+[INFO|logger.py:332] 2018-11-02 14:22:39,185 > [tbears_block_manager] [CONFIG.log.logger] > tbears
+[INFO|logger.py:332] 2018-11-02 14:22:39,185 > [tbears_block_manager] [CONFIG.log.level] > info
+[INFO|logger.py:332] 2018-11-02 14:22:39,186 > [tbears_block_manager] [CONFIG.log.filePath] > ./tbears.log
+[INFO|logger.py:332] 2018-11-02 14:22:39,186 > [tbears_block_manager] [CONFIG.log.colorLog] > True
+[INFO|logger.py:332] 2018-11-02 14:22:39,186 > [tbears_block_manager] [CONFIG.log.outputType] > file
+[INFO|logger.py:332] 2018-11-02 14:22:39,188 > [tbears_block_manager] [CONFIG.log.rotate.type] > bytes
+[INFO|logger.py:332] 2018-11-02 14:22:39,188 > [tbears_block_manager] [CONFIG.log.rotate.maxBytes] > 10485760
+[INFO|logger.py:332] 2018-11-02 14:22:39,190 > [tbears_block_manager] [CONFIG.log.rotate.backupCount] > 10
+[INFO|logger.py:332] 2018-11-02 14:22:39,190 > [tbears_block_manager] [CONFIG.service.fee] > False
+[INFO|logger.py:332] 2018-11-02 14:22:39,190 > [tbears_block_manager] [CONFIG.service.audit] > False
+[INFO|logger.py:332] 2018-11-02 14:22:39,191 > [tbears_block_manager] [CONFIG.service.deployerWhiteList] > False
+[INFO|logger.py:332] 2018-11-02 14:22:39,191 > [tbears_block_manager] [CONFIG.genesis.nid] > 0x3
+[INFO|logger.py:332] 2018-11-02 14:22:39,191 > [tbears_block_manager] [CONFIG.genesis.accounts] > [{'name': 'genesis', 'address': 'hx0000000000000000000000000000000000000000', 'balance': '0x2961fff8ca4a62327800000'}, {'name': 'fee_treasury', 'address': 'hx1000000000000000000000000000000000000000', 'balance': '0x0'}, {'name': 'test1', 'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb', 'balance': '0x2961fff8ca4a62327800000'}]
+[INFO|logger.py:332] 2018-11-02 14:22:39,191 > [tbears_block_manager] [CONFIG.channel] > loopchain_default
+[INFO|logger.py:332] 2018-11-02 14:22:39,191 > [tbears_block_manager] [CONFIG.amqpKey] > 7100
+[INFO|logger.py:332] 2018-11-02 14:22:39,192 > [tbears_block_manager] [CONFIG.amqpTarget] > 127.0.0.1
+[INFO|logger.py:332] 2018-11-02 14:22:39,192 > [tbears_block_manager] [CONFIG.blockConfirmInterval] > 10
+[INFO|logger.py:332] 2018-11-02 14:22:39,192 > [tbears_block_manager] [CONFIG.blockConfirmEmpty] > True
+[INFO|logger.py:332] 2018-11-02 14:22:39,192 > [tbears_block_manager] ====================LOG CONFIG====================
+[INFO|logger.py:332] 2018-11-02 14:22:39,206 > [tbears_block_manager] ==========tbears block_manager params==========
+[INFO|logger.py:332] 2018-11-02 14:22:39,207 > [tbears_block_manager] amqp_target  : 127.0.0.1
+[INFO|logger.py:332] 2018-11-02 14:22:39,207 > [tbears_block_manager] amqp_key  :  7100
+[INFO|logger.py:332] 2018-11-02 14:22:39,207 > [tbears_block_manager] queue_name  : Channel.loopchain_default.7100
+[INFO|logger.py:332] 2018-11-02 14:22:39,207 > [tbears_block_manager]             : IconScore.loopchain_default.7100
+[INFO|logger.py:332] 2018-11-02 14:22:39,207 > [tbears_block_manager] ==========tbears block_manager params==========
+[INFO|logger.py:332] 2018-11-02 14:22:39,260 > [IconInnerService] icon_score_hello
+[INFO|logger.py:332] 2018-11-02 14:22:39,264 > [IconInnerService] invoke request with {'transactions': [{'method': '', 'params': {'txHash': '685cf62751cef607271ed7190b6a707405c5b07ec0830156e748c0c2ea4a2cfe', 'timestamp': '0x579a7b952c778'}, 'genesisData': {'nid': '0x3', 'accounts': [{'name': 'genesis', 'address': 'hx0000000000000000000000000000000000000000', 'balance': '0x2961fff8ca4a62327800000'}, {'name': 'fee_treasury', 'address': 'hx1000000000000000000000000000000000000000', 'balance': '0x0'}, {'name': 'test1', 'address': 'hxe7af5fcfd8dfc67530a01a0e403882687528dfcb', 'balance': '0x2961fff8ca4a62327800000'}]}}], 'block': {'blockHeight': '0x0', 'blockHash': 'd306922df7eef45bcf7b3247f2487b33655e570edf3cefdf7c1987afbc4798cd', 'timestamp': '0x579a7b952c778'}}
+[INFO|logger.py:332] 2018-11-02 14:22:39,267 > [IconInnerService] invoke response with {'txResults': {'685cf62751cef607271ed7190b6a707405c5b07ec0830156e748c0c2ea4a2cfe': {'txHash': '685cf62751cef607271ed7190b6a707405c5b07ec0830156e748c0c2ea4a2cfe', 'blockHeight': '0x0', 'blockHash': 'd306922df7eef45bcf7b3247f2487b33655e570edf3cefdf7c1987afbc4798cd', 'txIndex': '0x0', 'stepUsed': '0x0', 'stepPrice': '0x0', 'cumulativeStepUsed': '0x0', 'status': '0x1'}}, 'stateRootHash': 'bca45882a67284e753546443b22611f827fc81b9b7c08ffce87378f9e765cad6'}
+[INFO|logger.py:332] 2018-11-02 14:22:39,273 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x0', 'blockHash': 'd306922df7eef45bcf7b3247f2487b33655e570edf3cefdf7c1987afbc4798cd'}
+[INFO|logger.py:332] 2018-11-02 14:22:39,274 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:22:39,277 > [tbears_block_manager] tbears block_manager service started!
+[INFO|logger.py:332] 2018-11-02 14:22:49,285 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x1', 'blockHash': '9d43dbf23b8625939dcdef9862af3e377c536afa717954fc3a1178e4c3488de3', 'prevBlockHash': 'd306922df7eef45bcf7b3247f2487b33655e570edf3cefdf7c1987afbc4798cd', 'timestamp': '0x579a7b9ebadee'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:22:49,287 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:22:49,290 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x2', 'blockHash': '9d43dbf23b8625939dcdef9862af3e377c536afa717954fc3a1178e4c3488de3'}
+[INFO|logger.py:332] 2018-11-02 14:22:49,290 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:22:59,286 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x2', 'blockHash': '283cd5ca42e6999055609b6b12149871a0f54fa1855fcbaab2ec89bff98ad8e4', 'prevBlockHash': '9d43dbf23b8625939dcdef9862af3e377c536afa717954fc3a1178e4c3488de3', 'timestamp': '0x579a7ba84479e'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:22:59,288 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:22:59,292 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x3', 'blockHash': '283cd5ca42e6999055609b6b12149871a0f54fa1855fcbaab2ec89bff98ad8e4'}
+[INFO|logger.py:332] 2018-11-02 14:22:59,293 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:23:09,288 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x3', 'blockHash': '31617a18011d831513d2f6989b0e31f3d444bbec2c1f15dcb67e0cd36f93ea17', 'prevBlockHash': '283cd5ca42e6999055609b6b12149871a0f54fa1855fcbaab2ec89bff98ad8e4', 'timestamp': '0x579a7bb1ce89c'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:23:09,290 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:23:09,294 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x4', 'blockHash': '31617a18011d831513d2f6989b0e31f3d444bbec2c1f15dcb67e0cd36f93ea17'}
+[INFO|logger.py:332] 2018-11-02 14:23:09,295 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:23:19,290 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x4', 'blockHash': 'c06a7c77fc67b139d30867cbb099f323339ef84d2e7568d1b3094c8f3e6e5c66', 'prevBlockHash': '31617a18011d831513d2f6989b0e31f3d444bbec2c1f15dcb67e0cd36f93ea17', 'timestamp': '0x579a7bbb58748'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:23:19,291 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:23:19,294 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x5', 'blockHash': 'c06a7c77fc67b139d30867cbb099f323339ef84d2e7568d1b3094c8f3e6e5c66'}
+[INFO|logger.py:332] 2018-11-02 14:23:19,294 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:23:29,291 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x5', 'blockHash': '10437340be55124cf4dfb58bc59ca7cb121be07e7069a73b5e9cc718ac08599d', 'prevBlockHash': 'c06a7c77fc67b139d30867cbb099f323339ef84d2e7568d1b3094c8f3e6e5c66', 'timestamp': '0x579a7bc4e2121'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:23:29,293 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:23:29,295 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x6', 'blockHash': '10437340be55124cf4dfb58bc59ca7cb121be07e7069a73b5e9cc718ac08599d'}
+[INFO|logger.py:332] 2018-11-02 14:23:29,296 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:23:39,292 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x6', 'blockHash': 'e21f8ccd1bfe873f03a90e4d3f2b4694e579dfec550c5d23076c28994fe95df8', 'prevBlockHash': '10437340be55124cf4dfb58bc59ca7cb121be07e7069a73b5e9cc718ac08599d', 'timestamp': '0x579a7bce6bf18'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:23:39,293 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:23:39,296 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x7', 'blockHash': 'e21f8ccd1bfe873f03a90e4d3f2b4694e579dfec550c5d23076c28994fe95df8'}
+[INFO|logger.py:332] 2018-11-02 14:23:39,296 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:23:48,302 > [IconService_dispatch_v3] rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_getTotalSupply', 'id': 1}
+[INFO|logger.py:332] 2018-11-02 14:23:48,302 > [LOG] 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_getTotalSupply', 'id': 1} on http://127.0.0.1:9000/api/v3
+[INFO|logger.py:332] 2018-11-02 14:23:48,307 > [IconInnerService] query request with {'method': 'icx_getTotalSupply', 'params': {'context': {'url': 'http://127.0.0.1:9000/api/v3', 'channel': 'loopchain_default'}}}
+[INFO|logger.py:332] 2018-11-02 14:23:48,308 > [IconInnerService] query response with 0x52c3fff19494c464f000000
+[INFO|logger.py:332] 2018-11-02 14:23:48,310 > [IconService_dispatch_v3] rest_server_v3 with response {"jsonrpc": "2.0", "result": "0x52c3fff19494c464f000000", "id": 1}
+[INFO|logger.py:332] 2018-11-02 14:23:49,296 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x7', 'blockHash': 'e2ecc0ccfaaa54a15f8824a9601e73cfd2d096e2c95e8f738de1cebb7b461830', 'prevBlockHash': 'e21f8ccd1bfe873f03a90e4d3f2b4694e579dfec550c5d23076c28994fe95df8', 'timestamp': '0x579a7bd7f5ff2'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:23:49,298 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:23:49,301 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x8', 'blockHash': 'e2ecc0ccfaaa54a15f8824a9601e73cfd2d096e2c95e8f738de1cebb7b461830'}
+[INFO|logger.py:332] 2018-11-02 14:23:49,302 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:23:56,516 > [IconService_dispatch_v3] rest_server_v3 request with {'jsonrpc': '2.0', 'method': 'icx_getLastBlock', 'id': 1}
+[INFO|logger.py:332] 2018-11-02 14:23:56,517 > [LOG] 127.0.0.1 requested {'jsonrpc': '2.0', 'method': 'icx_getLastBlock', 'id': 1} on http://127.0.0.1:9000/api/v3
+[INFO|logger.py:332] 2018-11-02 14:23:56,524 > [IconService_dispatch_v3] rest_server_v3 with response {"jsonrpc": "2.0", "result": {"version": "tbears", "prev_block_hash": "e21f8ccd1bfe873f03a90e4d3f2b4694e579dfec550c5d23076c28994fe95df8", "merkle_tree_root_hash": "tbears_block_manager_does_not_support_block_merkle_tree", "time_stamp": 1541136229294066, "confirmed_transaction_list": [], "block_hash": "e2ecc0ccfaaa54a15f8824a9601e73cfd2d096e2c95e8f738de1cebb7b461830", "height": 7, "peer_id": "50b2b54c-de5f-11e8-a22e-406c8f511432", "signature": "tbears_block_manager_does_not_support_block_signature"}, "id": 1}
+[INFO|logger.py:332] 2018-11-02 14:23:59,300 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x8', 'blockHash': '4e479abb848c9e42f7adef7e51dd27cb8c97209138fcb51f44cbaee318a1f8f1', 'prevBlockHash': 'e2ecc0ccfaaa54a15f8824a9601e73cfd2d096e2c95e8f738de1cebb7b461830', 'timestamp': '0x579a7be1805a0'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:23:59,302 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:23:59,305 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x9', 'blockHash': '4e479abb848c9e42f7adef7e51dd27cb8c97209138fcb51f44cbaee318a1f8f1'}
+[INFO|logger.py:332] 2018-11-02 14:23:59,305 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:24:09,301 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x9', 'blockHash': '343c9784dc4b8f0ba0928c6fdb419bfac1e6899809e7806f934a69caf08f6a69', 'prevBlockHash': '4e479abb848c9e42f7adef7e51dd27cb8c97209138fcb51f44cbaee318a1f8f1', 'timestamp': '0x579a7beb0a302'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:24:09,302 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:24:09,305 > [IconInnerService] write_precommit_state request with {'blockHeight': '0xa', 'blockHash': '343c9784dc4b8f0ba0928c6fdb419bfac1e6899809e7806f934a69caf08f6a69'}
+[INFO|logger.py:332] 2018-11-02 14:24:09,305 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:24:19,302 > [IconInnerService] invoke request with {'block': {'blockHeight': '0xa', 'blockHash': 'f7781c883e09932a1b84003ca34b9142475aaa4f3e0f826810a314406067e5d8', 'prevBlockHash': '343c9784dc4b8f0ba0928c6fdb419bfac1e6899809e7806f934a69caf08f6a69', 'timestamp': '0x579a7bf493c2b'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:24:19,304 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:24:19,306 > [IconInnerService] write_precommit_state request with {'blockHeight': '0xb', 'blockHash': 'f7781c883e09932a1b84003ca34b9142475aaa4f3e0f826810a314406067e5d8'}
+[INFO|logger.py:332] 2018-11-02 14:24:19,307 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:24:29,305 > [IconInnerService] invoke request with {'block': {'blockHeight': '0xb', 'blockHash': '6954238fe9af33c1d9a24388699eb038e87bf4838c8c0f0475a70a5441b0f6b9', 'prevBlockHash': 'f7781c883e09932a1b84003ca34b9142475aaa4f3e0f826810a314406067e5d8', 'timestamp': '0x579a7bfe1dec5'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:24:29,307 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:24:29,309 > [IconInnerService] write_precommit_state request with {'blockHeight': '0xc', 'blockHash': '6954238fe9af33c1d9a24388699eb038e87bf4838c8c0f0475a70a5441b0f6b9'}
+[INFO|logger.py:332] 2018-11-02 14:24:29,310 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:24:39,310 > [IconInnerService] invoke request with {'block': {'blockHeight': '0xc', 'blockHash': 'a134182a786d438be0ebc55b3639c0d21a22918b976917531b86fe6c454e15be', 'prevBlockHash': '6954238fe9af33c1d9a24388699eb038e87bf4838c8c0f0475a70a5441b0f6b9', 'timestamp': '0x579a7c07a8669'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:24:39,311 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:24:39,314 > [IconInnerService] write_precommit_state request with {'blockHeight': '0xd', 'blockHash': 'a134182a786d438be0ebc55b3639c0d21a22918b976917531b86fe6c454e15be'}
+[INFO|logger.py:332] 2018-11-02 14:24:39,315 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:24:49,309 > [IconInnerService] invoke request with {'block': {'blockHeight': '0xd', 'blockHash': 'c10aecded2e8db23088cf7262a4cf2da787eb0c05e98792db551d35c2cdeae69', 'prevBlockHash': 'a134182a786d438be0ebc55b3639c0d21a22918b976917531b86fe6c454e15be', 'timestamp': '0x579a7c1131e61'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:24:49,311 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:24:49,314 > [IconInnerService] write_precommit_state request with {'blockHeight': '0xe', 'blockHash': 'c10aecded2e8db23088cf7262a4cf2da787eb0c05e98792db551d35c2cdeae69'}
+[INFO|logger.py:332] 2018-11-02 14:24:49,314 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:24:59,310 > [IconInnerService] invoke request with {'block': {'blockHeight': '0xe', 'blockHash': 'dd7897dd97ce5de1ccc87bda034dc99631e2503838f2065a7a53eedbac7b73cb', 'prevBlockHash': 'c10aecded2e8db23088cf7262a4cf2da787eb0c05e98792db551d35c2cdeae69', 'timestamp': '0x579a7c1abb74c'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:24:59,311 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:24:59,314 > [IconInnerService] write_precommit_state request with {'blockHeight': '0xf', 'blockHash': 'dd7897dd97ce5de1ccc87bda034dc99631e2503838f2065a7a53eedbac7b73cb'}
+[INFO|logger.py:332] 2018-11-02 14:24:59,315 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:25:09,313 > [IconInnerService] invoke request with {'block': {'blockHeight': '0xf', 'blockHash': '089e1109cfcaca22d2845bba1026bf61c3c9528e1f7cd348553c9444b04ba39a', 'prevBlockHash': 'dd7897dd97ce5de1ccc87bda034dc99631e2503838f2065a7a53eedbac7b73cb', 'timestamp': '0x579a7c24453a9'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:25:09,314 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:25:09,318 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x10', 'blockHash': '089e1109cfcaca22d2845bba1026bf61c3c9528e1f7cd348553c9444b04ba39a'}
+[INFO|logger.py:332] 2018-11-02 14:25:09,319 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:25:19,312 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x10', 'blockHash': '0b12740a12831ab8d5b4dae8ff21110e13ba71c6b281ce3a14cccfc3736efb4d', 'prevBlockHash': '089e1109cfcaca22d2845bba1026bf61c3c9528e1f7cd348553c9444b04ba39a', 'timestamp': '0x579a7c2dcea67'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:25:19,313 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:25:19,315 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x11', 'blockHash': '0b12740a12831ab8d5b4dae8ff21110e13ba71c6b281ce3a14cccfc3736efb4d'}
+[INFO|logger.py:332] 2018-11-02 14:25:19,315 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:25:29,313 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x11', 'blockHash': '5ef20dfdc950db14636174a0720f550b2ef2f5d9e3a773a076461f52740585bc', 'prevBlockHash': '0b12740a12831ab8d5b4dae8ff21110e13ba71c6b281ce3a14cccfc3736efb4d', 'timestamp': '0x579a7c37584b5'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:25:29,314 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:25:29,316 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x12', 'blockHash': '5ef20dfdc950db14636174a0720f550b2ef2f5d9e3a773a076461f52740585bc'}
+[INFO|logger.py:332] 2018-11-02 14:25:29,317 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:25:39,317 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x12', 'blockHash': '50ac89c00f221a48d2c6214ef94156ce94419877d630b2c7a13458cb6984f327', 'prevBlockHash': '5ef20dfdc950db14636174a0720f550b2ef2f5d9e3a773a076461f52740585bc', 'timestamp': '0x579a7c40e2d5d'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:25:39,318 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:25:39,321 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x13', 'blockHash': '50ac89c00f221a48d2c6214ef94156ce94419877d630b2c7a13458cb6984f327'}
+[INFO|logger.py:332] 2018-11-02 14:25:39,322 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:25:49,320 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x13', 'blockHash': '95cfed4a2c46dd665bb075fdc76ffd9ec73be5f1dcc946d3d78e23c51bd981a8', 'prevBlockHash': '50ac89c00f221a48d2c6214ef94156ce94419877d630b2c7a13458cb6984f327', 'timestamp': '0x579a7c4a6cebb'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:25:49,322 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:25:49,324 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x14', 'blockHash': '95cfed4a2c46dd665bb075fdc76ffd9ec73be5f1dcc946d3d78e23c51bd981a8'}
+[INFO|logger.py:332] 2018-11-02 14:25:49,325 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:25:59,324 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x14', 'blockHash': '8943ba6f1c14202332cebfc12c35bcd7695dd50cb17738db682d80c7e150c197', 'prevBlockHash': '95cfed4a2c46dd665bb075fdc76ffd9ec73be5f1dcc946d3d78e23c51bd981a8', 'timestamp': '0x579a7c53f749f'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:25:59,325 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:25:59,327 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x15', 'blockHash': '8943ba6f1c14202332cebfc12c35bcd7695dd50cb17738db682d80c7e150c197'}
+[INFO|logger.py:332] 2018-11-02 14:25:59,328 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:26:09,328 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x15', 'blockHash': '4af7aa02d3fc632872117d30dcec449b7c224ad54cbf3331ee5d298f73ff2f17', 'prevBlockHash': '8943ba6f1c14202332cebfc12c35bcd7695dd50cb17738db682d80c7e150c197', 'timestamp': '0x579a7c5d81bbc'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:26:09,330 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:26:09,333 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x16', 'blockHash': '4af7aa02d3fc632872117d30dcec449b7c224ad54cbf3331ee5d298f73ff2f17'}
+[INFO|logger.py:332] 2018-11-02 14:26:09,334 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:26:19,333 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x16', 'blockHash': 'b2a55eb7996c6866d346dca22bc80b16224cc218ca9c4c32715aca4b8aafd612', 'prevBlockHash': '4af7aa02d3fc632872117d30dcec449b7c224ad54cbf3331ee5d298f73ff2f17', 'timestamp': '0x579a7c670c324'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:26:19,334 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:26:19,336 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x17', 'blockHash': 'b2a55eb7996c6866d346dca22bc80b16224cc218ca9c4c32715aca4b8aafd612'}
+[INFO|logger.py:332] 2018-11-02 14:26:19,337 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:26:29,337 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x17', 'blockHash': '4652c7d095a3e843027c50965498c2bec3e0eee1ba1d229a7883fa1707386708', 'prevBlockHash': 'b2a55eb7996c6866d346dca22bc80b16224cc218ca9c4c32715aca4b8aafd612', 'timestamp': '0x579a7c7096b06'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:26:29,339 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:26:29,341 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x18', 'blockHash': '4652c7d095a3e843027c50965498c2bec3e0eee1ba1d229a7883fa1707386708'}
+[INFO|logger.py:332] 2018-11-02 14:26:29,341 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:26:39,339 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x18', 'blockHash': 'c4dc2f0f4733120ff449b6104ebf78678b14a81c5b81328f6254196682a9b537', 'prevBlockHash': '4652c7d095a3e843027c50965498c2bec3e0eee1ba1d229a7883fa1707386708', 'timestamp': '0x579a7c7a20908'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:26:39,340 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:26:39,343 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x19', 'blockHash': 'c4dc2f0f4733120ff449b6104ebf78678b14a81c5b81328f6254196682a9b537'}
+[INFO|logger.py:332] 2018-11-02 14:26:39,343 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:26:49,342 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x19', 'blockHash': '98803c451a31e8c5c5ff8e5b407257ad0f4eb70d08d708457c463d4850e9462b', 'prevBlockHash': 'c4dc2f0f4733120ff449b6104ebf78678b14a81c5b81328f6254196682a9b537', 'timestamp': '0x579a7c83aab9c'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:26:49,344 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:26:49,346 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x1a', 'blockHash': '98803c451a31e8c5c5ff8e5b407257ad0f4eb70d08d708457c463d4850e9462b'}
+[INFO|logger.py:332] 2018-11-02 14:26:49,347 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:26:59,344 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x1a', 'blockHash': '080006f381b03a98860fafbaaf06ea31556b011bcc1b62a3f2ea7b22cb0a8797', 'prevBlockHash': '98803c451a31e8c5c5ff8e5b407257ad0f4eb70d08d708457c463d4850e9462b', 'timestamp': '0x579a7c8d34988'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:26:59,345 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:26:59,348 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x1b', 'blockHash': '080006f381b03a98860fafbaaf06ea31556b011bcc1b62a3f2ea7b22cb0a8797'}
+[INFO|logger.py:332] 2018-11-02 14:26:59,348 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:27:09,344 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x1b', 'blockHash': 'a001f80376550912dbd756dcdc296077f7636b15df0634e57bd0ce95d6aadf56', 'prevBlockHash': '080006f381b03a98860fafbaaf06ea31556b011bcc1b62a3f2ea7b22cb0a8797', 'timestamp': '0x579a7c96be0a0'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:27:09,345 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:27:09,348 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x1c', 'blockHash': 'a001f80376550912dbd756dcdc296077f7636b15df0634e57bd0ce95d6aadf56'}
+[INFO|logger.py:332] 2018-11-02 14:27:09,348 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:27:19,349 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x1c', 'blockHash': '4eda02659762ffb435e068e7e6177a8aa8a8568f02424127af2ccdecc5cfd3dc', 'prevBlockHash': 'a001f80376550912dbd756dcdc296077f7636b15df0634e57bd0ce95d6aadf56', 'timestamp': '0x579a7ca048916'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:27:19,350 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:27:19,353 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x1d', 'blockHash': '4eda02659762ffb435e068e7e6177a8aa8a8568f02424127af2ccdecc5cfd3dc'}
+[INFO|logger.py:332] 2018-11-02 14:27:19,353 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:27:29,351 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x1d', 'blockHash': 'af824279284d3ccc3de1b36ceda26aae195fb1c78c0fa09ed22fe64fc94e65cd', 'prevBlockHash': '4eda02659762ffb435e068e7e6177a8aa8a8568f02424127af2ccdecc5cfd3dc', 'timestamp': '0x579a7ca9d2792'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:27:29,353 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:27:29,355 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x1e', 'blockHash': 'af824279284d3ccc3de1b36ceda26aae195fb1c78c0fa09ed22fe64fc94e65cd'}
+[INFO|logger.py:332] 2018-11-02 14:27:29,356 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:27:39,353 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x1e', 'blockHash': 'f1bad84f2a10e0c09bf9e3a30b011f6b5fcab56c3a4e49269197c87a588f8483', 'prevBlockHash': 'af824279284d3ccc3de1b36ceda26aae195fb1c78c0fa09ed22fe64fc94e65cd', 'timestamp': '0x579a7cb35c7f4'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:27:39,355 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:27:39,357 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x1f', 'blockHash': 'f1bad84f2a10e0c09bf9e3a30b011f6b5fcab56c3a4e49269197c87a588f8483'}
+[INFO|logger.py:332] 2018-11-02 14:27:39,358 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:27:49,355 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x1f', 'blockHash': 'f2c4f92384b5ab7fd3e10d7289f188bf4675620e97d8702512532adfc842e242', 'prevBlockHash': 'f1bad84f2a10e0c09bf9e3a30b011f6b5fcab56c3a4e49269197c87a588f8483', 'timestamp': '0x579a7cbce64db'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:27:49,357 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:27:49,360 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x20', 'blockHash': 'f2c4f92384b5ab7fd3e10d7289f188bf4675620e97d8702512532adfc842e242'}
+[INFO|logger.py:332] 2018-11-02 14:27:49,360 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:27:59,358 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x20', 'blockHash': '927a7535f39eaecc7802914f4f8e7e7ec7d4833278fbf2cd2736e4918d65a6dc', 'prevBlockHash': 'f2c4f92384b5ab7fd3e10d7289f188bf4675620e97d8702512532adfc842e242', 'timestamp': '0x579a7cc670866'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:27:59,359 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:27:59,362 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x21', 'blockHash': '927a7535f39eaecc7802914f4f8e7e7ec7d4833278fbf2cd2736e4918d65a6dc'}
+[INFO|logger.py:332] 2018-11-02 14:27:59,362 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:28:09,364 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x21', 'blockHash': '4c66e6fb28642bf49cdde1231441d18e8eb4d47b32fab05ed7ae136fed122783', 'prevBlockHash': '927a7535f39eaecc7802914f4f8e7e7ec7d4833278fbf2cd2736e4918d65a6dc', 'timestamp': '0x579a7ccffb2fc'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:28:09,366 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:28:09,369 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x22', 'blockHash': '4c66e6fb28642bf49cdde1231441d18e8eb4d47b32fab05ed7ae136fed122783'}
+[INFO|logger.py:332] 2018-11-02 14:28:09,369 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:28:19,365 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x22', 'blockHash': 'e895d321b39506fce43f02221afe1fed6b083d2d23378331ff49798285856c94', 'prevBlockHash': '4c66e6fb28642bf49cdde1231441d18e8eb4d47b32fab05ed7ae136fed122783', 'timestamp': '0x579a7cd984d30'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:28:19,366 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:28:19,369 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x23', 'blockHash': 'e895d321b39506fce43f02221afe1fed6b083d2d23378331ff49798285856c94'}
+[INFO|logger.py:332] 2018-11-02 14:28:19,369 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:28:29,367 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x23', 'blockHash': '1ac82225119834468130a05549096479bc72f2e81126e700ab01a4655002f39f', 'prevBlockHash': 'e895d321b39506fce43f02221afe1fed6b083d2d23378331ff49798285856c94', 'timestamp': '0x579a7ce30efa3'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:28:29,369 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:28:29,372 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x24', 'blockHash': '1ac82225119834468130a05549096479bc72f2e81126e700ab01a4655002f39f'}
+[INFO|logger.py:332] 2018-11-02 14:28:29,372 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:28:39,371 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x24', 'blockHash': 'aeb7c250989263bddc08f4e54702d19fa88c9cd11f980ca0710debb48df04861', 'prevBlockHash': '1ac82225119834468130a05549096479bc72f2e81126e700ab01a4655002f39f', 'timestamp': '0x579a7cec99384'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:28:39,373 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:28:39,376 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x25', 'blockHash': 'aeb7c250989263bddc08f4e54702d19fa88c9cd11f980ca0710debb48df04861'}
+[INFO|logger.py:332] 2018-11-02 14:28:39,376 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:28:49,371 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x25', 'blockHash': '9cb5fc15f53ad5a6c6d42e700e9ac972fffe1ab8580ea6f35e093061445b422f', 'prevBlockHash': 'aeb7c250989263bddc08f4e54702d19fa88c9cd11f980ca0710debb48df04861', 'timestamp': '0x579a7cf622ae3'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:28:49,372 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:28:49,375 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x26', 'blockHash': '9cb5fc15f53ad5a6c6d42e700e9ac972fffe1ab8580ea6f35e093061445b422f'}
+[INFO|logger.py:332] 2018-11-02 14:28:49,376 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:28:59,372 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x26', 'blockHash': '55cbd492f28a0bf8d1e0e676a85de7e4304ee87d0e538834b191f10d5e96b14a', 'prevBlockHash': '9cb5fc15f53ad5a6c6d42e700e9ac972fffe1ab8580ea6f35e093061445b422f', 'timestamp': '0x579a7cffac795'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:28:59,373 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:28:59,376 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x27', 'blockHash': '55cbd492f28a0bf8d1e0e676a85de7e4304ee87d0e538834b191f10d5e96b14a'}
+[INFO|logger.py:332] 2018-11-02 14:28:59,376 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:29:09,377 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x27', 'blockHash': '774d1101da13b7756516c9bd48ff2f92d833a043897b9260e52da1b1d31c3d3f', 'prevBlockHash': '55cbd492f28a0bf8d1e0e676a85de7e4304ee87d0e538834b191f10d5e96b14a', 'timestamp': '0x579a7d093711c'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:29:09,379 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:29:09,381 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x28', 'blockHash': '774d1101da13b7756516c9bd48ff2f92d833a043897b9260e52da1b1d31c3d3f'}
+[INFO|logger.py:332] 2018-11-02 14:29:09,382 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:29:19,380 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x28', 'blockHash': 'd9c5ac1653dae01a211a9316ccddcd0a8a720300b85fcfb1617bf0d0d87cb295', 'prevBlockHash': '774d1101da13b7756516c9bd48ff2f92d833a043897b9260e52da1b1d31c3d3f', 'timestamp': '0x579a7d12c112e'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:29:19,382 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:29:19,385 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x29', 'blockHash': 'd9c5ac1653dae01a211a9316ccddcd0a8a720300b85fcfb1617bf0d0d87cb295'}
+[INFO|logger.py:332] 2018-11-02 14:29:19,386 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:29:29,383 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x29', 'blockHash': '1841fe4700a7fbc79f010abbefc34a8ee0873482d4d48d4fdfb05c967353661a', 'prevBlockHash': 'd9c5ac1653dae01a211a9316ccddcd0a8a720300b85fcfb1617bf0d0d87cb295', 'timestamp': '0x579a7d1c4b338'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:29:29,385 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:29:29,387 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x2a', 'blockHash': '1841fe4700a7fbc79f010abbefc34a8ee0873482d4d48d4fdfb05c967353661a'}
+[INFO|logger.py:332] 2018-11-02 14:29:29,388 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:29:39,386 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x2a', 'blockHash': '0746f78889313bb339cc096e39f96bdc600e38459c8fed78aa99f2f21526f3fb', 'prevBlockHash': '1841fe4700a7fbc79f010abbefc34a8ee0873482d4d48d4fdfb05c967353661a', 'timestamp': '0x579a7d25d5641'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:29:39,388 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:29:39,392 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x2b', 'blockHash': '0746f78889313bb339cc096e39f96bdc600e38459c8fed78aa99f2f21526f3fb'}
+[INFO|logger.py:332] 2018-11-02 14:29:39,393 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:29:49,390 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x2b', 'blockHash': '35073fad3fe5afe428a6efa0297f90ca300bab6777d429a33879f5682944be06', 'prevBlockHash': '0746f78889313bb339cc096e39f96bdc600e38459c8fed78aa99f2f21526f3fb', 'timestamp': '0x579a7d2f5f867'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:29:49,392 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:29:49,396 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x2c', 'blockHash': '35073fad3fe5afe428a6efa0297f90ca300bab6777d429a33879f5682944be06'}
+[INFO|logger.py:332] 2018-11-02 14:29:49,397 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:29:59,393 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x2c', 'blockHash': '54cb318e3551c4832f5247aa7895faccd371d7ce4de535ee853cf5f15c349bd7', 'prevBlockHash': '35073fad3fe5afe428a6efa0297f90ca300bab6777d429a33879f5682944be06', 'timestamp': '0x579a7d38e9d26'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:29:59,395 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:29:59,399 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x2d', 'blockHash': '54cb318e3551c4832f5247aa7895faccd371d7ce4de535ee853cf5f15c349bd7'}
+[INFO|logger.py:332] 2018-11-02 14:29:59,399 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:30:09,396 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x2d', 'blockHash': '0c8f07ce8714119bbcdb0b2ab441af54bdf0fcf8550fbf0d4e8acfae65098391', 'prevBlockHash': '54cb318e3551c4832f5247aa7895faccd371d7ce4de535ee853cf5f15c349bd7', 'timestamp': '0x579a7d4273d63'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:30:09,398 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:30:09,401 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x2e', 'blockHash': '0c8f07ce8714119bbcdb0b2ab441af54bdf0fcf8550fbf0d4e8acfae65098391'}
+[INFO|logger.py:332] 2018-11-02 14:30:09,401 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:30:19,399 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x2e', 'blockHash': 'fe5ac270ade5ef8b119a1fb74a1c045845e93b22a7928d9720eeced2895d6145', 'prevBlockHash': '0c8f07ce8714119bbcdb0b2ab441af54bdf0fcf8550fbf0d4e8acfae65098391', 'timestamp': '0x579a7d4bfe09f'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:30:19,400 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:30:19,403 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x2f', 'blockHash': 'fe5ac270ade5ef8b119a1fb74a1c045845e93b22a7928d9720eeced2895d6145'}
+[INFO|logger.py:332] 2018-11-02 14:30:19,403 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:30:29,401 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x2f', 'blockHash': 'c73c34807af00588db6e4fdd3004ccaef1859bd4b4f94bfebc8f4065f0125ab4', 'prevBlockHash': 'fe5ac270ade5ef8b119a1fb74a1c045845e93b22a7928d9720eeced2895d6145', 'timestamp': '0x579a7d558826d'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:30:29,403 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:30:29,407 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x30', 'blockHash': 'c73c34807af00588db6e4fdd3004ccaef1859bd4b4f94bfebc8f4065f0125ab4'}
+[INFO|logger.py:332] 2018-11-02 14:30:29,408 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:30:39,401 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x30', 'blockHash': '3123e12a734540152089dfa6c7c3bd0fa076702f04e7bd452b3f33e74d5068b3', 'prevBlockHash': 'c73c34807af00588db6e4fdd3004ccaef1859bd4b4f94bfebc8f4065f0125ab4', 'timestamp': '0x579a7d5f11906'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:30:39,402 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:30:39,405 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x31', 'blockHash': '3123e12a734540152089dfa6c7c3bd0fa076702f04e7bd452b3f33e74d5068b3'}
+[INFO|logger.py:332] 2018-11-02 14:30:39,405 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:30:49,403 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x31', 'blockHash': 'fa72ca6c833a1441ceda22445fda0484d5d40c823a48bc7eca4e1c66b6a211e8', 'prevBlockHash': '3123e12a734540152089dfa6c7c3bd0fa076702f04e7bd452b3f33e74d5068b3', 'timestamp': '0x579a7d689b63a'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:30:49,404 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:30:49,408 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x32', 'blockHash': 'fa72ca6c833a1441ceda22445fda0484d5d40c823a48bc7eca4e1c66b6a211e8'}
+[INFO|logger.py:332] 2018-11-02 14:30:49,408 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:30:59,404 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x32', 'blockHash': '156ad17b5f7732dc37ec076a6ee5500a22a922c251eb5f3b1ac9bd897794ab1b', 'prevBlockHash': 'fa72ca6c833a1441ceda22445fda0484d5d40c823a48bc7eca4e1c66b6a211e8', 'timestamp': '0x579a7d7225013'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:30:59,405 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:30:59,408 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x33', 'blockHash': '156ad17b5f7732dc37ec076a6ee5500a22a922c251eb5f3b1ac9bd897794ab1b'}
+[INFO|logger.py:332] 2018-11-02 14:30:59,409 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:31:09,407 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x33', 'blockHash': 'cecc0bfcf938a2eccd76e8c199178e5969e74b8bc9d4eeb86ca5e0b2e5f982f7', 'prevBlockHash': '156ad17b5f7732dc37ec076a6ee5500a22a922c251eb5f3b1ac9bd897794ab1b', 'timestamp': '0x579a7d7baf1af'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:31:09,408 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:31:09,411 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x34', 'blockHash': 'cecc0bfcf938a2eccd76e8c199178e5969e74b8bc9d4eeb86ca5e0b2e5f982f7'}
+[INFO|logger.py:332] 2018-11-02 14:31:09,412 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:31:19,410 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x34', 'blockHash': '6e6a415c69108591561bccc966a6bc72eb0879f82a6654346841724ad99a5113', 'prevBlockHash': 'cecc0bfcf938a2eccd76e8c199178e5969e74b8bc9d4eeb86ca5e0b2e5f982f7', 'timestamp': '0x579a7d853948a'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:31:19,412 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:31:19,415 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x35', 'blockHash': '6e6a415c69108591561bccc966a6bc72eb0879f82a6654346841724ad99a5113'}
+[INFO|logger.py:332] 2018-11-02 14:31:19,416 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:31:29,414 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x35', 'blockHash': '9cf12fdd8d7735958d1258c2c7e1cda653c64167a2ff4a1675a7cf3c3043e925', 'prevBlockHash': '6e6a415c69108591561bccc966a6bc72eb0879f82a6654346841724ad99a5113', 'timestamp': '0x579a7d8ec37fd'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:31:29,415 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:31:29,418 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x36', 'blockHash': '9cf12fdd8d7735958d1258c2c7e1cda653c64167a2ff4a1675a7cf3c3043e925'}
+[INFO|logger.py:332] 2018-11-02 14:31:29,418 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:31:39,417 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x36', 'blockHash': 'da07d62807f403abc3bac9f6a7de526934a47672e1c951d120f24d5916486c8b', 'prevBlockHash': '9cf12fdd8d7735958d1258c2c7e1cda653c64167a2ff4a1675a7cf3c3043e925', 'timestamp': '0x579a7d984da8d'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:31:39,419 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:31:39,423 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x37', 'blockHash': 'da07d62807f403abc3bac9f6a7de526934a47672e1c951d120f24d5916486c8b'}
+[INFO|logger.py:332] 2018-11-02 14:31:39,423 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:31:49,419 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x37', 'blockHash': '01400f47862159c86ec6cdb681be3be9af4f655b60c53e6e618b96910f89c379', 'prevBlockHash': 'da07d62807f403abc3bac9f6a7de526934a47672e1c951d120f24d5916486c8b', 'timestamp': '0x579a7da1d7810'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:31:49,420 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:31:49,423 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x38', 'blockHash': '01400f47862159c86ec6cdb681be3be9af4f655b60c53e6e618b96910f89c379'}
+[INFO|logger.py:332] 2018-11-02 14:31:49,423 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:31:59,422 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x38', 'blockHash': '60adfdabd7d1ed784f6982ba688861888602db8b5cfe08f1fb88f3985a155364', 'prevBlockHash': '01400f47862159c86ec6cdb681be3be9af4f655b60c53e6e618b96910f89c379', 'timestamp': '0x579a7dab61b64'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:31:59,423 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:31:59,426 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x39', 'blockHash': '60adfdabd7d1ed784f6982ba688861888602db8b5cfe08f1fb88f3985a155364'}
+[INFO|logger.py:332] 2018-11-02 14:31:59,427 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:32:09,423 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x39', 'blockHash': 'af52949a9bbd24635c963885d5120b61b59dc939b42a221f10770097c48ad69c', 'prevBlockHash': '60adfdabd7d1ed784f6982ba688861888602db8b5cfe08f1fb88f3985a155364', 'timestamp': '0x579a7db4eb843'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:32:09,424 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:32:09,427 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x3a', 'blockHash': 'af52949a9bbd24635c963885d5120b61b59dc939b42a221f10770097c48ad69c'}
+[INFO|logger.py:332] 2018-11-02 14:32:09,428 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:32:19,424 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x3a', 'blockHash': 'd239d276df2796dca9499b9ca8d271a58284fe17be22ba86f2cd9b5196bce7e5', 'prevBlockHash': 'af52949a9bbd24635c963885d5120b61b59dc939b42a221f10770097c48ad69c', 'timestamp': '0x579a7dbe75128'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:32:19,425 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:32:19,428 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x3b', 'blockHash': 'd239d276df2796dca9499b9ca8d271a58284fe17be22ba86f2cd9b5196bce7e5'}
+[INFO|logger.py:332] 2018-11-02 14:32:19,428 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:32:29,428 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x3b', 'blockHash': 'e2b07213a8019638d8a492a32eded55b77df3d41c7f9b33ba1d8394659886c73', 'prevBlockHash': 'd239d276df2796dca9499b9ca8d271a58284fe17be22ba86f2cd9b5196bce7e5', 'timestamp': '0x579a7dc7ff432'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:32:29,429 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:32:29,432 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x3c', 'blockHash': 'e2b07213a8019638d8a492a32eded55b77df3d41c7f9b33ba1d8394659886c73'}
+[INFO|logger.py:332] 2018-11-02 14:32:29,433 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:32:39,430 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x3c', 'blockHash': '2922de198811a4296cde3d2729e4711e3e72465ec3fb39fe1a559f30467f3919', 'prevBlockHash': 'e2b07213a8019638d8a492a32eded55b77df3d41c7f9b33ba1d8394659886c73', 'timestamp': '0x579a7dd1896a8'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:32:39,431 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:32:39,433 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x3d', 'blockHash': '2922de198811a4296cde3d2729e4711e3e72465ec3fb39fe1a559f30467f3919'}
+[INFO|logger.py:332] 2018-11-02 14:32:39,433 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:32:49,433 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x3d', 'blockHash': 'afe5817432cf0684795923c3ea55cc9013921f729f9a204724ef1eea8993c450', 'prevBlockHash': '2922de198811a4296cde3d2729e4711e3e72465ec3fb39fe1a559f30467f3919', 'timestamp': '0x579a7ddb137ef'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:32:49,435 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:32:49,438 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x3e', 'blockHash': 'afe5817432cf0684795923c3ea55cc9013921f729f9a204724ef1eea8993c450'}
+[INFO|logger.py:332] 2018-11-02 14:32:49,439 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:32:59,435 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x3e', 'blockHash': '23722b1921b0db7c8ac654db2eb21556794400ee438617e7331e0431b345d8e0', 'prevBlockHash': 'afe5817432cf0684795923c3ea55cc9013921f729f9a204724ef1eea8993c450', 'timestamp': '0x579a7de49d484'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:32:59,436 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:32:59,438 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x3f', 'blockHash': '23722b1921b0db7c8ac654db2eb21556794400ee438617e7331e0431b345d8e0'}
+[INFO|logger.py:332] 2018-11-02 14:32:59,439 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:33:09,438 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x3f', 'blockHash': '1590c2342bf5f219e9a12886df45423e0639a7ee85807880829651cba9dca054', 'prevBlockHash': '23722b1921b0db7c8ac654db2eb21556794400ee438617e7331e0431b345d8e0', 'timestamp': '0x579a7dee278b4'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:33:09,439 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:33:09,441 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x40', 'blockHash': '1590c2342bf5f219e9a12886df45423e0639a7ee85807880829651cba9dca054'}
+[INFO|logger.py:332] 2018-11-02 14:33:09,441 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:33:19,438 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x40', 'blockHash': 'c18398e7a9ed837b889ff75aaef3c8a5106973df15d699bba0c04057d2e54a67', 'prevBlockHash': '1590c2342bf5f219e9a12886df45423e0639a7ee85807880829651cba9dca054', 'timestamp': '0x579a7df7b0f98'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:33:19,441 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:33:19,446 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x41', 'blockHash': 'c18398e7a9ed837b889ff75aaef3c8a5106973df15d699bba0c04057d2e54a67'}
+[INFO|logger.py:332] 2018-11-02 14:33:19,447 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:33:29,441 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x41', 'blockHash': '9b59eb2ad6ddcef86aad461eaf61b5d48b91296339c0e844eaf08a1dd7d445ef', 'prevBlockHash': 'c18398e7a9ed837b889ff75aaef3c8a5106973df15d699bba0c04057d2e54a67', 'timestamp': '0x579a7e013b1f5'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:33:29,445 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:33:29,449 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x42', 'blockHash': '9b59eb2ad6ddcef86aad461eaf61b5d48b91296339c0e844eaf08a1dd7d445ef'}
+[INFO|logger.py:332] 2018-11-02 14:33:29,450 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:33:39,444 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x42', 'blockHash': 'fc6f53ba8b6561175bcdb2cbbf5e8369550fa3f64b3417fc3797c0a56250a6b1', 'prevBlockHash': '9b59eb2ad6ddcef86aad461eaf61b5d48b91296339c0e844eaf08a1dd7d445ef', 'timestamp': '0x579a7e0ac5596'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:33:39,445 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:33:39,448 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x43', 'blockHash': 'fc6f53ba8b6561175bcdb2cbbf5e8369550fa3f64b3417fc3797c0a56250a6b1'}
+[INFO|logger.py:332] 2018-11-02 14:33:39,449 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:33:49,445 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x43', 'blockHash': '23b94d1421cfc4e1612f4721ff5c71032cd847c10109a8f4fe265ba648a20ba1', 'prevBlockHash': 'fc6f53ba8b6561175bcdb2cbbf5e8369550fa3f64b3417fc3797c0a56250a6b1', 'timestamp': '0x579a7e144ee00'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:33:49,449 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:33:49,452 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x44', 'blockHash': '23b94d1421cfc4e1612f4721ff5c71032cd847c10109a8f4fe265ba648a20ba1'}
+[INFO|logger.py:332] 2018-11-02 14:33:49,455 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:33:59,446 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x44', 'blockHash': 'f1be3893ebefeb44d93408c78ad2b88ac27a71f95d773d7fbd29cee419e1b9b1', 'prevBlockHash': '23b94d1421cfc4e1612f4721ff5c71032cd847c10109a8f4fe265ba648a20ba1', 'timestamp': '0x579a7e1dd8a01'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:33:59,448 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:33:59,450 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x45', 'blockHash': 'f1be3893ebefeb44d93408c78ad2b88ac27a71f95d773d7fbd29cee419e1b9b1'}
+[INFO|logger.py:332] 2018-11-02 14:33:59,451 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:34:09,451 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x45', 'blockHash': 'ecff749453a1d44abf9baf9aaf424a2102597bbb9f0f5bfe5430b77dc94ca180', 'prevBlockHash': 'f1be3893ebefeb44d93408c78ad2b88ac27a71f95d773d7fbd29cee419e1b9b1', 'timestamp': '0x579a7e276326d'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:34:09,454 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:34:09,456 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x46', 'blockHash': 'ecff749453a1d44abf9baf9aaf424a2102597bbb9f0f5bfe5430b77dc94ca180'}
+[INFO|logger.py:332] 2018-11-02 14:34:09,458 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:34:19,451 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x46', 'blockHash': '2bb59a4e478b412a0bdb303c60467ca8717d70388f62300f457811e488b4a9e5', 'prevBlockHash': 'ecff749453a1d44abf9baf9aaf424a2102597bbb9f0f5bfe5430b77dc94ca180', 'timestamp': '0x579a7e30ec9f0'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:34:19,453 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:34:19,457 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x47', 'blockHash': '2bb59a4e478b412a0bdb303c60467ca8717d70388f62300f457811e488b4a9e5'}
+[INFO|logger.py:332] 2018-11-02 14:34:19,458 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:34:29,453 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x47', 'blockHash': '8d8d83982f389bfed2fd3e014c84a4dbad549dc6f5520376978dc280fb9c5a19', 'prevBlockHash': '2bb59a4e478b412a0bdb303c60467ca8717d70388f62300f457811e488b4a9e5', 'timestamp': '0x579a7e3a7696b'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:34:29,454 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:34:29,457 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x48', 'blockHash': '8d8d83982f389bfed2fd3e014c84a4dbad549dc6f5520376978dc280fb9c5a19'}
+[INFO|logger.py:332] 2018-11-02 14:34:29,457 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:34:39,458 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x48', 'blockHash': 'bc5bb3b137992b2be719945518262ecbd4844b15500ac815fea5c05e77944731', 'prevBlockHash': '8d8d83982f389bfed2fd3e014c84a4dbad549dc6f5520376978dc280fb9c5a19', 'timestamp': '0x579a7e4400ff6'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:34:39,460 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:34:39,463 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x49', 'blockHash': 'bc5bb3b137992b2be719945518262ecbd4844b15500ac815fea5c05e77944731'}
+[INFO|logger.py:332] 2018-11-02 14:34:39,463 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:34:49,458 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x49', 'blockHash': 'b01525f126a350b9e41eb44f5168d531947146571076de29f3649fa3fc419a2c', 'prevBlockHash': 'bc5bb3b137992b2be719945518262ecbd4844b15500ac815fea5c05e77944731', 'timestamp': '0x579a7e4d8a709'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:34:49,466 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:34:49,472 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x4a', 'blockHash': 'b01525f126a350b9e41eb44f5168d531947146571076de29f3649fa3fc419a2c'}
+[INFO|logger.py:332] 2018-11-02 14:34:49,474 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:34:59,462 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x4a', 'blockHash': '87321a028d08310da7b3cf37f0b8616638d555fff3b5d517b29b4ea776a51d06', 'prevBlockHash': 'b01525f126a350b9e41eb44f5168d531947146571076de29f3649fa3fc419a2c', 'timestamp': '0x579a7e5714da1'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:34:59,463 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:34:59,466 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x4b', 'blockHash': '87321a028d08310da7b3cf37f0b8616638d555fff3b5d517b29b4ea776a51d06'}
+[INFO|logger.py:332] 2018-11-02 14:34:59,466 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:35:09,463 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x4b', 'blockHash': '6225fa6984224d0d315b5fc81bb596a491dfa020a79431119729fda40c408e3e', 'prevBlockHash': '87321a028d08310da7b3cf37f0b8616638d555fff3b5d517b29b4ea776a51d06', 'timestamp': '0x579a7e609e8cf'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:35:09,465 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:35:09,468 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x4c', 'blockHash': '6225fa6984224d0d315b5fc81bb596a491dfa020a79431119729fda40c408e3e'}
+[INFO|logger.py:332] 2018-11-02 14:35:09,468 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:35:19,464 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x4c', 'blockHash': '167474fb499b979be0b89ae4c6f7158483fa605f217c255b6f34247fcc31abb5', 'prevBlockHash': '6225fa6984224d0d315b5fc81bb596a491dfa020a79431119729fda40c408e3e', 'timestamp': '0x579a7e6a281c5'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:35:19,468 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:35:19,471 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x4d', 'blockHash': '167474fb499b979be0b89ae4c6f7158483fa605f217c255b6f34247fcc31abb5'}
+[INFO|logger.py:332] 2018-11-02 14:35:19,471 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:35:29,465 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x4d', 'blockHash': 'dd41cb43e058a25709e25d176b48d897e2df25f1b4476ee5d2c23a6946ece0d4', 'prevBlockHash': '167474fb499b979be0b89ae4c6f7158483fa605f217c255b6f34247fcc31abb5', 'timestamp': '0x579a7e73b1c87'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:35:29,468 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:35:29,471 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x4e', 'blockHash': 'dd41cb43e058a25709e25d176b48d897e2df25f1b4476ee5d2c23a6946ece0d4'}
+[INFO|logger.py:332] 2018-11-02 14:35:29,471 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:35:39,470 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x4e', 'blockHash': 'deb62690b817ad79a8dbdf4812b7e418e360784008de627016b6f2b17987700c', 'prevBlockHash': 'dd41cb43e058a25709e25d176b48d897e2df25f1b4476ee5d2c23a6946ece0d4', 'timestamp': '0x579a7e7d3c720'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:35:39,471 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:35:39,474 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x4f', 'blockHash': 'deb62690b817ad79a8dbdf4812b7e418e360784008de627016b6f2b17987700c'}
+[INFO|logger.py:332] 2018-11-02 14:35:39,475 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:35:49,473 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x4f', 'blockHash': '7d7d3e3af5ed2d579f523e1547302149bfadc7dec4caa1d2876a83953520582f', 'prevBlockHash': 'deb62690b817ad79a8dbdf4812b7e418e360784008de627016b6f2b17987700c', 'timestamp': '0x579a7e86c6975'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:35:49,474 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:35:49,477 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x50', 'blockHash': '7d7d3e3af5ed2d579f523e1547302149bfadc7dec4caa1d2876a83953520582f'}
+[INFO|logger.py:332] 2018-11-02 14:35:49,478 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:35:59,477 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x50', 'blockHash': 'ac3ec7251a1022411aa796adee5231121c180e5fc4a3d80442fb0603df471b9d', 'prevBlockHash': '7d7d3e3af5ed2d579f523e1547302149bfadc7dec4caa1d2876a83953520582f', 'timestamp': '0x579a7e905107a'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:35:59,479 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:35:59,482 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x51', 'blockHash': 'ac3ec7251a1022411aa796adee5231121c180e5fc4a3d80442fb0603df471b9d'}
+[INFO|logger.py:332] 2018-11-02 14:35:59,483 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:36:09,477 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x51', 'blockHash': 'd1305f4f9bdd1a7635b8b1d5eef17bc4cb788e7eaaf8daa7662b21159411bb72', 'prevBlockHash': 'ac3ec7251a1022411aa796adee5231121c180e5fc4a3d80442fb0603df471b9d', 'timestamp': '0x579a7e99da923'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:36:09,479 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:36:09,482 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x52', 'blockHash': 'd1305f4f9bdd1a7635b8b1d5eef17bc4cb788e7eaaf8daa7662b21159411bb72'}
+[INFO|logger.py:332] 2018-11-02 14:36:09,482 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:36:19,479 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x52', 'blockHash': 'c2f5f00d25195e92867294b8d6957fd546e767619fe4f2724d0fcb191cd7f975', 'prevBlockHash': 'd1305f4f9bdd1a7635b8b1d5eef17bc4cb788e7eaaf8daa7662b21159411bb72', 'timestamp': '0x579a7ea36470e'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:36:19,480 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:36:19,482 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x53', 'blockHash': 'c2f5f00d25195e92867294b8d6957fd546e767619fe4f2724d0fcb191cd7f975'}
+[INFO|logger.py:332] 2018-11-02 14:36:19,483 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:36:29,482 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x53', 'blockHash': '064d154213dabc9a9b3c458a85095f2252ac7a22438561189d49436a176d5fb8', 'prevBlockHash': 'c2f5f00d25195e92867294b8d6957fd546e767619fe4f2724d0fcb191cd7f975', 'timestamp': '0x579a7eacee553'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:36:29,483 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:36:29,486 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x54', 'blockHash': '064d154213dabc9a9b3c458a85095f2252ac7a22438561189d49436a176d5fb8'}
+[INFO|logger.py:332] 2018-11-02 14:36:29,487 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:36:39,486 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x54', 'blockHash': 'ad698a6acf39085a88ddbb0a8b6dbf61fc9411b3131925078e7c19829c9ab439', 'prevBlockHash': '064d154213dabc9a9b3c458a85095f2252ac7a22438561189d49436a176d5fb8', 'timestamp': '0x579a7eb678e52'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:36:39,488 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:36:39,491 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x55', 'blockHash': 'ad698a6acf39085a88ddbb0a8b6dbf61fc9411b3131925078e7c19829c9ab439'}
+[INFO|logger.py:332] 2018-11-02 14:36:39,492 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:36:49,490 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x55', 'blockHash': '97b79f1a99bc7443278d7e4c7e4c98be8c5f42b483a842a0ca6a0b3f124aa24c', 'prevBlockHash': 'ad698a6acf39085a88ddbb0a8b6dbf61fc9411b3131925078e7c19829c9ab439', 'timestamp': '0x579a7ec00358a'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:36:49,492 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:36:49,494 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x56', 'blockHash': '97b79f1a99bc7443278d7e4c7e4c98be8c5f42b483a842a0ca6a0b3f124aa24c'}
+[INFO|logger.py:332] 2018-11-02 14:36:49,495 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:36:59,493 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x56', 'blockHash': '1f23f262d63974a3bbbbcaf293c9d33078d72837c8efaecb0fce5da1ab414583', 'prevBlockHash': '97b79f1a99bc7443278d7e4c7e4c98be8c5f42b483a842a0ca6a0b3f124aa24c', 'timestamp': '0x579a7ec98d367'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:36:59,494 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:36:59,497 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x57', 'blockHash': '1f23f262d63974a3bbbbcaf293c9d33078d72837c8efaecb0fce5da1ab414583'}
+[INFO|logger.py:332] 2018-11-02 14:36:59,497 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:37:09,496 > [IconInnerService] invoke request with {'block': {'blockHeight': '0x57', 'blockHash': 'fa8b7825ed335771d62ea0861bafb9f1497e0faf2d713b11c6274cadba979d5f', 'prevBlockHash': '1f23f262d63974a3bbbbcaf293c9d33078d72837c8efaecb0fce5da1ab414583', 'timestamp': '0x579a7ed31775b'}, 'transactions': []}
+[INFO|logger.py:332] 2018-11-02 14:37:09,499 > [IconInnerService] invoke response with {'txResults': {}, 'stateRootHash': 'a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a'}
+[INFO|logger.py:332] 2018-11-02 14:37:09,502 > [IconInnerService] write_precommit_state request with {'blockHeight': '0x58', 'blockHash': 'fa8b7825ed335771d62ea0861bafb9f1497e0faf2d713b11c6274cadba979d5f'}
+[INFO|logger.py:332] 2018-11-02 14:37:09,502 > [IconInnerService] write_precommit_state response with 0x0
+[INFO|logger.py:332] 2018-11-02 14:37:13,375 > [IconInnerService] icon_score_service close
+[INFO|logger.py:332] 2018-11-02 14:37:13,376 > [IconServiceCli] ==========IconService Done==========

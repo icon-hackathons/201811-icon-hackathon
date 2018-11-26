@@ -1,0 +1,24 @@
+{
+    "jsonrpc": "2.0",
+    "method": "icx_sendTransaction",
+    "params": {
+        "version": "0x3",
+        "from": "hx3eb8da45c0aee21e48410530f62358d6edfdcbc1",
+        "value": "0x0",
+        "stepLimit": "0xdbba0",
+        "nid": "0x3",
+        "nonce": "0x1",
+        "to": "cxb787980518b717a7f986500576c6a24c0294ed64",
+        "dataType": "call",
+            "data": {
+                "method": "vote",
+                "params": {
+                    "_from": "hx3eb8da45c0aee21e48410530f62358d6edfdcbc1", 
+                    "_to": "hx92bb869bb42edd254ac6b6bd5c1c85702a6b5380",
+                    "_formatted_json": "[{\"type\":\"bool\",\"value\":\"0x1\"},{\"type\":\"int\",\"value\":\"0x4\"},{\"type\":\"int\",\"value\":\"0x4\"},{\"type\":\"int\",\"value\":\"0x5\"},{\"type\":\"int\",\"value\":\"0x4\"}]",
+                    "_message": "흠흠..."
+                }
+            }
+    },
+    "id": 1
+}

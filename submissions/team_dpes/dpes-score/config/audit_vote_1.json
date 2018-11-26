@@ -1,0 +1,21 @@
+{
+    "jsonrpc": "2.0",
+    "method": "icx_sendTransaction",
+    "params": {
+        "version": "0x3",
+        "from": "hx908f59b7ea6bbbc6b2fcfc629d7cacdb22db6432",
+        "value": "0x0",
+        "stepLimit": "0x9502f9",
+        "nid": "0x3",
+        "nonce": "0x1",
+        "to": "cx635118b9865c8cddee4759dff5d29360f5664d5a",
+        "dataType": "call",
+            "data": {
+                "method": "audit_vote",
+                "params": {
+                    "_project_address": "cxb787980518b717a7f986500576c6a24c0294ed64"
+                }
+            }
+    },
+    "id": 1
+}

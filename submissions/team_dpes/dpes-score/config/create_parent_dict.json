@@ -1,0 +1,21 @@
+{
+    "jsonrpc": "2.0",
+    "method": "icx_sendTransaction",
+    "params": {
+        "version": "0x3",
+        "from": "hxa4c3a78d73bb7287f72801c09298f1a5743b1655",
+        "value": "0x0",
+        "stepLimit": "0x9502f900",
+        "nid": "0x3",
+        "nonce": "0x1",
+        "to": "cx635118b9865c8cddee4759dff5d29360f5664d5a",
+        "dataType": "call",
+            "data": {
+                "method": "create_parent_dict",
+                "params": {
+                    "_formatted_json": "[{\"address\":\"hx435b4dd5f623f2e31c691bf480902a3056b828ac\",\"limit\":\"0x2\",\"name\":\"Global\",\"parent_level\":\"0x1\"},{\"address\":\"hx4ed9e9c34451bd3ceb85a7530cb0b0986fd46f79\",\"limit\":\"0x2\",\"name\":\"Develop\",\"parent_level\":\"0x1\"},{\"address\":\"hx6efa0281337beea3c3888398e0cba640482aec36\",\"limit\":\"0x1\",\"name\":\"Oracle\",\"parent_level\":\"0x2\"}]"
+                }
+            }
+    },
+    "id": 1
+}
