@@ -1,0 +1,11 @@
+aiohttp
+sanic==0.7.0
+sanic-oauth
+requests
+sanic_session
+jsonrpcclient
+jsonrpcserver==3.5.6
+leveldb
+secp256k1
+PyJWT
+websockets==5.0.1
