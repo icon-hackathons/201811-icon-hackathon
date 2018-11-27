@@ -1,1 +1,0 @@
-from .smart_wallet import SmartWallet
