@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+}
+
+group 'com.nomad'
+version '0.9.4'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    okhttpVersion = '3.11.0'
+    junitVersion = '5.2.0'
+    mockitoVersion = '2.19.0'
+    awaitVersion = '3.1.2'
+}
+
+dependencies {
+    implementation "foundation.icon:icon-sdk:$iconSdkVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttpVersion"
+
+    testImplementation "org.mockito:mockito-core:$mockitoVersion"
+    testImplementation "org.junit.jupiter:junit-jupiter-api:$junitVersion"
+    testRuntime "org.junit.jupiter:junit-jupiter-engine:$junitVersion"
+    testCompile "org.awaitility:awaitility:$awaitVersion"
+}
+
+test {
+    useJUnitPlatform()
+    enabled = false
+}
