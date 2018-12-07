@@ -13,7 +13,7 @@ ICON DICE는 스코어로 합의 가능한 RNG(Random number generation)가 도�
   3. low house edge
     기존 카지노에 들어가는 비용이 없기 때문에 최소한의 비용을 가지고 운영이 가능해 플레이어들이 정당한 보상을 가져갈 수 있게 해줍니다.
 
-## ICON DICE의  SCORE diagram
+## ICON DICE의 flow diagram
 ![179](https://user-images.githubusercontent.com/45279839/49357852-fb752d80-f713-11e8-92de-a5db289060ff.png)
 위 다이어 그램은 이렇게 설명될 수 있습니다:
 
