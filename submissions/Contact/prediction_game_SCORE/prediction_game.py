@@ -9,20 +9,20 @@ class PredictionState:
     ENDED = "ended"
 
 
-VOTING_PERIOD = 4000
-COUNTING_PERIOD = 4000
-REQUIRED_ICX = 11 * ICX
+VOTING_PERIOD = 500
+COUNTING_PERIOD = 500
+REQUIRED_ICX = 21000 * ICX
 
 
 class Prediction:
     def __init__(self,
-                 creator: Address,
+                 maker: Address,
                  subject: str,
                  items: str,
                  description: str,
                  required_icx: int = REQUIRED_ICX):
         # immutable data
-        self.creator = str(creator)
+        self.maker = str(maker)
         self.subject = subject
         self.items = items
         self.description = description
@@ -32,7 +32,7 @@ class Prediction:
     def from_bytes(cls, buf: bytes):
         json_data = json_loads(buf.decode())
         return cls(
-            creator=json_data['creator'],
+            maker=json_data['maker'],
             subject=json_data['subject'],
             items=json_data['items'],
             description=json_data['description'],
@@ -72,10 +72,10 @@ class PredictionGame(IconScoreBase):
         super().on_update()
 
     @external
-    def submit_prediction(self, subject: str, items: str, description: str, required_icx: int = REQUIRED_ICX):
+    def generatePrediction(self, _subject: str, _items: str, _description: str, _requiredIcx: int = REQUIRED_ICX):
         # required_icx is will be deprecated ( as this is constant data)
         # add check logic
-        new_prediction = Prediction(self.msg.sender, subject, items, description, required_icx)
+        new_prediction = Prediction(self.msg.sender, _subject, _items, _description, _requiredIcx)
         new_prediction_num = len(self._predictions)
         self._prediction_state[new_prediction_num] = PredictionState.ON_VOTING
         self._prediction_expire_block_height[new_prediction_num] = self.block_height + VOTING_PERIOD
@@ -87,86 +87,88 @@ class PredictionGame(IconScoreBase):
 
     @payable
     @external
-    def vote_prediction(self, prediction_num: int, hashed_vote: str):
-        if self._prediction_state[prediction_num] != PredictionState.ON_VOTING:
+    def votePrediction(self, _predictionNum: int, _hashedVote: str):
+        if self._prediction_state[_predictionNum] != PredictionState.ON_VOTING:
             revert("you cannot vote to this prediction as state is not 'on_voting'")
-        if self._prediction_expire_block_height[prediction_num] < self.block_height:
+        if self._prediction_expire_block_height[_predictionNum] < self.block_height:
             revert("exceed expire date")
-        if prediction_num < 0 or prediction_num >= len(self._predictions):
+        if _predictionNum < 0 or _predictionNum >= len(self._predictions):
             revert("not existed prediction")
         if self.msg.value != 1 * ICX:
             revert("you can invest only 1 icx")
-        if self._prediction_address_hashed_vote[prediction_num][str(self.msg.sender)] != "":
+        if self._prediction_address_hashed_vote[_predictionNum][self.msg.sender] != "":
             revert("you have already voted to this prediction")
         # should be modified (as naive check)
-        if len(hashed_vote) != 64:
+        if len(_hashedVote) != 64:
             revert("invalid hash data")
 
-        self._prediction_total_voted_count[prediction_num] += 1
-        self._prediction_deposited_icx[prediction_num] += 1 * ICX
+        self._prediction_total_voted_count[_predictionNum] += 1
+        self._prediction_deposited_icx[_predictionNum] += 1 * ICX
 
-        prediction = Prediction.from_bytes(self._predictions[prediction_num])
-        if self._prediction_total_voted_count[prediction_num] == 1:
-            self._prediction_voter_list[prediction_num] = str(self.msg.sender)
+        prediction = Prediction.from_bytes(self._predictions[_predictionNum])
+        if self._prediction_total_voted_count[_predictionNum] == 1:
+            self._prediction_voter_list[_predictionNum] = str(self.msg.sender)
         else:
-            self._prediction_voter_list[prediction_num] += f',{str(self.msg.sender)}'
+            self._prediction_voter_list[_predictionNum] += f',{str(self.msg.sender)}'
 
-        self._prediction_address_hashed_vote[prediction_num][str(self.msg.sender)] = hashed_vote
+        self._prediction_address_hashed_vote[_predictionNum][self.msg.sender] = _hashedVote
 
-        if self._prediction_deposited_icx[prediction_num] == prediction.required_icx:
-            self._prediction_state[prediction_num] = PredictionState.ON_COUNTING
-            self._prediction_expire_block_height[prediction_num] += COUNTING_PERIOD
+        if self._prediction_deposited_icx[_predictionNum] == prediction.required_icx:
+            self._prediction_state[_predictionNum] = PredictionState.ON_COUNTING
+            self._prediction_expire_block_height[_predictionNum] += COUNTING_PERIOD
 
     @external
-    def validate_vote(self, prediction_num: int, item: str, nonce: int):
-        if self._prediction_state[prediction_num] != PredictionState.ON_COUNTING:
+    def validateVote(self, _predictionNum: int, _item: str, _nonce: int):
+        if self._prediction_state[_predictionNum] != PredictionState.ON_COUNTING:
             revert("you cannot validate vote as this prediction state is not 'on_counting'")
-        if self._prediction_expire_block_height[prediction_num] < self.block_height:
+        if self._prediction_expire_block_height[_predictionNum] < self.block_height:
             revert("exceed expire date")
         # check if he has already validated or not
-        if self._prediction_address_open[prediction_num][self.msg.sender]:
+        if self._prediction_address_open[_predictionNum][self.msg.sender]:
             revert("you have already validated vote")
 
-        serialize_vote_info = str(self.address) + str(self.msg.sender) + item + str(nonce)
+        serialize_vote_info = str(self.address) + str(self.msg.sender) + _item + str(_nonce)
 
         vote_hash = sha3_256(serialize_vote_info.encode())
-        if vote_hash.hex() == self._prediction_address_hashed_vote[prediction_num][str(self.msg.sender)]:
-            self._prediction_address_open[prediction_num][str(self.msg.sender)] = True
-            self._prediction_voted_count_by_item[prediction_num][item] += 1
-            if self._prediction_voted_count_by_item[prediction_num][item] == 1:
-                self._prediction_voter_list_by_item[prediction_num][item] = str(self.msg.sender)
+        if vote_hash.hex() == self._prediction_address_hashed_vote[_predictionNum][self.msg.sender]:
+            self._prediction_address_open[_predictionNum][self.msg.sender] = True
+            self._prediction_voted_count_by_item[_predictionNum][_item] += 1
+            if self._prediction_voted_count_by_item[_predictionNum][_item] == 1:
+                self._prediction_voter_list_by_item[_predictionNum][_item] = str(self.msg.sender)
             else:
-                self._prediction_voter_list_by_item[prediction_num][item] += f",{str(self.msg.sender)}"
+                self._prediction_voter_list_by_item[_predictionNum][_item] += f",{str(self.msg.sender)}"
+        else:
+            revert("hash data dose not match. check the  ")
 
-        prediction = Prediction.from_bytes(self._predictions[prediction_num])
+        prediction = Prediction.from_bytes(self._predictions[_predictionNum])
         items = prediction.items.split(',')
         total_validated_vote = 0
-        for item in items:
-            total_validated_vote += self._prediction_voted_count_by_item[prediction_num][item]
-        if total_validated_vote == self._prediction_total_voted_count[prediction_num]:
-            self._distribute_icx(prediction_num, Address.from_string(prediction.creator), items)
-            self._prediction_state[prediction_num] = PredictionState.ENDED
+        for _item in items:
+            total_validated_vote += self._prediction_voted_count_by_item[_predictionNum][_item]
+        if total_validated_vote == self._prediction_total_voted_count[_predictionNum]:
+            self._distribute_icx(_predictionNum, Address.from_string(prediction.maker), items)
+            self._prediction_state[_predictionNum] = PredictionState.ENDED
 
     @external
-    def change_prediction_state(self, prediction_num: int):
+    def changePredictionState(self, _predictionNum: int):
         # anyone can call this method
         # requirement: exceed expire block height.
         # on_voting -> on_counting
         # on_counting -> ended
-        if self._prediction_expire_block_height[prediction_num] >= self.block_height:
+        if self._prediction_expire_block_height[_predictionNum] >= self.block_height:
             revert("still in period")
 
-        if self._prediction_state[prediction_num] == PredictionState.ON_VOTING:
-            self._prediction_state[prediction_num] = PredictionState.ON_COUNTING
-            self._prediction_expire_block_height[prediction_num] = self.block_height + COUNTING_PERIOD
+        if self._prediction_state[_predictionNum] == PredictionState.ON_VOTING:
+            self._prediction_state[_predictionNum] = PredictionState.ON_COUNTING
+            self._prediction_expire_block_height[_predictionNum] = self.block_height + COUNTING_PERIOD
             return
 
-        if self._prediction_state[prediction_num] == PredictionState.ON_COUNTING:
-            prediction = Prediction.from_bytes(self._predictions[prediction_num])
+        if self._prediction_state[_predictionNum] == PredictionState.ON_COUNTING:
+            prediction = Prediction.from_bytes(self._predictions[_predictionNum])
             items = prediction.items.split(',')
 
-            self._distribute_icx(prediction_num, Address.from_string(prediction.creator), items)
-            self._prediction_state[prediction_num] = PredictionState.ENDED
+            self._distribute_icx(_predictionNum, Address.from_string(prediction.maker), items)
+            self._prediction_state[_predictionNum] = PredictionState.ENDED
             return
 
     def _distribute_icx(self, prediction_num: int, prediction_creator: Address, items: list):
@@ -250,24 +252,24 @@ class PredictionGame(IconScoreBase):
         return prediction_dict
 
     @external(readonly=True)
-    def getVoteCountOfEachItem(self, prediction_num: int, items: str) -> dict:
+    def getVoteCountOfEachItem(self, _predictionNum: int, _items: str) -> dict:
         return_data = {}
-        items = items.split(',')
-        for item in items:
-            return_data[item] = self._prediction_voted_count_by_item[prediction_num][item]
+        _items = _items.split(',')
+        for item in _items:
+            return_data[item] = self._prediction_voted_count_by_item[_predictionNum][item]
         return return_data
 
     @external(readonly=True)
-    def getAddressValidationInfo(self, prediction_num: int, address: Address) -> bool:
-        return self._prediction_address_open[prediction_num][str(address)]
+    def getAddressValidationInfo(self, _predictionNum: int, _address: Address) -> bool:
+        return self._prediction_address_open[_predictionNum][_address]
 
     @external(readonly=True)
-    def getVoteHashByAddress(self, prediction_num: int, address: Address) -> str:
-        return self._prediction_address_hashed_vote[prediction_num][str(address)]
+    def getVoteHashByAddress(self, _predictionNum: int, _address: Address) -> str:
+        return self._prediction_address_hashed_vote[_predictionNum][_address]
 
     @external(readonly=True)
-    def getPrediction(self, prediction_num: int) -> dict:
-        return self._make_prediction_info(prediction_num)
+    def getPrediction(self, _predictionNum: int) -> dict:
+        return self._make_prediction_info(_predictionNum)
 
     @external(readonly=True)
     def getPredictions(self) -> list:
@@ -277,35 +279,35 @@ class PredictionGame(IconScoreBase):
         return prediction_list
 
     @external(readonly=True)
-    def getPredictionsByOwner(self, address: Address) -> list:
+    def getPredictionsByOwner(self, _address: Address) -> list:
         prediction_list = []
         for idx, prediction in enumerate(self._predictions):
             prediction = Prediction.from_bytes(prediction)
-            if prediction.creator == str(address):
+            if prediction.maker == str(_address):
                 prediction_list.append(self._make_prediction_info(idx))
         return prediction_list
 
     @external(readonly=True)
-    def getPredictionsByVoter(self, address: Address) -> list:
+    def getPredictionsByVoter(self, _address: Address) -> list:
         prediction_list = []
         prediction_count = len(self._predictions)
         for idx in range(prediction_count):
-            if str(address) in self._prediction_voter_list[idx]:
+            if str(_address) in self._prediction_voter_list[idx]:
                 prediction_list.append(self._make_prediction_info(idx))
         return prediction_list
 
     @external(readonly=True)
-    def getPredictionsByState(self, state: str) -> list:
+    def getPredictionsByState(self, _state: str) -> list:
         prediction_list = []
         for idx, prediction in enumerate(self._predictions):
-            if self._prediction_state[idx] == state:
+            if self._prediction_state[idx] == _state:
                 prediction_list.append(self._make_prediction_info(idx))
         return prediction_list
 
     @external(readonly=True)
-    def getWinnerRewardPerVoter(self, prediction_num: int) -> int:
-        return self._prediction_winner_reward[prediction_num]
+    def getWinnerRewardPerVoter(self, _predictionNum: int) -> int:
+        return self._prediction_winner_reward[_predictionNum]
 
     @external(readonly=True)
-    def getCreatorIncentive(self, prediction_num: int) -> int:
-        return self._prediction_creator_incentive[prediction_num]
+    def getCreatorIncentive(self, _predictionNum: int) -> int:
+        return self._prediction_creator_incentive[_predictionNum]
