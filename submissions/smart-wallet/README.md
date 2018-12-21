@@ -25,8 +25,8 @@
 - Transaction을 수행하는데 필요한 소량의 자산을 제외한 나머지 금액을 SCORE의 기본 account 에 예치 
 - 다양한 기능에 따라 SCORE에 기능별 여러 계좌를 관리 
   - 예를 들어, 기본, 소액 송금용, 거액 송금용, DApp 게임용 계좌를 생성하여 관리 가능
-
-![스크린샷_2018-12-21_오전_10.17.20](/uploads/7adcf6b7993fca7df1268f25b64eda5f/스크린샷_2018-12-21_오전_10.17.20.png)
+  
+![screenshot1](https://github.com/boyeon555/201811-icon-hackathon/blob/master/submissions/smart-wallet/img/screenshot1.png)
 
 
 ### 2. DID인증을 통해 계좌별 인증레벨 설정
@@ -38,14 +38,15 @@
         - 거액 송금용 계좌에는 인증 레벨 2로 설정하여 Mail, Kakao 인증 필요
         - DApp 게임용 계좌에는 인증 레벨 1로 설정하여 Mail 인증 필요 및 하루 송금 10icx 이하로 송금 제한 설정
 
-![스크린샷_2018-12-21_오전_10.17.33](/uploads/af7cac3bf7dbcf68a48426d9add5dd18/스크린샷_2018-12-21_오전_10.17.33.png)
+![screenshot1](https://github.com/boyeon555/201811-icon-hackathon/blob/master/submissions/smart-wallet/img/screenshot2.png)
+
 
 
 ### 3. 기존 Private key 분실 시 새로운 키 생성 
 
 - 기존 Private key 분실 시 최고 3레벨 인증을 모두 통과할 경우 새로운 계좌 생성 후 Smart wallet SCORE와 연동하여 분실 위험성 최소화
 
-![스크린샷_2018-12-21_오전_10.17.54](/uploads/c07690cb6b1d8e731d00c7c3a32a96c0/스크린샷_2018-12-21_오전_10.17.54.png)
+![screenshot1](https://github.com/boyeon555/201811-icon-hackathon/blob/master/submissions/smart-wallet/img/screenshot3.png)
 
 
 ## 주요 함수
