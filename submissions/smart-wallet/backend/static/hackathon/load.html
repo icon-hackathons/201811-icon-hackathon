@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="static/favicon.ico">
+
+    <title>Load Wallet</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="static/hackathon/load.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $( document ).ready(function() {
+          console.log( "ready!" );
+          $("#submit").click(function () {
+            $.get("/login", {"privateKey": $("#inputPassword").val()}).done(
+              function (result) {
+                if(result.result){
+                  alert("login success")
+                  window.location.href = "/account"
+                }
+              }
+            )
+          })
+      });
+    </script>
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="form-signin">
+        <h2 class="form-signin-heading">Load Wallet</h2><br>
+        <label for="inputPassword" class="sr-only">Private Key</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Private Key" required>
+        <button id="submit" style="margin-top: 20px; margin-bottom: 10px" class="btn btn-lg btn-primary btn-block" >Continue</button>
+        <button type="button" class="btn btn-link" style="margin: 0px; padding: 0px">Forgot your Private Key? </button>
+      </div>
+
+    </div> <!-- /container -->
+
+  </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="static/favicon.ico">
+
+    <title>Account Setting</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="static/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="static/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="static/hackathon/setting.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $( document ).ready(function() {
+          console.log( "ready!" );
+          $("#submit").click(function(){
+            alert("계정 생성 할 떄까지 기다려 주세요 (약 20초 소요)")
+            var isIcx = $("#icx").val()
+
+            var dids = []
+            if ($("#kakao").prop("checked")) dids.push("kakao")
+            if ($("#chainId").prop("checked")) dids.push("chainId")
+            if ($("#iconex").prop("checked")) dids.push("iconex")
+
+            accountinfo = {
+              "account" : $("#account").val(),
+              "tokenType" : isIcx ? "icx" : "IRC2",
+              "tokenName" : isIcx ? "" : $("#tokenName").val(),
+              "contractAddr" : isIcx ? "" : $("#contractAddr").val(),
+              "sendLimit": $("#limit").val(),
+              "dids" : dids
+            }
+
+            $.ajax({
+              url: '/accounts',
+              type: 'post',
+              dataType: 'json',
+              contentType: 'application/json',
+              success: function (data) {
+                alert("지갑 생성이 완료되었습니다.")
+                window.location.href = "/main"
+              },
+              data: JSON.stringify(accountinfo)
+            });
+          }
+            
+          )
+      });
+    </script>
+  </head>
+
+  <body>
+
+  <div class="container">
+
+    <div id="signin" class="form-signin">
+      <h2 class="form-signin-heading">Account Setting</h2><br>
+      <h5>Account Name</h5>
+      <label for="input" class="sr-only">Account Name</label>
+      <input id="account" type="text" id="input" class="form-control" placeholder="Accounts" required autofocus>
+      <br>
+      <h5>Asset Type</h5>
+      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-secondary active">
+          <input id="icx" type="radio" name="options" id="option1" autocomplete="off" checked>ICX
+        </label>
+        <label class="btn btn-secondary">
+          <input id="irc2" type="radio" name="options" id="option2" autocomplete="off">IRC2
+        </label>
+      </div>
+      <input id="tokenName" style="margin-top: 5px" type="text" id="input" class="form-control" placeholder="IRC2 Token Name" required autofocus>
+      <input id="contractAddr" style="margin-top: 5px" type="text" id="input" class="form-control" placeholder="IRC2 Contract Address" required autofocus>
+      <br>
+      <h5>Send up to</h5>
+      <label for="input" class="sr-only">Send up to</label>
+      <input id="limit" type="number" id="input" class="form-control" placeholder="300 ICX" required autofocus>
+      <br>
+      <h5>Verify with</h5>
+      <!-- Button trigger modal -->
+      <div class="form-check">
+        <input id="kakao" type="checkbox" class="form-check-input" >
+        <label class="form-check-label" for="kakao">Kakao</label>
+      </div>
+      <div class="form-check">
+        <input id="chainId" type="checkbox" class="form-check-input" >
+        <label class="form-check-label" for="chainId">ChainID</label>
+      </div>
+      <div class="form-check">
+        <input id="iconex" type="checkbox" class="form-check-input">
+        <label class="form-check-label" for="iconex">ICONex</label>
+      </div>
+
+      <button id="submit" style="margin-top: 20px; margin-bottom: 10px" class="btn btn-lg btn-primary btn-block" >Save</button>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Would you like to delete this DID?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+              <button type="button" class="btn btn-primary">Yes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div> <!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="static/assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="static/dist/js/bootstrap.min.js"></script>
+    <script src="static/assets/js/docs.min.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="static/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
