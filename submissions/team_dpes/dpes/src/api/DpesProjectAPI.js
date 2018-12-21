@@ -10,7 +10,7 @@ const getMessageList = async (projectAddress, userAddress) => {
       _user_address: userAddress,
     },
   });
-  const result = await iconService.call(call).execute(true);
+  const result = await iconService.call(call).execute();
   return result;
 };
 
@@ -25,7 +25,7 @@ const getReviewResult = async ({
       _user_address: userAddress,
     },
   });
-  const result = await iconService.call(call).execute(true);
+  const result = await iconService.call(call).execute();
   return result;
 };
 
@@ -34,7 +34,7 @@ const getProjectInfo = async (projectAddress) => {
     to: projectAddress,
     methodName: 'get_project_info',
   });
-  const result = await iconService.call(call).execute(true);
+  const result = await iconService.call(call).execute();
   return result;
 };
 
