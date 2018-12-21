@@ -54,10 +54,11 @@ Token Economy 기반 인센티브/패널티
 >- 성과 평과 시스템을 추상화 된 평가 모델로 활용하여, 성과 평과 이외에 다양한 분야로 활용이 가능
 
 ## 구성
-> - dpes: Vue.js 기반의 프론트엔드 클라이언트
-> - dpes-score : ICON Network에서 작동하는 SCORE 기반의 스마트 컨트랙트
 
-## Tutorial - SCORE
+> - dpes-score : ICON Network에서 작동하는 SCORE 기반의 스마트 컨트랙트
+> - dpes: Vue.js 기반의 프론트엔드 클라이언트
+
+## Tutorial - dpes-score
 
 ### 디렉토리 구조
 
@@ -506,11 +507,9 @@ tbears sendtx -k ../keystores/P1-L.json -p "@1234qwer" -c ../config/deploy_dpes_
 }
 ```
 
+## Tutorial - dpes (FRONT-END & BACK-END)
 
-
-### FRONT-END & BACK-END
-
-#### 디렉토리 구조
+### 디렉토리 구조
 	.
 	├── src              # App code directory
 	│   ├── api             # api (SCORE, ICONex-connect, etc.)
@@ -524,7 +523,7 @@ tbears sendtx -k ../keystores/P1-L.json -p "@1234qwer" -c ../config/deploy_dpes_
 	├── main.js          # App entry file 
 	└── router.js        # Vue-router config
 
-#### 설치 및 실행방법
+### 설치 및 실행방법
 
 의존성 모듈을 설치한 후, json-server를 구동합니다.
 ```bash
