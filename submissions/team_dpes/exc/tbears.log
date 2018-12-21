@@ -1,0 +1,425 @@
+[ERROR|logger.py:360] 2018-11-17 17:13:20,612 > [IconService] inconsistent use of tabs and spaces in indentation (dpes_score.py, line 19)
+Traceback (most recent call last):
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/icon_service_engine.py", line 616, in _handle_icx_send_transaction
+    tx_result.score_address = self._handle_score_invoke(context, to, params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/icon_service_engine.py", line 788, in _handle_score_invoke
+    data=data)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 100, in invoke
+    raise e
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 97, in invoke
+    self.deploy(context, context.tx.hash)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 130, in deploy
+    self._score_deploy(context, tx_params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 156, in _score_deploy
+    self._on_deploy(context, tx_params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 302, in _on_deploy
+    raise e
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 283, in _on_deploy
+    score = context.new_icon_score_mapper.load_score(score_address, next_tx_hash)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/iconscore/icon_score_mapper.py", line 127, in load_score
+    score_wrapper = self._load_score_wrapper(address, tx_hash)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/iconscore/icon_score_mapper.py", line 157, in _load_score_wrapper
+    score_wrapper = self.icon_score_loader.load_score(score_path)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/iconscore/icon_score_loader.py", line 64, in load_score
+    mod = importlib.import_module(f".{score_package_info[self._MAIN_FILE]}", pkg_root_import)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./.score/01d2a734dcbffad4c63ced39bb05a1614c255fb49f/0x5fb422f946d220b15e04c61ebc4175bf65f769d5e6d4bce997954dc4b4c7741b/dpes_score.py", line 19
+    @abstractmethod
+                  ^
+TabError: inconsistent use of tabs and spaces in indentation
+[ERROR|logger.py:360] 2018-11-17 17:17:40,613 > [IconService] inconsistent use of tabs and spaces in indentation (dpes_score.py, line 19)
+Traceback (most recent call last):
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/icon_service_engine.py", line 616, in _handle_icx_send_transaction
+    tx_result.score_address = self._handle_score_invoke(context, to, params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/icon_service_engine.py", line 788, in _handle_score_invoke
+    data=data)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 100, in invoke
+    raise e
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 97, in invoke
+    self.deploy(context, context.tx.hash)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 130, in deploy
+    self._score_deploy(context, tx_params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 156, in _score_deploy
+    self._on_deploy(context, tx_params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 302, in _on_deploy
+    raise e
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 283, in _on_deploy
+    score = context.new_icon_score_mapper.load_score(score_address, next_tx_hash)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/iconscore/icon_score_mapper.py", line 127, in load_score
+    score_wrapper = self._load_score_wrapper(address, tx_hash)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/iconscore/icon_score_mapper.py", line 157, in _load_score_wrapper
+    score_wrapper = self.icon_score_loader.load_score(score_path)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/iconscore/icon_score_loader.py", line 64, in load_score
+    mod = importlib.import_module(f".{score_package_info[self._MAIN_FILE]}", pkg_root_import)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./.score/013fe8c7dba6f996f2df5f441b8538246337bd44b0/0xc660b3ce72084e08b21074991ed550a3eb508aec50c7ad80df4150a5ad4bd619/dpes_score.py", line 19
+    @abstractmethod
+                  ^
+TabError: inconsistent use of tabs and spaces in indentation
+[ERROR|logger.py:360] 2018-11-17 17:18:40,633 > [IconService] inconsistent use of tabs and spaces in indentation (dpes_score.py, line 19)
+Traceback (most recent call last):
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/icon_service_engine.py", line 616, in _handle_icx_send_transaction
+    tx_result.score_address = self._handle_score_invoke(context, to, params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/icon_service_engine.py", line 788, in _handle_score_invoke
+    data=data)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 100, in invoke
+    raise e
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 97, in invoke
+    self.deploy(context, context.tx.hash)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 130, in deploy
+    self._score_deploy(context, tx_params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 156, in _score_deploy
+    self._on_deploy(context, tx_params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 302, in _on_deploy
+    raise e
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 283, in _on_deploy
+    score = context.new_icon_score_mapper.load_score(score_address, next_tx_hash)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/iconscore/icon_score_mapper.py", line 127, in load_score
+    score_wrapper = self._load_score_wrapper(address, tx_hash)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/iconscore/icon_score_mapper.py", line 157, in _load_score_wrapper
+    score_wrapper = self.icon_score_loader.load_score(score_path)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/iconscore/icon_score_loader.py", line 64, in load_score
+    mod = importlib.import_module(f".{score_package_info[self._MAIN_FILE]}", pkg_root_import)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./.score/01d62ee6aef907279769ec8e5a2d8319864ed43736/0xee264dc2846a457e780dc98623f8e123ff308a517a4234875a42fcaaa44e410e/dpes_score.py", line 19
+    @abstractmethod
+                  ^
+TabError: inconsistent use of tabs and spaces in indentation
+[ERROR|logger.py:360] 2018-11-17 17:20:40,660 > [IconService] inconsistent use of tabs and spaces in indentation (dpes_score.py, line 19)
+Traceback (most recent call last):
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/icon_service_engine.py", line 616, in _handle_icx_send_transaction
+    tx_result.score_address = self._handle_score_invoke(context, to, params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/icon_service_engine.py", line 788, in _handle_score_invoke
+    data=data)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 100, in invoke
+    raise e
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 97, in invoke
+    self.deploy(context, context.tx.hash)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 130, in deploy
+    self._score_deploy(context, tx_params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 156, in _score_deploy
+    self._on_deploy(context, tx_params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 302, in _on_deploy
+    raise e
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 283, in _on_deploy
+    score = context.new_icon_score_mapper.load_score(score_address, next_tx_hash)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/iconscore/icon_score_mapper.py", line 127, in load_score
+    score_wrapper = self._load_score_wrapper(address, tx_hash)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/iconscore/icon_score_mapper.py", line 157, in _load_score_wrapper
+    score_wrapper = self.icon_score_loader.load_score(score_path)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/iconscore/icon_score_loader.py", line 64, in load_score
+    mod = importlib.import_module(f".{score_package_info[self._MAIN_FILE]}", pkg_root_import)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./.score/011d4b670376a549a0d0e193823b1270c93ecc7903/0x741fb6b19355c40bed516e3d026688f804b7eb2d303bd93cfdf8a7e33c459dc3/dpes_score.py", line 19
+    @abstractmethod
+                  ^
+TabError: inconsistent use of tabs and spaces in indentation
+[ERROR|logger.py:360] 2018-11-17 17:24:00,712 > [IconService] invalid syntax (dpes_score.py, line 81)
+Traceback (most recent call last):
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/icon_service_engine.py", line 616, in _handle_icx_send_transaction
+    tx_result.score_address = self._handle_score_invoke(context, to, params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/icon_service_engine.py", line 788, in _handle_score_invoke
+    data=data)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 100, in invoke
+    raise e
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 97, in invoke
+    self.deploy(context, context.tx.hash)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 130, in deploy
+    self._score_deploy(context, tx_params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 156, in _score_deploy
+    self._on_deploy(context, tx_params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 302, in _on_deploy
+    raise e
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 283, in _on_deploy
+    score = context.new_icon_score_mapper.load_score(score_address, next_tx_hash)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/iconscore/icon_score_mapper.py", line 127, in load_score
+    score_wrapper = self._load_score_wrapper(address, tx_hash)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/iconscore/icon_score_mapper.py", line 157, in _load_score_wrapper
+    score_wrapper = self.icon_score_loader.load_score(score_path)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/iconscore/icon_score_loader.py", line 64, in load_score
+    mod = importlib.import_module(f".{score_package_info[self._MAIN_FILE]}", pkg_root_import)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./.score/0147b86b56c4b441cc253aa2366cbf0da33dae23b4/0xa5ce55934edfdb85a66d70f303e7766752ba7fcdd1f36b8847876d20d9593cf4/dpes_score.py", line 81
+    def audit_vote(self, _project_address: Address): -> None:
+                                                      ^
+SyntaxError: invalid syntax
+[ERROR|logger.py:360] 2018-11-17 17:24:20,718 > [IconService] invalid syntax (dpes_score.py, line 244)
+Traceback (most recent call last):
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/icon_service_engine.py", line 616, in _handle_icx_send_transaction
+    tx_result.score_address = self._handle_score_invoke(context, to, params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/icon_service_engine.py", line 788, in _handle_score_invoke
+    data=data)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 100, in invoke
+    raise e
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 97, in invoke
+    self.deploy(context, context.tx.hash)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 130, in deploy
+    self._score_deploy(context, tx_params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 156, in _score_deploy
+    self._on_deploy(context, tx_params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 302, in _on_deploy
+    raise e
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 283, in _on_deploy
+    score = context.new_icon_score_mapper.load_score(score_address, next_tx_hash)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/iconscore/icon_score_mapper.py", line 127, in load_score
+    score_wrapper = self._load_score_wrapper(address, tx_hash)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/iconscore/icon_score_mapper.py", line 157, in _load_score_wrapper
+    score_wrapper = self.icon_score_loader.load_score(score_path)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/iconscore/icon_score_loader.py", line 64, in load_score
+    mod = importlib.import_module(f".{score_package_info[self._MAIN_FILE]}", pkg_root_import)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./.score/0162bd1d254fd3d435c498a33d1e96074caafa3bc6/0xd638a9e948c2d8b7d26d45d74c814f6af580f3bec94cfa5f4ee4b06d15152717/dpes_score.py", line 244
+    if ParentLevel(_parent_level) is ParentLevel.TEAM
+                                                    ^
+SyntaxError: invalid syntax
+[ERROR|logger.py:360] 2018-11-17 17:25:00,728 > [IconService] invalid syntax (dpes_score.py, line 244)
+Traceback (most recent call last):
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/icon_service_engine.py", line 616, in _handle_icx_send_transaction
+    tx_result.score_address = self._handle_score_invoke(context, to, params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/icon_service_engine.py", line 788, in _handle_score_invoke
+    data=data)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 100, in invoke
+    raise e
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 97, in invoke
+    self.deploy(context, context.tx.hash)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 130, in deploy
+    self._score_deploy(context, tx_params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 156, in _score_deploy
+    self._on_deploy(context, tx_params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 302, in _on_deploy
+    raise e
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 283, in _on_deploy
+    score = context.new_icon_score_mapper.load_score(score_address, next_tx_hash)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/iconscore/icon_score_mapper.py", line 127, in load_score
+    score_wrapper = self._load_score_wrapper(address, tx_hash)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/iconscore/icon_score_mapper.py", line 157, in _load_score_wrapper
+    score_wrapper = self.icon_score_loader.load_score(score_path)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/iconscore/icon_score_loader.py", line 64, in load_score
+    mod = importlib.import_module(f".{score_package_info[self._MAIN_FILE]}", pkg_root_import)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./.score/0126d3d4c477a68b400750e860722b36f872a7bfb3/0xd3ac1fc056e291e513f274cbd7f760ce1ea5a8b09a4965a753a2aa81aa310fe3/dpes_score.py", line 244
+    if ParentLevel(_parent_level) == ParentLevel.TEAM
+                                                    ^
+SyntaxError: invalid syntax
+[ERROR|logger.py:360] 2018-11-17 17:25:30,734 > [IconService] invalid syntax (dpes_score.py, line 244)
+Traceback (most recent call last):
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/icon_service_engine.py", line 616, in _handle_icx_send_transaction
+    tx_result.score_address = self._handle_score_invoke(context, to, params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/icon_service_engine.py", line 788, in _handle_score_invoke
+    data=data)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 100, in invoke
+    raise e
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 97, in invoke
+    self.deploy(context, context.tx.hash)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 130, in deploy
+    self._score_deploy(context, tx_params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 156, in _score_deploy
+    self._on_deploy(context, tx_params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 302, in _on_deploy
+    raise e
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 283, in _on_deploy
+    score = context.new_icon_score_mapper.load_score(score_address, next_tx_hash)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/iconscore/icon_score_mapper.py", line 127, in load_score
+    score_wrapper = self._load_score_wrapper(address, tx_hash)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/iconscore/icon_score_mapper.py", line 157, in _load_score_wrapper
+    score_wrapper = self.icon_score_loader.load_score(score_path)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/iconscore/icon_score_loader.py", line 64, in load_score
+    mod = importlib.import_module(f".{score_package_info[self._MAIN_FILE]}", pkg_root_import)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./.score/013775185fd3f0e5d603cbd31e9d531e8f0e853b36/0x999886f089b644e1447a971ae0e1b3b047ed7ed8714227cc60c8c96f9f07f3e2/dpes_score.py", line 244
+    if _parent_level == ParentLevel.TEAM.value
+                                             ^
+SyntaxError: invalid syntax
+[ERROR|logger.py:360] 2018-11-17 17:29:00,802 > [IconService] invalid syntax (dpes_score.py, line 244)
+Traceback (most recent call last):
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/icon_service_engine.py", line 616, in _handle_icx_send_transaction
+    tx_result.score_address = self._handle_score_invoke(context, to, params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/icon_service_engine.py", line 788, in _handle_score_invoke
+    data=data)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 100, in invoke
+    raise e
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 97, in invoke
+    self.deploy(context, context.tx.hash)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 130, in deploy
+    self._score_deploy(context, tx_params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 156, in _score_deploy
+    self._on_deploy(context, tx_params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 302, in _on_deploy
+    raise e
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 283, in _on_deploy
+    score = context.new_icon_score_mapper.load_score(score_address, next_tx_hash)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/iconscore/icon_score_mapper.py", line 127, in load_score
+    score_wrapper = self._load_score_wrapper(address, tx_hash)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/iconscore/icon_score_mapper.py", line 157, in _load_score_wrapper
+    score_wrapper = self.icon_score_loader.load_score(score_path)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/iconscore/icon_score_loader.py", line 64, in load_score
+    mod = importlib.import_module(f".{score_package_info[self._MAIN_FILE]}", pkg_root_import)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./.score/0182799f3f6b5af6e0f29c6606d0624e08fc277b66/0x91b4f6ff0cf01872d3393cdfb6246e86d9a18125e53063cbe9e68381c0afdbaf/dpes_score.py", line 244
+    if _parent_level is ParentLevel.TEAM.value
+                                             ^
+SyntaxError: invalid syntax
+[ERROR|logger.py:360] 2018-11-17 17:29:30,814 > [IconService] name 'true' is not defined
+Traceback (most recent call last):
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/icon_service_engine.py", line 616, in _handle_icx_send_transaction
+    tx_result.score_address = self._handle_score_invoke(context, to, params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/icon_service_engine.py", line 788, in _handle_score_invoke
+    data=data)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 100, in invoke
+    raise e
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 97, in invoke
+    self.deploy(context, context.tx.hash)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 130, in deploy
+    self._score_deploy(context, tx_params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 156, in _score_deploy
+    self._on_deploy(context, tx_params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 302, in _on_deploy
+    raise e
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 283, in _on_deploy
+    score = context.new_icon_score_mapper.load_score(score_address, next_tx_hash)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/iconscore/icon_score_mapper.py", line 127, in load_score
+    score_wrapper = self._load_score_wrapper(address, tx_hash)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/iconscore/icon_score_mapper.py", line 157, in _load_score_wrapper
+    score_wrapper = self.icon_score_loader.load_score(score_path)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/iconscore/icon_score_loader.py", line 64, in load_score
+    mod = importlib.import_module(f".{score_package_info[self._MAIN_FILE]}", pkg_root_import)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./.score/01612608d89dfc7ae27fe6b7496b4fdb177a9c0afb/0x8b34f1edc37bfe97aa9c505249969ea62591403db5d153dce4136a0a11706c7a/dpes_score.py", line 159, in <module>
+    class DpesScore(IconScoreBase, IDpesScore):
+  File "./.score/01612608d89dfc7ae27fe6b7496b4fdb177a9c0afb/0x8b34f1edc37bfe97aa9c505249969ea62591403db5d153dce4136a0a11706c7a/dpes_score.py", line 211, in DpesScore
+    @external(readonly=true)
+NameError: name 'true' is not defined
+[ERROR|logger.py:360] 2018-11-17 17:30:50,842 > [IconService] 'DpesScore' object has no attribute '_USER_TOTAL_AVERAGE_SCORE_DICT'
+Traceback (most recent call last):
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/icon_service_engine.py", line 616, in _handle_icx_send_transaction
+    tx_result.score_address = self._handle_score_invoke(context, to, params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/icon_service_engine.py", line 788, in _handle_score_invoke
+    data=data)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 100, in invoke
+    raise e
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 97, in invoke
+    self.deploy(context, context.tx.hash)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 130, in deploy
+    self._score_deploy(context, tx_params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 156, in _score_deploy
+    self._on_deploy(context, tx_params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 302, in _on_deploy
+    raise e
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 283, in _on_deploy
+    score = context.new_icon_score_mapper.load_score(score_address, next_tx_hash)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/iconscore/icon_score_mapper.py", line 129, in load_score
+    score = score_wrapper(score_db)
+  File "./.score/01f0d3b3d2d9df09636972ed501321fc3288d7a127/0x4586c286f5e32a80458c9b25a6bc5e0cee32db7a3555ab79cdfb1f4e0aefdcdf/dpes_score.py", line 171, in __init__
+    self._user_total_score_dict = DictDB(self._USER_TOTAL_AVERAGE_SCORE_DICT, db, value_type=int)
+AttributeError: 'DpesScore' object has no attribute '_USER_TOTAL_AVERAGE_SCORE_DICT'
+[ERROR|logger.py:360] 2018-11-17 17:31:30,847 > [IconService] 'DpesScore' object has no attribute '_team_audit_count'
+Traceback (most recent call last):
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/icon_service_engine.py", line 616, in _handle_icx_send_transaction
+    tx_result.score_address = self._handle_score_invoke(context, to, params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/icon_service_engine.py", line 788, in _handle_score_invoke
+    data=data)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 100, in invoke
+    raise e
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 97, in invoke
+    self.deploy(context, context.tx.hash)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 130, in deploy
+    self._score_deploy(context, tx_params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 156, in _score_deploy
+    self._on_deploy(context, tx_params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 302, in _on_deploy
+    raise e
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 298, in _on_deploy
+    self._initialize_score(on_deploy=on_deploy, params=params)
+  File "/Users/yhjack/.pyenv/versions/3.6.5/envs/venv36/lib/python3.6/site-packages/iconservice/deploy/icon_score_deploy_engine.py", line 321, in _initialize_score
+    on_deploy(**params)
+  File "./.score/01ca6f38de57148279f3ddb1c8416c4d46bc450842/0x3609f4a1848270749d831bd7b26b39243a22c0bdacfd87a29ba91c399974b22c/dpes_score.py", line 197, in on_install
+    self._team_audit_count.set(0)
+AttributeError: 'DpesScore' object has no attribute '_team_audit_count'

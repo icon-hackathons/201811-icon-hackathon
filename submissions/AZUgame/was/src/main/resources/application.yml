@@ -1,0 +1,62 @@
+server.port: 8080
+
+## Profile
+spring.profiles.active: dev
+
+## Set Default Datasource
+spring:
+  jpa:
+​    hibernate.ddl-auto: create-drop
+​    properties.hibernate:
+​      show_sql: true
+​      use_sql_comments: true
+​      format_sql: true
+  datasource:
+​    url: jdbc:h2:mem:testdb
+​    driver-class-name: org.h2.Driver
+​    username: sa
+​    password:
+  h2.console.enabled: true
+
+## Logger Config
+logging.config: classpath:application-logback.xml
+
+## App Properties
+app.file:
+  iconScore: icon_score_dice.zip
+
+
+## ---------------------------------------------------------------------------------------------------------------------
+## local
+## ---------------------------------------------------------------------------------------------------------------------
+---
+spring:
+  profiles: local
+app:
+  node:
+​    url: http://localhost:9000/api/v3
+​    networkId: 3
+
+
+## ---------------------------------------------------------------------------------------------------------------------
+## dev
+## ---------------------------------------------------------------------------------------------------------------------
+---
+spring:
+  profiles: dev
+app:
+  node:
+​    url: https://bicon.net.solidwallet.io/api/v3
+​    networkId: 3
+
+
+## ---------------------------------------------------------------------------------------------------------------------
+## prod
+## ---------------------------------------------------------------------------------------------------------------------
+---
+spring:
+  profiles: prod
+app:
+  node:
+​    url: https://wallet.icon.foundation/api/v3
+​    networkId: 1

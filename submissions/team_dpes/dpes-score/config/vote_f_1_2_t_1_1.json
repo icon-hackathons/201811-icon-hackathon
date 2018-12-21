@@ -1,0 +1,24 @@
+{
+    "jsonrpc": "2.0",
+    "method": "icx_sendTransaction",
+    "params": {
+        "version": "0x3",
+        "from": "hx0ac12c49979287e3e81550a1e5b5759c78c7325a",
+        "value": "0x0",
+        "stepLimit": "0xdbba0",
+        "nid": "0x3",
+        "nonce": "0x1",
+        "to": "cxb787980518b717a7f986500576c6a24c0294ed64",
+        "dataType": "call",
+            "data": {
+                "method": "vote",
+                "params": {
+                    "_from": "hx0ac12c49979287e3e81550a1e5b5759c78c7325a", 
+                    "_to": "hxcacb3b4b04f0f0e4e1667163476d436c87dd11bc",
+                    "_formatted_json": "[{\"type\":\"int\",\"value\":\"0x4\"},{\"type\":\"int\",\"value\":\"0x3\"},{\"type\":\"int\",\"value\":\"0x3\"},{\"type\":\"int\",\"value\":\"0x4\"},{\"type\":\"int\",\"value\":\"0x4\"},{\"type\":\"int\",\"value\":\"0x4\"},{\"type\":\"int\",\"value\":\"0x4\"},{\"type\":\"int\",\"value\":\"0x4\"},{\"type\":\"int\",\"value\":\"0x4\"},{\"type\":\"int\",\"value\":\"0x4\"},{\"type\":\"int\",\"value\":\"0x3\"},{\"type\":\"int\",\"value\":\"0x4\"},{\"type\":\"int\",\"value\":\"0x4\"},{\"type\":\"int\",\"value\":\"0x3\"},{\"type\":\"bool\",\"value\":\"0x1\"}]",
+                    "_message": "진짜 열심히 하는 친구랍니다."
+                }
+            }
+    },
+    "id": 1
+}

@@ -1,0 +1,325 @@
+{
+	"0x09d8e1e09b5ee62d77163e3861935a9e30240e19": {
+		"createdAt": "1542620535444",
+		"name": "이더테스트",
+		"priv": "{\"version\":3,\"id\":\"2375cab9-dce0-4a4b-b67e-b5abba9008f4\",\"address\":\"09d8e1e09b5ee62d77163e3861935a9e30240e19\",\"crypto\":{\"ciphertext\":\"4aa79c65bad952d6cc02bf94bf71c1304eb079e60829f02707206f629bb01e02\",\"cipherparams\":{\"iv\":\"eb4dc2c34cb97757a1a3cda87b38bb4a\"},\"cipher\":\"aes-128-ctr\",\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":32,\"salt\":\"6236c31cd8fdf97c4bed2be631a67a5fb96654042561bdd1124b19983f632981\",\"n\":16384,\"r\":8,\"p\":1},\"mac\":\"8870cd43169d49ab19a304b705fedce5b0ac482f3f81964bc52e01aff1259480\"}}",
+		"recent": [],
+		"tokens": {
+			"0xe00ed109b2b080ee6bb10898ac4b77201b124449": {
+				"address": "0xe00ed109b2b080ee6bb10898ac4b77201b124449",
+				"createdAt": "1542620953093",
+				"decimals": "12",
+				"defaultDecimals": "12",
+				"defaultName": "ICX",
+				"defaultSymbol": "ICX",
+				"name": "ICX",
+				"recent": [],
+				"symbol": "ICX"
+			}
+		},
+		"type": "eth"
+	},
+	"hx01008b5a87508f779c3dd3f394b3690c7ba03a8a": {
+		"createdAt": "1542794924176",
+		"name": "asdf",
+		"pendingTransaction": [],
+		"priv": "{\"version\":3,\"id\":\"19b8e976-5937-45d7-87f8-36abfdacaf5d\",\"address\":\"hx01008b5a87508f779c3dd3f394b3690c7ba03a8a\",\"crypto\":{\"ciphertext\":\"0b86255640c09d0121e8c8b15c6614a9b949d67f165dde5df9817e4029023be0\",\"cipherparams\":{\"iv\":\"a3fd485e281ca4e2ea00dd3b3dbf08e6\"},\"cipher\":\"aes-128-ctr\",\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":32,\"salt\":\"ef07f833d6c06b5c8046d3529f453b0771e2219cbb8bf75444d99f13d23baab8\",\"n\":16384,\"r\":8,\"p\":1},\"mac\":\"547c697d61e49ae0ebfe08b65b7fe113fe1938fef6407eea3808d4500e1482ad\"},\"coinType\":\"icx\"}",
+		"recent": [],
+		"tokens": {},
+		"type": "icx"
+	},
+	"hx0ac12c49979287e3e81550a1e5b5759c78c7325a": {
+		"createdAt": "1542458335977",
+		"name": "1팀 하봉안",
+		"pendingTransaction": [],
+		"priv": "{\"version\":3,\"id\":\"ac0eb8d1-0d72-4174-93ba-ebc8e5fce8e7\",\"address\":\"hx0ac12c49979287e3e81550a1e5b5759c78c7325a\",\"crypto\":{\"ciphertext\":\"dccecd39d56a223a0807d16f29c956eb92e6277bf40b1ca239a572d7a17d7433\",\"cipherparams\":{\"iv\":\"cf511a50c2b9b815da87550aa47324ad\"},\"cipher\":\"aes-128-ctr\",\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":32,\"salt\":\"b98be403768f3b1a833ec469f5d464e7a93961d39fb39fe0737e4a396bd006da\",\"n\":16384,\"r\":8,\"p\":1},\"mac\":\"bc0e73218e59dc6f7a9b69fea4845e8f975a14e87ad9582cde416f953f8563d5\"},\"coinType\":\"icx\"}",
+		"recent": [],
+		"tokens": {},
+		"type": "icx"
+	},
+	"hx0fc2c4a745db84455de35d4a102ce7b8b8ee9cbb": {
+		"createdAt": "1542458424618",
+		"name": "2팀 백선미",
+		"pendingTransaction": [],
+		"priv": "{\"version\":3,\"id\":\"f88027fa-a723-4637-afe8-92a9575e382f\",\"address\":\"hx0fc2c4a745db84455de35d4a102ce7b8b8ee9cbb\",\"crypto\":{\"ciphertext\":\"e01d32b3419f8e3299565a3245f5506fe09b848f1dea9521fc6c9f987b9b7304\",\"cipherparams\":{\"iv\":\"d62f01feca5183a1765542f4f323fe3f\"},\"cipher\":\"aes-128-ctr\",\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":32,\"salt\":\"ff7a337f3074c48e106d8e2373b8a5b152a290eed06f2a4215d02637d3ede664\",\"n\":16384,\"r\":8,\"p\":1},\"mac\":\"e1003e67471b6f8d490bfb8697a7a2f2531e3ab4de345b0cdf587c074fa18728\"},\"coinType\":\"icx\"}",
+		"recent": [],
+		"tokens": {},
+		"type": "icx"
+	},
+	"hx1025f4a40ba1e7a9aa20d7b07f6f9624c23e0361": {
+		"createdAt": "1542616870013",
+		"name": "테스트용계정",
+		"pendingTransaction": [],
+		"priv": "{\"version\":3,\"id\":\"679713d9-43da-48c6-be17-844aad0269a6\",\"address\":\"hx1025f4a40ba1e7a9aa20d7b07f6f9624c23e0361\",\"crypto\":{\"ciphertext\":\"ed52e61dc4ab13aaa28688d62f84421596ce69b5f3e537082e433832f451d362\",\"cipherparams\":{\"iv\":\"9e4fbc13d0e952c20b441252847e1986\"},\"cipher\":\"aes-128-ctr\",\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":32,\"salt\":\"04fb99a2ab16ee435e3b501c597a50b9368f0ca7a70ff4b9b0c476635b6bae33\",\"n\":16384,\"r\":8,\"p\":1},\"mac\":\"0f22148efaab2c9084a6ab8714c05fd6b98dc23b867d0229bd4b557e822468bf\"},\"coinType\":\"icx\"}",
+		"recent": [],
+		"tokens": {
+			"cx4ae65c058d35b5bb8cef668be5113354448c0264": {
+				"address": "cx4ae65c058d35b5bb8cef668be5113354448c0264",
+				"createdAt": "1542619536801",
+				"decimals": "16",
+				"defaultDecimals": 18,
+				"defaultName": "StandardToken",
+				"defaultSymbol": "ICX",
+				"name": "StandardToken",
+				"pendingTransaction": [],
+				"recent": [],
+				"symbol": "ICX"
+			},
+			"cx9e36d92a08b47d64bd03455641454d47e46710b8": {
+				"address": "cx9e36d92a08b47d64bd03455641454d47e46710b8",
+				"createdAt": "1542701633032",
+				"decimals": 18,
+				"defaultDecimals": 18,
+				"defaultName": "MONG",
+				"defaultSymbol": "MONG",
+				"name": "MONG",
+				"pendingTransaction": [],
+				"recent": [],
+				"symbol": "MONG"
+			}
+		},
+		"type": "icx"
+	},
+	"hx3eb8da45c0aee21e48410530f62358d6edfdcbc1": {
+		"createdAt": "1542458398900",
+		"name": "2팀 박상후",
+		"pendingTransaction": [],
+		"priv": "{\"version\":3,\"id\":\"a492d0e5-1e10-44c1-8758-a11728dea344\",\"address\":\"hx3eb8da45c0aee21e48410530f62358d6edfdcbc1\",\"crypto\":{\"ciphertext\":\"f59704e732a2cc86fc056ecd4c9ed9a2221d8a1348d1a9aea0d21be743da66f2\",\"cipherparams\":{\"iv\":\"1030a1b53c9a5355d5ff8761e0b4a06d\"},\"cipher\":\"aes-128-ctr\",\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":32,\"salt\":\"cc16d03eb46a9b1c4986b9753ee6057200c1c5a354bb4a92de3c3541ffca6471\",\"n\":16384,\"r\":8,\"p\":1},\"mac\":\"2c4774160308eb8a30b573cea63dfdfa20ac5eb6bc2ff46b60f302d01b1bb480\"},\"coinType\":\"icx\"}",
+		"recent": [],
+		"tokens": {},
+		"type": "icx"
+	},
+	"hx41a61f2b24ed615ba7dba8018ca8cca4d89944d6": {
+		"createdAt": "1542949392081",
+		"name": "내개인지갑",
+		"pendingTransaction": [],
+		"priv": "{\"version\":3,\"id\":\"e08700b9-ae9f-4d7e-b07d-895ce2c2d9de\",\"address\":\"hx41a61f2b24ed615ba7dba8018ca8cca4d89944d6\",\"crypto\":{\"ciphertext\":\"2e1f134e7fc20fc8b0591cdd296259458b49301b06af8050d0f2083eb2861f74\",\"cipherparams\":{\"iv\":\"daa3f400e9e2a9274d2e6c9b0c90a37d\"},\"cipher\":\"aes-128-ctr\",\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":32,\"salt\":\"f4f898068dbb121e6633a0446f4159dffb7c8cdce45865701e010ff4e854386d\",\"n\":16384,\"r\":8,\"p\":1},\"mac\":\"fa091e5459046a77718ca7ede02ed6fac29d654d6dcc874e2f1187470689db83\"},\"coinType\":\"icx\"}",
+		"recent": [],
+		"tokens": {},
+		"type": "icx"
+	},
+	"hx435b4dd5f623f2e31c691bf480902a3056b828ac": {
+		"createdAt": "1542445101426",
+		"name": "팀계정1",
+		"pendingTransaction": [],
+		"priv": "{\"version\":3,\"id\":\"403a754c-0751-4428-bfb6-815f9510f08e\",\"address\":\"hx435b4dd5f623f2e31c691bf480902a3056b828ac\",\"crypto\":{\"ciphertext\":\"9bbe95efa36a37ffdac44627567780a2d6f8ddc0690a3d46b06d9cc1b814534e\",\"cipherparams\":{\"iv\":\"94011ef3deec9a69c60158705ed83530\"},\"cipher\":\"aes-128-ctr\",\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":32,\"salt\":\"ee4a385c8ba83e613f1de2111cff3652f203cb7d45fa1a6a61a89e12cf4daab2\",\"n\":16384,\"r\":8,\"p\":1},\"mac\":\"f5f657f539efb3f33a582ec33565f331a92e12b3f9925d9cf579664a382032f7\"},\"coinType\":\"icx\"}",
+		"recent": [],
+		"tokens": {},
+		"type": "icx"
+	},
+	"hx4ed9e9c34451bd3ceb85a7530cb0b0986fd46f79": {
+		"createdAt": "1542445760310",
+		"name": "팀계정2",
+		"pendingTransaction": [],
+		"priv": "{\"version\":3,\"id\":\"5a8ac861-3bb3-4d60-93d5-a80cb86e51b5\",\"address\":\"hx4ed9e9c34451bd3ceb85a7530cb0b0986fd46f79\",\"crypto\":{\"ciphertext\":\"3466f7f8d5f316163b786f1b7c05097bc284434cf1f0e0301ca2fc356866bd64\",\"cipherparams\":{\"iv\":\"243d2dbc1956e8302156d06911a874ba\"},\"cipher\":\"aes-128-ctr\",\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":32,\"salt\":\"879a3e86be1f9442b21b5f3e99cf9e47aeec5d8656aab859ab02a325a5387ccd\",\"n\":16384,\"r\":8,\"p\":1},\"mac\":\"36d63f80278535b02b0a3a4d74e342fbe144f71f715836a030290cdb9dfa5322\"},\"coinType\":\"icx\"}",
+		"recent": [],
+		"tokens": {},
+		"type": "icx"
+	},
+	"hx62c2b680f042e10a74b51e2065814255c2333e66": {
+		"createdAt": "1542536867620",
+		"name": "유저 2팀 박상후",
+		"pendingTransaction": [],
+		"priv": "{\"version\":3,\"id\":\"d7be5d68-380e-4cc5-84fb-e006c43ddbb3\",\"address\":\"hx62c2b680f042e10a74b51e2065814255c2333e66\",\"crypto\":{\"ciphertext\":\"584370b56fb97b4d5f2225b44d564509f920fe7693024d16cd9409f93a48b3dc\",\"cipherparams\":{\"iv\":\"361af830dbf4c2ab46cc64f2e5a35ee6\"},\"cipher\":\"aes-128-ctr\",\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":32,\"salt\":\"3832e3d525c5fa52bea2fcab429bddbbb84d59bc08c06761d562881c884582cf\",\"n\":16384,\"r\":8,\"p\":1},\"mac\":\"27725381d718693a98fbdaa42ee462a1dadfab0c6dfea0b24719f32cbc1e1c49\"},\"coinType\":\"icx\"}",
+		"recent": [],
+		"tokens": {},
+		"type": "icx"
+	},
+	"hx6efa0281337beea3c3888398e0cba640482aec36": {
+		"createdAt": "1542447574295",
+		"name": "오라클팀계정1",
+		"pendingTransaction": [],
+		"priv": "{\"version\":3,\"id\":\"0006918b-381c-4a38-b823-a2257e6ce4e9\",\"address\":\"hx6efa0281337beea3c3888398e0cba640482aec36\",\"crypto\":{\"ciphertext\":\"f10b5e6c191b9984efa3ec52433e7e6dd50a4ceb8d6f4f45d09c97e50970c7ff\",\"cipherparams\":{\"iv\":\"0b2e49928a20929b2863609f213acd40\"},\"cipher\":\"aes-128-ctr\",\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":32,\"salt\":\"66cf7cb2541640a7c3eadd1b69c983655dc1d22ae619c9a0109f083975a2e8b2\",\"n\":16384,\"r\":8,\"p\":1},\"mac\":\"dba1484f8d23310a0bc055a12c1f9b7114387f9b724830f43808ac900632fcf2\"},\"coinType\":\"icx\"}",
+		"recent": [],
+		"tokens": {},
+		"type": "icx"
+	},
+	"hx72f7f531dcd26c6f34f691ec54c0ea9a255d2508": {
+		"createdAt": "1542536793053",
+		"name": "유저 1팀 하봉안",
+		"pendingTransaction": [],
+		"priv": "{\"version\":3,\"id\":\"2c9ec27d-afeb-4bf5-a29c-2c12e0eb1fc1\",\"address\":\"hx72f7f531dcd26c6f34f691ec54c0ea9a255d2508\",\"crypto\":{\"ciphertext\":\"4b223ca5944001abff300d7f1df414803d694ae261b96f0cc9dcbfd3693927c6\",\"cipherparams\":{\"iv\":\"78128eb21a22236e3b9fab2666814ae2\"},\"cipher\":\"aes-128-ctr\",\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":32,\"salt\":\"6756921c5d1837156bf482f6b3acaf5113218e6a81b8ff1f122a655f5466c7cc\",\"n\":16384,\"r\":8,\"p\":1},\"mac\":\"1df231b6ecba90bb36f30f699e51cc8e6cbeb2692dd069f8f26f9a0eb6b95c36\"},\"coinType\":\"icx\"}",
+		"recent": [],
+		"tokens": {},
+		"type": "icx"
+	},
+	"hx8a6f27ec9347b3e0f330ac929920e3f48ad4e5cd": {
+		"createdAt": "1542458285864",
+		"name": "1팀 김진현",
+		"pendingTransaction": [],
+		"priv": "{\"version\":3,\"id\":\"9abd187a-6476-4733-9e29-00644480f900\",\"address\":\"hx8a6f27ec9347b3e0f330ac929920e3f48ad4e5cd\",\"crypto\":{\"ciphertext\":\"5296eba2582b8d37bda194d7cb421dab82623512e8570dec3037dcc9c7f3116c\",\"cipherparams\":{\"iv\":\"378483f20612bf87fe87a48d368f792f\"},\"cipher\":\"aes-128-ctr\",\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":32,\"salt\":\"bc57e6e4a8c57f60b0234fe59eb5e3e1171577a43f851f06a5df8149a34619fc\",\"n\":16384,\"r\":8,\"p\":1},\"mac\":\"5454703e27fa759091127dc04cabba16571119cf35cfd4940f2d881fbffc7ab6\"},\"coinType\":\"icx\"}",
+		"recent": [],
+		"tokens": {},
+		"type": "icx"
+	},
+	"hx9051d3a7e357b863f9c5b873788bf5a48b40e75a": {
+		"createdAt": "1542458486131",
+		"name": "오라클 갓종협",
+		"pendingTransaction": [],
+		"priv": "{\"version\":3,\"id\":\"2f091288-6196-45ce-ba03-18ea983486ad\",\"address\":\"hx9051d3a7e357b863f9c5b873788bf5a48b40e75a\",\"crypto\":{\"ciphertext\":\"81c688fde994801ff86ea25fd59616b25e930d9c27370220dae97bd06e1b5dd2\",\"cipherparams\":{\"iv\":\"33dffef89860ae999c9025273e0e1b1d\"},\"cipher\":\"aes-128-ctr\",\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":32,\"salt\":\"81526ce4b61e30f5c244fdf809b901a1e7414d9cdc8668e0e2128867ba5f49a6\",\"n\":16384,\"r\":8,\"p\":1},\"mac\":\"dde5666bd0f4a4a6ddc83c27509e0a40b355e14f4413b65dc22620da3f5eb7f9\"},\"coinType\":\"icx\"}",
+		"recent": [],
+		"tokens": {},
+		"type": "icx"
+	},
+	"hx908f59b7ea6bbbc6b2fcfc629d7cacdb22db6432": {
+		"createdAt": "1542458548524",
+		"name": "1팀 팀장 김용진",
+		"pendingTransaction": [],
+		"priv": "{\"version\":3,\"id\":\"37cf131e-7c51-4584-9df3-8b622f67ed72\",\"address\":\"hx908f59b7ea6bbbc6b2fcfc629d7cacdb22db6432\",\"crypto\":{\"ciphertext\":\"6f45af76469cace1bd48295b375102070ad6d0e60167cad63ca554ed3421104f\",\"cipherparams\":{\"iv\":\"35b57afdb9cdcad7946105685d96e72d\"},\"cipher\":\"aes-128-ctr\",\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":32,\"salt\":\"9748f247d74c77a0a381656282ed2a9883f29b59236a9d6b00d1c1add908d9e3\",\"n\":16384,\"r\":8,\"p\":1},\"mac\":\"46d8ee1345a0e08ad4c43102b235ced9bd6407ed4c68773be5f51d0299e035e0\"},\"coinType\":\"icx\"}",
+		"recent": [],
+		"tokens": {},
+		"type": "icx"
+	},
+	"hx92bb869bb42edd254ac6b6bd5c1c85702a6b5380": {
+		"createdAt": "1542536897307",
+		"name": "유저 2팀 백선미",
+		"pendingTransaction": [],
+		"priv": "{\"version\":3,\"id\":\"51808904-6fb6-4da6-b688-30e5070f2135\",\"address\":\"hx92bb869bb42edd254ac6b6bd5c1c85702a6b5380\",\"crypto\":{\"ciphertext\":\"422c661f82fa2a6f782c94cbc981d5b932c7ba58350c4fedce29301c344a17e4\",\"cipherparams\":{\"iv\":\"5d3efcee37e5f571eb9eb655d62792b5\"},\"cipher\":\"aes-128-ctr\",\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":32,\"salt\":\"b9b15dc8841c39db4c4e049e5d616e4607d577e28aecfa8ed83321cd28865b20\",\"n\":16384,\"r\":8,\"p\":1},\"mac\":\"bc4099c0a1285eb3d6f5e70f0e9ecd2ca841ac43760a10f31a9ea6502467981f\"},\"coinType\":\"icx\"}",
+		"recent": [],
+		"tokens": {},
+		"type": "icx"
+	},
+	"hxa4c3a78d73bb7287f72801c09298f1a5743b1655": {
+		"createdAt": "1541927882444",
+		"name": "관리자1",
+		"pendingTransaction": [
+			{
+				"address": "cxf1a43ce12e9a4e218487978c6739c41426bebd8f",
+				"quantity": "1000",
+				"time": 1542454664053,
+				"txid": "0xc8acf04aad40ea8d36efbde732654dad52e1adb06fc1226bab2b5dd88e8c9b55",
+				"type": "icx"
+			},
+			{
+				"address": "cx122d93825733b6a5047814e86dcb7ba0e81b46b6",
+				"quantity": "10",
+				"time": 1541929365226,
+				"txid": "0x5f21e5ad69fd3f2eef20653856d83540c97baebf2ccd3f99db697f47cd14b6d2",
+				"type": "icx"
+			},
+			{
+				"address": "cx122d93825733b6a5047814e86dcb7ba0e81b46b6",
+				"quantity": "10",
+				"time": 1541929349904,
+				"txid": "0xe4ad003f925c8bca2b8e2d343239c9611b1b98bb248e2b20b38e905af3a6aae4",
+				"type": "icx"
+			}
+		],
+		"priv": "{\"version\":3,\"id\":\"9ff8acbe-7b51-4663-a339-15962c263802\",\"address\":\"hxa4c3a78d73bb7287f72801c09298f1a5743b1655\",\"crypto\":{\"ciphertext\":\"ecca7b9218f0b4e3045d8731a3a04a2d49a752e0dde9e3d33cacac32472ce2b0\",\"cipherparams\":{\"iv\":\"c848edc3ca36102959c2527cebd04846\"},\"cipher\":\"aes-128-ctr\",\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":32,\"salt\":\"3add699737a0f731c08217e20bcec5524eb0308007aa6306af4bf6cecc9c0f28\",\"n\":16384,\"r\":8,\"p\":1},\"mac\":\"c603af418f4215e61a046219ca1a361daceb60e3c838e8e0ef8633a46346b4fe\"},\"coinType\":\"icx\"}",
+		"recent": [
+			{
+				"time": 1542454664053
+			}
+		],
+		"tokens": {},
+		"type": "icx"
+	},
+	"hxcacb3b4b04f0f0e4e1667163476d436c87dd11bc": {
+		"createdAt": "1542536769664",
+		"name": "유저 1팀 김진현",
+		"pendingTransaction": [],
+		"priv": "{\"version\":3,\"id\":\"2a19f51e-ed4a-490c-860d-9bc71c986310\",\"address\":\"hxcacb3b4b04f0f0e4e1667163476d436c87dd11bc\",\"crypto\":{\"ciphertext\":\"0313d4c450e715e4ebb51a78610cb45abbe510f1a8358235ae16e51e66069fdd\",\"cipherparams\":{\"iv\":\"4d60f7e20e5f5421be1a4c7c3acfde8c\"},\"cipher\":\"aes-128-ctr\",\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":32,\"salt\":\"54d28ba89178284b9edfd95ae17ab49d5df6b5fdf5bbbfaf8c60173aca679d8e\",\"n\":16384,\"r\":8,\"p\":1},\"mac\":\"f915544c01cfbe449963acfd28ccf4989026545da07e22590757ebca6adbbc5a\"},\"coinType\":\"icx\"}",
+		"recent": [],
+		"tokens": {},
+		"type": "icx"
+	},
+	"hxebf3a409845cd09dcb5af31ed5be5e34e2af9433": {
+		"createdAt": "1531185138801",
+		"name": "V3 GENESIS",
+		"pendingTransaction": [],
+		"priv": "{\"version\":3,\"id\":\"6d3c3563-fe80-4855-b9f9-7f52de42b110\",\"address\":\"hxebf3a409845cd09dcb5af31ed5be5e34e2af9433\",\"crypto\":{\"ciphertext\":\"215cef598cfcba0c5adf9c68f71ee468db216e53926ccd57380ec1210ef92878\",\"cipherparams\":{\"iv\":\"68768b14b91584e1f4da571fcd770647\"},\"cipher\":\"aes-128-ctr\",\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":32,\"salt\":\"086fa3f4c56fd6a79fd2e22e6c541d003fe5115d0d14eaaac304446e0c69cb76\",\"n\":16384,\"r\":8,\"p\":1},\"mac\":\"975a91c94bca72fe6485bb990e74a0b377935a96500747b7437fe13721a74111\"},\"coinType\":\"icx\"}",
+		"recent": [
+			{
+				"time": 1542680503539
+			}
+		],
+		"tokens": {
+			"cx4ae65c058d35b5bb8cef668be5113354448c0264": {
+				"address": "cx4ae65c058d35b5bb8cef668be5113354448c0264",
+				"createdAt": "1536733609372",
+				"decimals": "18",
+				"defaultDecimals": 18,
+				"defaultName": "StandardToken",
+				"defaultSymbol": "ICX",
+				"name": "StandardToken",
+				"pendingTransaction": [
+					{
+						"address": "hx1025f4a40ba1e7a9aa20d7b07f6f9624c23e0361",
+						"quantity": "100",
+						"time": 1542619700101,
+						"txid": "0x76b86cec975c1bc6f8df601b6768b361b8b1ce4f89a9a110cabc65e8d9028ece",
+						"type": "icx"
+					},
+					{
+						"address": "hxb731f2bed405ecfe6ff9042a4b361076ae344aa8",
+						"quantity": "1",
+						"time": 1540516755706,
+						"txid": "0x3ef3f25d657199d3aedbb348604b65e258009879adf932b76b11053f2acfeeee",
+						"type": "icx"
+					},
+					{
+						"address": "hxb731f2bed405ecfe6ff9042a4b361076ae344aa8",
+						"quantity": "0.1",
+						"time": 1540514852302,
+						"txid": "0x4fe6e8a85941ba58a6cb51f5285307a7090a3c154cd9ae8c2a8e1e16c2ff5016",
+						"type": "icx"
+					},
+					{
+						"address": "hxb731f2bed405ecfe6ff9042a4b361076ae344aa8",
+						"quantity": "0.1",
+						"time": 1540506348297,
+						"txid": "0x6b820117c1f99640f6090388873f5ca158655dbef2d20d6ec30566f1ec5835db",
+						"type": "icx"
+					},
+					{
+						"address": "hx1655f08ca797e9da5fddcc46b43b0ef3749feb31",
+						"quantity": "1",
+						"time": 1540505742985,
+						"txid": "0x3180c259c3388abac58b6965d60ed4257eb09cdb61f3359a4163bfb5fb212269",
+						"type": "icx"
+					}
+				],
+				"recent": [
+					{
+						"time": 1542619700101
+					}
+				],
+				"symbol": "ICX"
+			},
+			"cxe382845b0fa8d00d748f7b29c9ee7369eee20897": {
+				"address": "cxe382845b0fa8d00d748f7b29c9ee7369eee20897",
+				"createdAt": "1534684837898",
+				"decimals": 18,
+				"defaultDecimals": 18,
+				"defaultName": "StandardToken",
+				"defaultSymbol": "MST",
+				"name": "StandardToken1",
+				"pendingTransaction": [],
+				"recent": [],
+				"symbol": "MST"
+			},
+			"cxf9148db4f8ec78823a50cb06c4fed83660af38d0": {
+				"address": "cxf9148db4f8ec78823a50cb06c4fed83660af38d0",
+				"createdAt": "1542350350667",
+				"decimals": 0,
+				"defaultDecimals": 0,
+				"defaultName": "MECA Coin",
+				"defaultSymbol": "MCA",
+				"name": "MECA Coin",
+				"pendingTransaction": [],
+				"recent": [],
+				"symbol": "MCA"
+			}
+		},
+		"type": "icx"
+	},
+	"hxff7d934596a0c2ac4526559837786e881eddf410": {
+		"createdAt": "1542458578747",
+		"name": "2팀 팀장 이홍수",
+		"pendingTransaction": [],
+		"priv": "{\"version\":3,\"id\":\"e837ddeb-7229-4439-a62b-7c7e64c714b5\",\"address\":\"hxff7d934596a0c2ac4526559837786e881eddf410\",\"crypto\":{\"ciphertext\":\"205fb2b42f1175a998e64a010350656e33659c439136ea2175ddb104a74c6deb\",\"cipherparams\":{\"iv\":\"9bc20259312a2f0c1a16f31f6a42fc51\"},\"cipher\":\"aes-128-ctr\",\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":32,\"salt\":\"7e2d6926e1bfad2b8dfd141fa63cd258f3b8316b1072338ea170c9f699bb7900\",\"n\":16384,\"r\":8,\"p\":1},\"mac\":\"7fe4f357d8b849f68c8b083f1c23036fa4250799cee1c561669d793ba2974fa8\"},\"coinType\":\"icx\"}",
+		"recent": [],
+		"tokens": {},
+		"type": "icx"
+	}
+}
