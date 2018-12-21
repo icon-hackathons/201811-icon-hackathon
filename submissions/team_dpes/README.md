@@ -68,7 +68,7 @@ Token Economy 기반 인센티브/패널티
 	├── keystores	# keystore files for example
 	└── config	# example tx object
 
-DPES의 SCORE는 `dpes_score` 와 `dpes_project_score`, 크게 두 가지로 구성되어 있습니다. `dpes_score`는 앱마다 고유하게 존재하는 앱 데이터 저장 및 유저 화이트리스트 관리용 SCORE이며, `dpes_project_score`는 새로운 워크스페이스를 생성할 때마다 deploy되는 SCORE입니다. 
+DPES의 SCORE는 `dpes_score` 와 `dpes_project_score`, 크게 두 가지로 구성되어 있습니다. `dpes_score`는 앱마다 고유하게 존재하는 앱 데이터 저장 및 유저 화이트리스트 관리용 SCORE이며, `dpes_project_score`는 새로운 워크스페이스를 생성할 때마다 deploy되는 SCORE입니다. 
 
 ### dpes_score API
 
@@ -302,7 +302,7 @@ tbears deploy dpes_score -k ../keystores/Admin1.json -p "@1234qwer" -c ../config
 tbears deploy dpes_score -k ../keystores/Admin1.json -p "@1234qwer" -c ../config/deploy_dpes_score.json -m update -o cx635118b9865c8cddee4759dff5d29360f5664d5a
 ```
 
-워크스페이스 생성 및 리워드 지급을 위한 ICX를 미리 예치합니다.
+워크스페이스 생성 및 리워드 지급을 위한 ICX를 미리 예치합니다.
 
 ```bash
 tbears sendtx -k ../keystores/Admin1.json -p "@1234qwer" -c ../config/deploy_dpes_score.json ../config/send_icx_to_contract.json
@@ -382,7 +382,7 @@ tbears sendtx -k ../keystores/Parent1.json -p "@1234qwer" -c ../config/deploy_dp
     "id": 1
 }
 ```
-
+
 한편, 관리자 계정은 `dpes_project_score`를 deploy하여 워크스페이스를 생성할 수 있습니다. 
 
 ```bash
@@ -533,7 +533,7 @@ npm i # npm install
 json-server --watch ./src/server/db.json
 ```
 
-`serve` 스크립트를 실행하면, `http://localhost:8080` 를 통해 로컬 환경에서 앱을 사용할 수 있습니다. 
+`serve` 스크립트를 실행하면, `http://localhost:8080` 를 통해 로컬 환경에서 앱을 사용할 수 있습니다. 
 ```bash
 npm run serve 
 # App running at http://localhost:8080
