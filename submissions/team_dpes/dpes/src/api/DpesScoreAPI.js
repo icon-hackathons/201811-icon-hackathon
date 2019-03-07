@@ -12,7 +12,7 @@ const checkChildExist = async (childAddress) => {
       _child_address: childAddress,
     },
   });
-  const result = await iconService.call(call).execute(true);
+  const result = await iconService.call(call).execute();
   return result;
 };
 
@@ -24,7 +24,7 @@ const checkParentExist = async (parentAddress) => {
       _parent_address: parentAddress,
     },
   });
-  const result = await iconService.call(call).execute(true);
+  const result = await iconService.call(call).execute();
   return result;
 };
 
@@ -36,7 +36,7 @@ const getChildLevel = async (childAddress) => {
       _child_address: childAddress,
     },
   });
-  const result = await iconService.call(call).execute(true);
+  const result = await iconService.call(call).execute();
   return result;
 };
 
@@ -48,7 +48,7 @@ const getParentLevel = async (parentAddress) => {
       _parent_address: parentAddress,
     },
   });
-  const result = await iconService.call(call).execute(true);
+  const result = await iconService.call(call).execute();
   return result;
 };
 
@@ -57,7 +57,7 @@ const getTeamCount = async () => {
     to: Constants.DPES_SCORE_ADDRESS,
     methodName: 'get_team_count',
   });
-  const result = await iconService.call(call).execute(true);
+  const result = await iconService.call(call).execute();
   return result;
 };
 
@@ -69,7 +69,7 @@ const getUserInfo = async (userAddress) => {
       _user_address: userAddress,
     },
   });
-  const result = await iconService.call(call).execute(true);
+  const result = await iconService.call(call).execute();
   return result;
 };
 
